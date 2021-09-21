@@ -1,4 +1,5 @@
 name: Build and run tests
+runs-on: [self-hosted, windows, x64]
 on:
   push:
     branches-ignore:
