@@ -18,7 +18,7 @@ jobs:
        git submodule update --init --recursive
     - name: "Build solution"
       run: |
-       cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Enterprise\MSBuild\Current\Bin\"
+       cd "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\"
        .\MSBuild.exe -m -p:Configuration=Release $Env:GITHUB_WORKSPACE\EU4toVic3.sln
     - name: "Run tests"
       run: |
