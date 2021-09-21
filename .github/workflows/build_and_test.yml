@@ -1,5 +1,4 @@
 name: Build and run tests
-runs-on: [self-hosted, Windows]
 on:
   push:
     branches-ignore:
@@ -9,7 +8,7 @@ on:
       - main
 jobs:
   build_and_test:
-    runs-on: windows-2019
+    runs-on: [self-hosted, Windows]
     steps:
     - uses: actions/checkout@v2
       with:
