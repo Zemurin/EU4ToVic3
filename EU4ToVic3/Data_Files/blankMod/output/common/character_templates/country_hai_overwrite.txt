@@ -1,0 +1,91 @@
+﻿### Haiti character template file ###
+
+# Haiti - HAI
+
+### IG leaders ###
+
+# Antoine Bernard Thomas Madiou, historian and politician.
+REPLACE:HAI_thomas_madiou = {
+    first_name = Thomas
+    last_name = Madiou
+    historical = yes
+    culture = cu:afro_antillean
+    female = no
+    religion = rel:catholic
+    ideology = ideology_reformer
+    interest_group = ig_intelligentsia
+    birth_date = 1814.4.30 # died 1884.5.25
+    traits = {
+    	persistent
+    	tactful # given the number of governments he worked through, he had to have /some/ knack for delicacy in political matters
+        literary
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+			uses_haiti_characters = yes
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_thomas_madiou
+				}
+			}
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1836.1.5
+        latest_usage_date = 1859.4.30 # spawn at age 45 at the latest
+        chance = 50
+    }
+	on_created = {
+		converter_african_diaspora_template_effect = { TARGET = global_caribbean_cultures }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_thomas_madiou
+		}
+		fix_variable_error = { variable = converter_thomas_madiou }
+	}
+}
+fem_HAI_thomas_madiou = {
+    first_name = Tamzen
+    last_name = Madiou
+    historical = yes
+    culture = cu:afro_antillean
+    female = yes
+    religion = rel:catholic
+    ideology = ideology_reformer
+    interest_group = ig_intelligentsia
+    birth_date = 1814.4.30 # died 1884.5.25
+    traits = {
+    	persistent
+    	tactful # given the number of governments he worked through, he had to have /some/ knack for delicacy in political matters
+        literary
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+			uses_haiti_characters = yes
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_thomas_madiou
+				}
+			}
+		}
+        interest_group_trigger = {
+            is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1836.1.5
+        latest_usage_date = 1859.4.30 # spawn at age 45 at the latest
+        chance = 50
+    }
+	on_created = {
+		converter_african_diaspora_template_effect = { TARGET = global_caribbean_cultures }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_thomas_madiou
+		}
+		fix_variable_error = { variable = converter_thomas_madiou }
+	}
+}

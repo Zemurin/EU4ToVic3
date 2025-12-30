@@ -355,6 +355,44 @@ converter_historical_leader_cultures_effect = {
 		if = {
 			limit = {
 				any_scope_state = {
+					converter_is_lithuanian_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_lithuanian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_lithuanian_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_lithuanian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_lithuanian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_lithuanian_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
 					converter_is_irish_homeland = yes
 					any_scope_pop = {
 						culture = {
@@ -849,6 +887,44 @@ converter_historical_leader_cultures_effect = {
 		if = {
 			limit = {
 				any_scope_state = {
+					converter_is_spanish_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_spanish_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_spanish_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
 					converter_is_catalan_homeland = yes
 					any_scope_pop = {
 						culture = {
@@ -887,10 +963,10 @@ converter_historical_leader_cultures_effect = {
 		if = {
 			limit = {
 				any_scope_state = {
-					converter_is_spanish_homeland = yes
+					converter_is_galician_homeland = yes
 					any_scope_pop = {
 						culture = {
-							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							NOT = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } }
 							has_homeland = prev.state
 						}
 					}
@@ -898,10 +974,10 @@ converter_historical_leader_cultures_effect = {
 			}
 			every_scope_state = {
 				limit = {
-					converter_is_spanish_homeland = yes
+					converter_is_galician_homeland = yes
 					any_scope_pop = {
 						culture = {
-							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							NOT = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } }
 							has_homeland = prev.state
 						}
 					}
@@ -909,13 +985,51 @@ converter_historical_leader_cultures_effect = {
 				every_scope_pop = {
 					limit = {
 						culture = {
-							NOT = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+							NOT = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } }
 							has_homeland = prev.state
 						}
 					}
 					culture = {
 						add_to_global_variable_list = {
-							name = global_spanish_cultures
+							name = global_galician_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					converter_is_basque_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_basque_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_basque_cultures
 							target = this
 						}
 					}
@@ -1910,6 +2024,120 @@ converter_historical_leader_cultures_effect = {
 				}
 			}
 		}
+		if = {
+			limit = {
+				any_scope_state = {
+					converter_is_ethiopian_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_ethiopian_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_ethiopian_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					converter_is_arab_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_arab_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_arab_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
+		if = {
+			limit = {
+				any_scope_state = {
+					converter_is_swahili_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+			}
+			every_scope_state = {
+				limit = {
+					converter_is_swahili_homeland = yes
+					any_scope_pop = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+				}
+				every_scope_pop = {
+					limit = {
+						culture = {
+							NOT = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } }
+							has_homeland = prev.state
+						}
+					}
+					culture = {
+						add_to_global_variable_list = {
+							name = global_swahili_cultures
+							target = this
+						}
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -1924,28 +2152,7 @@ converter_colonial_confederation_cultures_effect = {
 							has_discrimination_trait_group = heritage_group_african
 							NOR = {
 								is_target_in_global_variable_list = { name = global_african_diaspora_cultures target = this }
-								has_discrimination_trait_group = language_group_kwa
-								has_discrimination_trait_group = language_group_mande
-								has_discrimination_trait_group = language_group_kru
-								has_discrimination_trait_group = language_group_volta_niger
-								has_discrimination_trait_group = language_group_senegambian
-								has_discrimination_trait_group = language_group_chadic
-								has_discrimination_trait_group = language_group_benue_congo
-								has_discrimination_trait_group = language_group_mal
-								has_discrimination_trait_group = language_group_gur
-								has_discrimination_trait_group = language_group_senufic
-								has_discrimination_trait_group = language_group_songhai
-								has_discrimination_trait_group = language_group_bantu
-								has_discrimination_trait_group = language_group_central_sudanic
-								has_discrimination_trait_group = language_group_saharan
-								has_discrimination_trait_group = language_group_nilotic
-								has_discrimination_trait = language_amharic
-								has_discrimination_trait_group = language_group_kushitic
-								has_discrimination_trait_group = language_group_ubangian
-								has_discrimination_trait_group = language_group_furan
-								has_discrimination_trait_group = language_group_kordofanian
-								has_discrimination_trait = language_tigrinya
-								has_discrimination_trait_group = language_group_khoisan
+								converter_has_indigenous_african_language = yes
 							}
 							has_homeland = prev.state
 						}
@@ -1960,28 +2167,7 @@ converter_colonial_confederation_cultures_effect = {
 							has_discrimination_trait_group = heritage_group_african
 							NOR = {
 								is_target_in_global_variable_list = { name = global_african_diaspora_cultures target = this }
-								has_discrimination_trait_group = language_group_kwa
-								has_discrimination_trait_group = language_group_mande
-								has_discrimination_trait_group = language_group_kru
-								has_discrimination_trait_group = language_group_volta_niger
-								has_discrimination_trait_group = language_group_senegambian
-								has_discrimination_trait_group = language_group_chadic
-								has_discrimination_trait_group = language_group_benue_congo
-								has_discrimination_trait_group = language_group_mal
-								has_discrimination_trait_group = language_group_gur
-								has_discrimination_trait_group = language_group_senufic
-								has_discrimination_trait_group = language_group_songhai
-								has_discrimination_trait_group = language_group_bantu
-								has_discrimination_trait_group = language_group_central_sudanic
-								has_discrimination_trait_group = language_group_saharan
-								has_discrimination_trait_group = language_group_nilotic
-								has_discrimination_trait = language_amharic
-								has_discrimination_trait_group = language_group_kushitic
-								has_discrimination_trait_group = language_group_ubangian
-								has_discrimination_trait_group = language_group_furan
-								has_discrimination_trait_group = language_group_kordofanian
-								has_discrimination_trait = language_tigrinya
-								has_discrimination_trait_group = language_group_khoisan
+								converter_has_indigenous_african_language = yes
 							}
 							has_homeland = prev.state
 						}
@@ -1993,28 +2179,7 @@ converter_colonial_confederation_cultures_effect = {
 							has_discrimination_trait_group = heritage_group_african
 							NOR = {
 								is_target_in_global_variable_list = { name = global_african_diaspora_cultures target = this }
-								has_discrimination_trait_group = language_group_kwa
-								has_discrimination_trait_group = language_group_mande
-								has_discrimination_trait_group = language_group_kru
-								has_discrimination_trait_group = language_group_volta_niger
-								has_discrimination_trait_group = language_group_senegambian
-								has_discrimination_trait_group = language_group_chadic
-								has_discrimination_trait_group = language_group_benue_congo
-								has_discrimination_trait_group = language_group_mal
-								has_discrimination_trait_group = language_group_gur
-								has_discrimination_trait_group = language_group_senufic
-								has_discrimination_trait_group = language_group_songhai
-								has_discrimination_trait_group = language_group_bantu
-								has_discrimination_trait_group = language_group_central_sudanic
-								has_discrimination_trait_group = language_group_saharan
-								has_discrimination_trait_group = language_group_nilotic
-								has_discrimination_trait = language_amharic
-								has_discrimination_trait_group = language_group_kushitic
-								has_discrimination_trait_group = language_group_ubangian
-								has_discrimination_trait_group = language_group_furan
-								has_discrimination_trait_group = language_group_kordofanian
-								has_discrimination_trait = language_tigrinya
-								has_discrimination_trait_group = language_group_khoisan
+								converter_has_indigenous_african_language = yes
 							}
 							has_homeland = prev.state
 						}
@@ -2031,102 +2196,86 @@ converter_colonial_confederation_cultures_effect = {
 		if = {
 			limit = {
 				any_scope_state = {
-					is_in_geographic_region = geographic_region_americas
-					any_scope_pop = {
-						culture = {
-							has_discrimination_trait_group = heritage_group_indigenous_american
-							NOR = {
-								is_target_in_global_variable_list = { name = global_metis_cultures target = this }
-								has_discrimination_trait_group = language_group_oto_manguean
-								has_discrimination_trait_group = language_group_mayan
-								has_discrimination_trait_group = language_group_uto_aztecan
-								has_discrimination_trait_group = language_group_tarascan
-								has_discrimination_trait_group = language_group_tupian
-								has_discrimination_trait_group = language_group_aymaran
-								has_discrimination_trait_group = language_group_chonan
-								has_discrimination_trait_group = language_group_arawakan
-								has_discrimination_trait_group = language_group_siouan
-								has_discrimination_trait_group = language_group_iroquoian
-								has_discrimination_trait_group = language_group_muskogean
-								has_discrimination_trait_group = language_group_eskaleut
-								has_discrimination_trait_group = language_group_algic
-								has_discrimination_trait_group = language_group_na_dene
-								has_discrimination_trait_group = language_group_salishan
-								has_discrimination_trait_group = language_group_penutian
-								has_discrimination_trait_group = language_group_caddoan
-								has_discrimination_trait_group = language_group_hokan
-								has_discrimination_trait_group = language_group_chibchan
-								has_discrimination_trait_group = language_group_misumalpan
-								has_discrimination_trait_group = language_group_cariban
+					trigger_if = {
+						limit = { is_in_geographic_region = geographic_region_americas }
+						any_scope_pop = {
+							culture = {
+								has_discrimination_trait_group = heritage_group_indigenous_american
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_american_language = yes
+								}
+								has_homeland = prev.state
 							}
-							has_homeland = prev.state
+						}
+					}
+					trigger_else = {
+						is_in_geographic_region = geographic_region_south_africa
+						any_scope_pop = {
+							culture = {
+								has_discrimination_trait_group = heritage_group_african
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_african_language = yes
+								}
+								has_homeland = prev.state
+							}
 						}
 					}
 				}
 			}
 			every_scope_state = {
 				limit = {
-					is_in_geographic_region = geographic_region_americas
-					any_scope_pop = {
-						culture = {
-							has_discrimination_trait_group = heritage_group_indigenous_american
-							NOR = {
-								is_target_in_global_variable_list = { name = global_metis_cultures target = this }
-								has_discrimination_trait_group = language_group_oto_manguean
-								has_discrimination_trait_group = language_group_mayan
-								has_discrimination_trait_group = language_group_uto_aztecan
-								has_discrimination_trait_group = language_group_tarascan
-								has_discrimination_trait_group = language_group_tupian
-								has_discrimination_trait_group = language_group_aymaran
-								has_discrimination_trait_group = language_group_chonan
-								has_discrimination_trait_group = language_group_arawakan
-								has_discrimination_trait_group = language_group_siouan
-								has_discrimination_trait_group = language_group_iroquoian
-								has_discrimination_trait_group = language_group_muskogean
-								has_discrimination_trait_group = language_group_eskaleut
-								has_discrimination_trait_group = language_group_algic
-								has_discrimination_trait_group = language_group_na_dene
-								has_discrimination_trait_group = language_group_salishan
-								has_discrimination_trait_group = language_group_penutian
-								has_discrimination_trait_group = language_group_caddoan
-								has_discrimination_trait_group = language_group_hokan
-								has_discrimination_trait_group = language_group_chibchan
-								has_discrimination_trait_group = language_group_misumalpan
-								has_discrimination_trait_group = language_group_cariban
+					trigger_if = {
+						limit = { is_in_geographic_region = geographic_region_americas }
+						any_scope_pop = {
+							culture = {
+								has_discrimination_trait_group = heritage_group_indigenous_american
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_american_language = yes
+								}
+								has_homeland = prev.state
 							}
-							has_homeland = prev.state
+						}
+					}
+					trigger_else = {
+						is_in_geographic_region = geographic_region_south_africa
+						any_scope_pop = {
+							culture = {
+								has_discrimination_trait_group = heritage_group_african
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_african_language = yes
+								}
+								has_homeland = prev.state
+							}
 						}
 					}
 				}
 				every_scope_pop = {
 					limit = {
 						culture = {
-							has_discrimination_trait_group = heritage_group_indigenous_american
-							NOR = {
-								is_target_in_global_variable_list = { name = global_metis_cultures target = this }
-								has_discrimination_trait_group = language_group_oto_manguean
-								has_discrimination_trait_group = language_group_mayan
-								has_discrimination_trait_group = language_group_uto_aztecan
-								has_discrimination_trait_group = language_group_tarascan
-								has_discrimination_trait_group = language_group_tupian
-								has_discrimination_trait_group = language_group_aymaran
-								has_discrimination_trait_group = language_group_chonan
-								has_discrimination_trait_group = language_group_arawakan
-								has_discrimination_trait_group = language_group_siouan
-								has_discrimination_trait_group = language_group_iroquoian
-								has_discrimination_trait_group = language_group_muskogean
-								has_discrimination_trait_group = language_group_eskaleut
-								has_discrimination_trait_group = language_group_algic
-								has_discrimination_trait_group = language_group_na_dene
-								has_discrimination_trait_group = language_group_salishan
-								has_discrimination_trait_group = language_group_penutian
-								has_discrimination_trait_group = language_group_caddoan
-								has_discrimination_trait_group = language_group_hokan
-								has_discrimination_trait_group = language_group_chibchan
-								has_discrimination_trait_group = language_group_misumalpan
-								has_discrimination_trait_group = language_group_cariban
+							trigger_if = {
+								limit = {
+									prev.state = { is_in_geographic_region = geographic_region_americas }
+								}
+								has_discrimination_trait_group = heritage_group_indigenous_american
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_american_language = yes
+								}
+								has_homeland = prev.state
 							}
-							has_homeland = prev.state
+							trigger_else = {
+								prev.state = { is_in_geographic_region = geographic_region_south_africa }
+								has_discrimination_trait_group = heritage_group_african
+								NOR = {
+									is_target_in_global_variable_list = { name = global_metis_cultures target = this }
+									converter_has_indigenous_african_language = yes
+								}
+								has_homeland = prev.state
+							}
 						}
 					}
 					culture = {
@@ -2767,7 +2916,7 @@ converter_colonial_confederation_cultures_effect = {
 					any_scope_pop = {
 						culture = {
 							NOR = {
-								has_discrimination_trait_group = heritage_group_african
+								#has_discrimination_trait_group = heritage_group_african
 								is_target_in_global_variable_list = { name = global_cape_cultures target = this }
 							}
 							#has_homeland = prev.state		#This is causing problems, and since the converter doesn't add immigrant pops...
@@ -2781,7 +2930,7 @@ converter_colonial_confederation_cultures_effect = {
 					any_scope_pop = {
 						culture = {
 							NOR = {
-								has_discrimination_trait_group = heritage_group_african
+								#has_discrimination_trait_group = heritage_group_african
 								is_target_in_global_variable_list = { name = global_cape_cultures target = this }
 							}
 							#has_homeland = prev.state		#This is causing problems, and since the converter doesn't add immigrant pops...
@@ -2792,16 +2941,25 @@ converter_colonial_confederation_cultures_effect = {
 					limit = {
 						culture = {
 							NOR = {
-								has_discrimination_trait_group = heritage_group_african
+								#has_discrimination_trait_group = heritage_group_african
 								is_target_in_global_variable_list = { name = global_cape_cultures target = this }
 							}
 							#has_homeland = prev.state		#This is causing problems, and since the converter doesn't add immigrant pops...
 						}
 					}
 					culture = {
-						add_to_global_variable_list = {
-							name = global_cape_cultures
-							target = this
+						if = {
+							limit = { has_discrimination_trait_group = heritage_group_african }
+							add_to_global_variable_list = {
+								name = global_black_cape_cultures
+								target = this
+							}
+						}
+						else = {
+							add_to_global_variable_list = {
+								name = global_cape_cultures
+								target = this
+							}
 						}
 					}
 				}
@@ -2869,13 +3027,6 @@ converter_colonial_confederation_cultures_effect = {
 		add_to_global_variable_list = {
 			name = global_unavailable_converter_confederations
 			target = flag:converter_AST
-		}
-	}
-	if = {
-		limit = { exists = c:SAF }
-		add_to_global_variable_list = {
-			name = global_unavailable_converter_confederations
-			target = flag:converter_SAF
 		}
 	}
 	every_country = {
@@ -2973,12 +3124,19 @@ converter_other_starting_cultural_effects = {
 					}
 					add_modifier = modifier_india_company_rule
 				}
-				activate_law = law_type:law_presidential_republic
+				activate_law = law_type:law_colonial_administration
 				activate_law = law_type:law_oligarchy
-				activate_law = law_type:law_cultural_exclusion
+				activate_law = law_type:law_subjecthood
+				active_law:lawgroup_citizenship ?= { # Subjecthood
+					add_amendment = {
+						type = amendment_racialized_subjecthood
+						sponsor = PREV.ig:ig_armed_forces
+					}
+				}
 				activate_law = law_type:law_appointed_bureaucrats
 				activate_law = law_type:law_professional_army
 				activate_law = law_type:law_extraction_economy
+				activate_law = law_type:law_colonial_exploitation
 				if = {
 					limit = { has_law_or_variant = law_type:law_homesteading }
 					activate_law = law_type:law_tenant_farmers

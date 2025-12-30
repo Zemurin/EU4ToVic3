@@ -27,7 +27,7 @@
 			uses_fra_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -76,7 +76,7 @@ fem_agitator_errico_malatesta = {
 			uses_sou_ita_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -125,7 +125,7 @@ fem_agitator_henry_ford = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1908.8.12 # first production Model T
@@ -189,7 +189,7 @@ masc_agitator_louise_michel = {
 			uses_fra_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -238,7 +238,7 @@ fem_agitator_emiliano_zapata = {
 			uses_mexico_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_rural_folk
@@ -293,7 +293,7 @@ fem_agitator_ernst_rohm = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -346,7 +346,7 @@ fem_agitator_frederick_douglass = {
 			uses_afro_amer_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1840.1.1
@@ -392,7 +392,7 @@ fem_agitator_ahmed_urabi = {
 			uses_egy_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1876.3.9 # End of the Egyptian-Ethiopian War
@@ -438,7 +438,7 @@ fem_agitator_eugene_debs = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_trade_unions
 		}
 		earliest_usage_date = 1893.6.20 # foundation of the American Railway Union
@@ -484,7 +484,7 @@ fem_agitator_saigo_takamori = {
 			uses_japanese_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1868.1.27
@@ -529,7 +529,7 @@ fem_agitator_wichaichan = { # a.k.a. PRINCE GEORGE WASHINGTON
 			uses_sia_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1868.8.2
@@ -575,7 +575,7 @@ fem_agitator_enver_pasha = {
 			uses_tur_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1906.1.1
@@ -594,7 +594,7 @@ fem_agitator_enver_pasha = {
 			uses_tur_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1908.1.1
@@ -643,7 +643,7 @@ fem_agitator_alfred_hugenberg = {
 			uses_han_ger_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1916.1.1
@@ -692,7 +692,7 @@ masc_agitator_susan_b_anthony = {
 			uses_new_england_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -744,7 +744,7 @@ fem_agitator_giovanni_gentile = {
 			uses_sou_ita_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -764,51 +764,6 @@ fem_agitator_giovanni_gentile = {
 			target = flag:converter_giovanni_gentile
 		}
 		fix_variable_error = { variable = converter_giovanni_gentile }
-	}
-}
-
-fem_agitator_lajos_kossuth = {
-	first_name = Lujza
-	last_name = Kossuth
-	historical = yes
-	culture = cu:hungarian
-	religion = rel:protestant
-	female = yes
-	interest_group = ig_petty_bourgeoisie
-	ideology = ideology_radical
-	birth_date = 1802.9.19
-	traits = {
-		charismatic
-		demagogue
-		imperious
-	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			should_have_female_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_lajos_kossuth
-				}
-			}
-			uses_hun_characters = yes
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			is_interest_group_type = ig_petty_bourgeoisie
-		}
-		earliest_usage_date = 1836.1.1
-		latest_usage_date = 1867.5.29 # Compromise of 1867
-		chance = 50
-	}
-	on_created = {
-		converter_standard_template_effect = { TARGET = cu:hungarian }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_lajos_kossuth
-		}
-		fix_variable_error = { variable = converter_lajos_kossuth }
 	}
 }
 
@@ -840,7 +795,7 @@ fem_agitator_ludwik_mieroslawski = {
 			uses_pol_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1836.1.1
@@ -886,7 +841,7 @@ fem_agitator_francesco_crispi = {
 			uses_sou_ita_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -935,7 +890,7 @@ fem_agitator_bjornstjerne_bjornson = {
 			uses_nor_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -983,7 +938,7 @@ fem_agitator_orla_lehmann = { # Peter Martin Orla Lehmann
 			uses_den_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -1034,7 +989,7 @@ fem_agitator_prince_sabahaddin = { # Prince Sabahaddin de Neuchâtel
 			has_law = law_type:law_monarchy
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_landowners
@@ -1083,7 +1038,7 @@ fem_agitator_francisco_madero = { # Francisco Ignacio Madero Gonzalez
 			uses_mexico_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -1135,7 +1090,7 @@ fem_agitator_gabriele_d_annunzio = { # Gabriele D'Annunzio
 			uses_sou_ita_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_landowners
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -1190,7 +1145,7 @@ fem_agitator_jean_jaures = { # Jean Jaurès
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_intelligentsia
@@ -1238,7 +1193,7 @@ fem_agitator_viggo_horup = { # Viggo Hørup
 			uses_den_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -1286,7 +1241,7 @@ fem_agitator_georg_brandes = { # Georg Brandes
 			uses_den_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -1335,7 +1290,7 @@ fem_agitator_alexis_de_tocqueville = { # Alexis de Tocqueville
 			uses_fra_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_landowners
 				is_interest_group_type = ig_intelligentsia
@@ -1385,7 +1340,7 @@ fem_agitator_jose_do_patrocinio = { # José do Patrocínio
 			uses_afro_braz_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_rural_folk
@@ -1434,7 +1389,7 @@ fem_agitator_karl_liebknecht = { # Karl Liebknecht, or as I like to call him, Ch
 			uses_sax_ger_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_intelligentsia
@@ -1483,7 +1438,7 @@ fem_agitator_francesc_pi_i_margall = { # Francesc Pi i Margall
 			uses_catalan_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -1529,10 +1484,10 @@ fem_agitator_manuel_ruiz_zorrilla = { # Manuel Ruiz Zorrilla
 					target = flag:converter_manuel_ruiz_zorrilla
 				}
 			}
-			uses_spa_characters = yes
+			uses_spanish_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -1580,7 +1535,7 @@ fem_agitator_francois_rene_de_la_tour_du_pin_chambly = { # François-René de La
 			uses_fra_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_landowners
 				is_interest_group_type = ig_armed_forces
@@ -1631,7 +1586,7 @@ fem_agitator_antonio_sardinha = { # António Sardinha, integralist
 			uses_por_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_petty_bourgeoisie
@@ -1651,108 +1606,6 @@ fem_agitator_antonio_sardinha = { # António Sardinha, integralist
 			target = flag:converter_antonio_sardinha
 		}
 		fix_variable_error = { variable = converter_antonio_sardinha }
-	}
-}
-
-fem_agitator_ion_dragoumis = { # Ion Dragoumis
-	first_name = Creusa
-	last_name = Dragoumis
-	historical = yes
-	culture = cu:greek
-	religion = rel:orthodox
-	female = yes
-	interest_group = ig_landowners
-	ideology = ideology_fascist
-	birth_date = 1878.9.14
-	traits = {
-		experienced_diplomat
-		literary
-		ambitious
-	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			NOT = {
-				has_variable = ion_dragoumis_spawn
-			}
-			should_have_female_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_ion_dragoumis
-				}
-			}
-			uses_gre_characters = yes
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			OR = {
-				is_interest_group_type = ig_landowners
-				is_interest_group_type = ig_petty_bourgeoisie
-			}
-		}
-		earliest_usage_date = 1907.1.1
-		latest_usage_date = 1935.12.31 # Historically, he was shot in 1920
-		chance = 50
-	}
-	on_created = {
-		owner = {
-			set_variable = ion_dragoumis_spawn
-		}
-		converter_standard_template_effect = { TARGET = cu:greek }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_ion_dragoumis
-		}
-		fix_variable_error = { variable = converter_ion_dragoumis }
-	}
-}
-
-fem_agitator_sandor_petofi = { # Sándor Petőfi
-	first_name = Alexandra
-	last_name = Petofi
-	historical = yes
-	culture = cu:hungarian
-	religion = rel:protestant
-	female = yes
-	interest_group = ig_intelligentsia
-	ideology = ideology_radical
-	birth_date = 1823.1.1
-	traits = {
-		literary
-		charismatic
-		romantic
-	}
-	agitator_usage = {
-		country_trigger = {
-			has_dlc_feature = voice_of_the_people_content
-			should_have_female_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_sandor_petofi
-				}
-			}
-			uses_hun_characters = yes
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			OR = {
-				is_interest_group_type = ig_intelligentsia
-				is_interest_group_type = ig_petty_bourgeoisie
-			}
-		}
-		earliest_usage_date = 1847.1.1
-		latest_usage_date = 1860.1.1 # he actually disappeared in 1860
-		chance = 50
-	}
-	on_created = {
-		converter_standard_template_effect = { TARGET = cu:hungarian }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_sandor_petofi
-		}
-		fix_variable_error = { variable = converter_sandor_petofi }
 	}
 }
 
@@ -1786,7 +1639,7 @@ masc_agitator_harriet_tubman = {
 			uses_afro_amer_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_devout
@@ -1839,7 +1692,7 @@ fem_agitator_web_du_bois = { # W.E.B. Du Bois
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1894.6.1
@@ -1885,7 +1738,7 @@ fem_agitator_alexandru_bogdan_pitesti = { # Alexandru Bogdan-Pitești
 			uses_romanian_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1894.1.1
@@ -1931,7 +1784,7 @@ fem_agitator_jules_brunet = { # Jules Brunet
 			uses_japanese_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_landowners
@@ -2076,6 +1929,7 @@ masc_pol_rosa_luxemburg_character_template = {
 		romantic
 	}
 	on_created = {
+		set_variable = anti_nationalist_var
 		converter_standard_template_effect = { TARGET = cu:polish }
 	}
 }
@@ -2117,6 +1971,7 @@ fem_fra_georges_boulanger_character_template = {
 		demagogue
 		innovative
 		romantic
+        special_character_general_revanche
 	}
 	on_created = {
 		converter_standard_template_effect = { TARGET = cu:french }
@@ -2265,7 +2120,7 @@ fem_ada_lovelace_template = {
 			}
 		}
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
         }
 		earliest_usage_date = 1840.1.1
@@ -2310,7 +2165,7 @@ fem_ibsen_character_template = {
 			uses_nor_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1862.1.1
@@ -2356,7 +2211,7 @@ fem_albert_einstein_template = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1905.1.1

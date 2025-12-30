@@ -6,6 +6,8 @@
 # is_colonized_country
 # zzz_is_non_major_new_world_tag
 # zzz_is_major_new_world_tag
+# converter_has_indigenous_american_language
+# converter_has_indigenous_african_language
 
 converter_is_converter_confederation_culture = {
 	trigger_if = {
@@ -574,5 +576,58 @@ zzz_is_major_new_world_tag = {
 			exists = c:AST
 			c:AST = ROOT
 		}
+	}
+}
+
+converter_has_indigenous_american_language = {
+	OR = {
+		has_discrimination_trait_group = language_group_oto_manguean
+		has_discrimination_trait_group = language_group_mayan
+		has_discrimination_trait_group = language_group_uto_aztecan
+		has_discrimination_trait_group = language_group_tarascan
+		has_discrimination_trait_group = language_group_tupian
+		has_discrimination_trait_group = language_group_aymaran
+		has_discrimination_trait_group = language_group_chonan
+		has_discrimination_trait_group = language_group_arawakan
+		has_discrimination_trait_group = language_group_siouan
+		has_discrimination_trait_group = language_group_iroquoian
+		has_discrimination_trait_group = language_group_muskogean
+		has_discrimination_trait_group = language_group_eskaleut
+		has_discrimination_trait_group = language_group_algic
+		has_discrimination_trait_group = language_group_na_dene
+		has_discrimination_trait_group = language_group_salishan
+		has_discrimination_trait_group = language_group_penutian
+		has_discrimination_trait_group = language_group_caddoan
+		has_discrimination_trait_group = language_group_hokan
+		has_discrimination_trait_group = language_group_chibchan
+		has_discrimination_trait_group = language_group_misumalpan
+		has_discrimination_trait_group = language_group_cariban
+	}
+}
+
+converter_has_indigenous_african_language = {
+	OR = {
+		has_discrimination_trait_group = language_group_kwa
+		has_discrimination_trait_group = language_group_mande
+		has_discrimination_trait_group = language_group_kru
+		has_discrimination_trait_group = language_group_volta_niger
+		has_discrimination_trait_group = language_group_senegambian
+		has_discrimination_trait_group = language_group_chadic
+		has_discrimination_trait_group = language_group_benue_congo
+		has_discrimination_trait_group = language_group_mal
+		has_discrimination_trait_group = language_group_gur
+		has_discrimination_trait_group = language_group_senufic
+		has_discrimination_trait_group = language_group_songhai
+		has_discrimination_trait_group = language_group_bantu
+		has_discrimination_trait_group = language_group_central_sudanic
+		has_discrimination_trait_group = language_group_saharan
+		has_discrimination_trait_group = language_group_nilotic
+		has_discrimination_trait = language_amharic
+		has_discrimination_trait_group = language_group_kushitic
+		has_discrimination_trait_group = language_group_ubangian
+		has_discrimination_trait_group = language_group_furan
+		has_discrimination_trait_group = language_group_kordofanian
+		has_discrimination_trait = language_tigrinya
+		has_discrimination_trait_group = language_group_khoisan
 	}
 }

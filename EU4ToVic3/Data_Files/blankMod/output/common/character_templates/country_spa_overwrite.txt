@@ -1,7 +1,6 @@
 ﻿### Spain character template file ###
 
 # Spain - SPA
-# Cuba - CUB
 
 # Spain
 
@@ -89,5 +88,7256 @@ fem_SPA_pedro_duro = { # Pedro Duro, Duro y Compania
 			target = flag:converter_pedro_duro
 		}
 		fix_variable_error = { variable = converter_pedro_duro }
+	}
+}
+
+### Generated Characters
+
+REPLACE:SPA_maria_fortuny_i_portell = { # Marià Fortuny i Portell
+	first_name = MariA_
+	last_name = Fortuny_i_Portell
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_carlist
+	birth_date = 1855.6.25
+	traits = {
+		pious
+		reserved
+		basic_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_maria_fortuny_i_portell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1875.1.1
+		latest_usage_date = 1901.12.31
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_maria_fortuny_i_portell
+		}
+		fix_variable_error = { variable = converter_maria_fortuny_i_portell }
+	}
+}
+fem_SPA_maria_fortuny_i_portell = {
+	first_name = MariA_
+	last_name = Fortuny_i_Portell
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_carlist
+	birth_date = 1855.6.25
+	traits = {
+		pious
+		reserved
+		basic_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_maria_fortuny_i_portell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1875.1.1
+		latest_usage_date = 1901.12.31
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_maria_fortuny_i_portell
+		}
+		fix_variable_error = { variable = converter_maria_fortuny_i_portell }
+	}
+}
+
+REPLACE:SPA_emilio_castelar = { # Emilio Castelar
+	first_name = Emilio
+	last_name = Castelar_y_Ripoll
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_emilio_castelar
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_republican_leader
+	birth_date = 1832.9.7
+	traits = {
+		charismatic
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_emilio_castelar
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1899.5.25
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_emilio_castelar
+		}
+		fix_variable_error = { variable = converter_emilio_castelar }
+	}
+}
+fem_SPA_emilio_castelar = {
+	first_name = Emilia
+	last_name = Castelar_y_Ripoll
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_emilio_castelar
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_republican_leader
+	birth_date = 1832.9.7
+	traits = {
+		charismatic
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_emilio_castelar
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1899.5.25
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_emilio_castelar
+		}
+		fix_variable_error = { variable = converter_emilio_castelar }
+	}
+}
+
+REPLACE:SPA_pablo_iglesias_posse = { # Pablo Iglesias Posse
+	first_name = Pablo
+	last_name = Iglesias_Posse
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	dna = dna_pablo_iglesias
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_social_democrat
+	birth_date = 1850.10.17
+	traits = {
+		persistent
+		inspirational_orator
+		literary
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_pablo_iglesias_posse
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1879.5.2
+		latest_usage_date = 1925.12.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_pablo_iglesias_posse
+		}
+		fix_variable_error = { variable = converter_pablo_iglesias_posse }
+	}
+}
+fem_SPA_pablo_iglesias_posse = {
+	first_name = Paula
+	last_name = Iglesias_Posse
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	dna = dna_pablo_iglesias
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_social_democrat
+	birth_date = 1850.10.17
+	traits = {
+		persistent
+		inspirational_orator
+		literary
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_pablo_iglesias_posse
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1879.5.2
+		latest_usage_date = 1925.12.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_pablo_iglesias_posse
+		}
+		fix_variable_error = { variable = converter_pablo_iglesias_posse }
+	}
+}
+
+REPLACE:SPA_antonio_maura = { # Antonio Maura
+	first_name = Antonio
+	last_name = Maura
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_protectionist
+	birth_date = 1853.5.2
+	traits = {
+		ambitious
+		meticulous
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_maura
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1925.12.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_maura
+		}
+		fix_variable_error = { variable = converter_antonio_maura }
+	}
+}
+fem_SPA_antonio_maura = {
+	first_name = Antonia
+	last_name = Maura
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_protectionist
+	birth_date = 1853.5.2
+	traits = {
+		ambitious
+		meticulous
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_maura
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1925.12.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_maura
+		}
+		fix_variable_error = { variable = converter_antonio_maura }
+	}
+}
+
+REPLACE:SPA_juan_prim = { # Juan Prim i Prats
+	first_name = Juan
+	last_name = Prim_i_Prats
+	historical = yes
+	female = no
+	ig_leader = yes
+	is_general = yes
+	culture = cu:catalan
+	noble = no
+	dna = dna_juan_prim
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1814.12.6
+	traits = {
+		brave
+		charismatic
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_prim
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1870.12.30
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_prim
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1870.12.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_prim
+		}
+		fix_variable_error = { variable = converter_juan_prim }
+	}
+}
+fem_SPA_juan_prim = {
+	first_name = Juana
+	last_name = Prim_i_Prats
+	historical = yes
+	female = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:catalan
+	noble = no
+	dna = dna_juan_prim
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1814.12.6
+	traits = {
+		brave
+		charismatic
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_prim
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1870.12.30
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_prim
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1870.12.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_prim
+		}
+		fix_variable_error = { variable = converter_juan_prim }
+	}
+}
+
+REPLACE:SPA_antonio_canovas = { # Antonio Cánovas del Castillo
+	first_name = Antonio
+	last_name = Canovas_del_Castillo
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_antonio_canovas_del_castillo
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_authoritarian
+	birth_date = 1828.2.8
+	traits = {
+		meticulous
+		reserved
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_canovas
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1874.12.29
+		latest_usage_date = 1897.8.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_canovas
+		}
+		fix_variable_error = { variable = converter_antonio_canovas }
+	}
+}
+fem_SPA_antonio_canovas = {
+	first_name = Antonia
+	last_name = Canovas_del_Castillo
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_antonio_canovas_del_castillo
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_authoritarian
+	birth_date = 1828.2.8
+	traits = {
+		meticulous
+		reserved
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_canovas
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1874.12.29
+		latest_usage_date = 1897.8.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_canovas
+		}
+		fix_variable_error = { variable = converter_antonio_canovas }
+	}
+}
+
+REPLACE:SPA_praxedes_sagasta = { # Práxedes Mateo Sagasta
+	first_name = PrA_xedes
+	last_name = Mateo_Sagasta
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_praxedes_mateo_sagasta
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	birth_date = 1825.7.21
+	traits = {
+		charismatic
+		innovative
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_praxedes_sagasta
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1903.1.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_praxedes_sagasta
+		}
+		fix_variable_error = { variable = converter_praxedes_sagasta }
+	}
+}
+fem_SPA_praxedes_sagasta = {
+	first_name = PrA_xedes
+	last_name = Mateo_Sagasta
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_praxedes_mateo_sagasta
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_liberal_leader
+	birth_date = 1825.7.21
+	traits = {
+		charismatic
+		innovative
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_praxedes_sagasta
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1903.1.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_praxedes_sagasta
+		}
+		fix_variable_error = { variable = converter_praxedes_sagasta }
+	}
+}
+
+REPLACE:SPA_jaime_balmes = { # Jaume (Jaime) Balmes i Urpià
+	first_name = Jaume
+	last_name = Balmes_i_UrpiA_
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_theocrat
+	birth_date = 1810.8.28
+	traits = {
+		pious
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jaime_balmes
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1848.7.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jaime_balmes
+		}
+		fix_variable_error = { variable = converter_jaime_balmes }
+	}
+}
+fem_SPA_jaime_balmes = {
+	first_name = Lilia
+	last_name = Balmes_i_UrpiA_
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_theocrat
+	birth_date = 1810.8.28
+	traits = {
+		pious
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jaime_balmes
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1848.7.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jaime_balmes
+		}
+		fix_variable_error = { variable = converter_jaime_balmes }
+	}
+}
+
+REPLACE:SPA_jose_caixal = { # Joan Josep Caixal i Estradé
+	first_name = JosE_
+	last_name = Caixal_i_EstradE_
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_carlist
+	birth_date = 1803.6.28
+	traits = {
+		pious
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_caixal
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1853.1.1
+		latest_usage_date = 1879.8.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_caixal
+		}
+		fix_variable_error = { variable = converter_jose_caixal }
+	}
+}
+fem_SPA_jose_caixal = {
+	first_name = Josefa
+	last_name = Caixal_i_EstradE_
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_carlist
+	birth_date = 1803.6.28
+	traits = {
+		pious
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_caixal
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1853.1.1
+		latest_usage_date = 1879.8.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_caixal
+		}
+		fix_variable_error = { variable = converter_jose_caixal }
+	}
+}
+
+REPLACE:SPA_anselmo_lorenzo = { # Anselmo Lorenzo
+	first_name = Anselmo
+	last_name = Lorenzo
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_anselmo_lorenzo
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1841.4.21
+	traits = {
+		firebrand
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anselmo_lorenzo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1914.11.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anselmo_lorenzo
+		}
+		fix_variable_error = { variable = converter_anselmo_lorenzo }
+	}
+}
+fem_SPA_anselmo_lorenzo = {
+	first_name = Anselma
+	last_name = Lorenzo
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_anselmo_lorenzo
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1841.4.21
+	traits = {
+		firebrand
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anselmo_lorenzo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1914.11.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anselmo_lorenzo
+		}
+		fix_variable_error = { variable = converter_anselmo_lorenzo }
+	}
+}
+
+REPLACE:SPA_joan_guell = { # Joan Güell i Ferrer
+	first_name = Joan
+	last_name = GU_ell_i_Ferrer
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1800.3.3
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joan_guell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1872.12.31
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joan_guell
+		}
+		fix_variable_error = { variable = converter_joan_guell }
+	}
+}
+fem_SPA_joan_guell = {
+	first_name = Joana
+	last_name = GU_ell_i_Ferrer
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1800.3.3
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joan_guell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1872.12.31
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joan_guell
+		}
+		fix_variable_error = { variable = converter_joan_guell }
+	}
+}
+
+REPLACE:SPA_jose_canalejas = { # José Canalejas y Méndez
+	first_name = JosE_
+	last_name = Canalejas_y_ME_ndez
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	birth_date = 1854.7.31
+	traits = {
+		innovative
+		meticulous
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_canalejas
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1912.11.12
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_canalejas
+		}
+		fix_variable_error = { variable = converter_jose_canalejas }
+	}
+}
+fem_SPA_jose_canalejas = {
+	first_name = Josefa
+	last_name = Canalejas_y_ME_ndez
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	birth_date = 1854.7.31
+	traits = {
+		innovative
+		meticulous
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_canalejas
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1912.11.12
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_canalejas
+		}
+		fix_variable_error = { variable = converter_jose_canalejas }
+	}
+}
+
+REPLACE:SPA_joaquin_costa = { # Joaquín Costa
+	first_name = Joaquin
+	last_name = Costa
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:aragonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_land_reformer
+	birth_date = 1846.9.14
+	traits = {
+		erudite
+		direct
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_costa
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ARAGON
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1911.2.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_costa
+		}
+		fix_variable_error = { variable = converter_joaquin_costa }
+	}
+}
+fem_SPA_joaquin_costa = {
+	first_name = Joaquima
+	last_name = Costa
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:aragonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_land_reformer
+	birth_date = 1846.9.14
+	traits = {
+		erudite
+		direct
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_costa
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ARAGON
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1890.1.1
+		latest_usage_date = 1911.2.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_costa
+		}
+		fix_variable_error = { variable = converter_joaquin_costa }
+	}
+}
+
+REPLACE:SPA_miguel_primo_de_rivera = { # Miguel Primo de Rivera
+	first_name = Miguel
+	last_name = Primo_de_Rivera
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_miguel_primo_de_rivera
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1870.1.8
+	traits = {
+		brave
+		ambitious
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_primo_de_rivera
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1902.1.1
+		latest_usage_date = 1930.1.16
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_primo_de_rivera
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1902.1.1
+		latest_usage_date = 1930.1.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_miguel_primo_de_rivera
+		}
+		fix_variable_error = { variable = converter_miguel_primo_de_rivera }
+	}
+}
+fem_SPA_miguel_primo_de_rivera = {
+	first_name = Miguela
+	last_name = Primo_de_Rivera
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_miguel_primo_de_rivera
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1870.1.8
+	traits = {
+		brave
+		ambitious
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_primo_de_rivera
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1902.1.1
+		latest_usage_date = 1930.1.16
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_primo_de_rivera
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1902.1.1
+		latest_usage_date = 1930.1.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_miguel_primo_de_rivera
+		}
+		fix_variable_error = { variable = converter_miguel_primo_de_rivera }
+	}
+}
+REPLACE:SPA_melquiades_alvarez = { # Melquíades Álvarez
+	first_name = Melquiades
+	last_name = Alvarez
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	birth_date = 1864.5.17
+	traits = {
+		erudite
+		charismatic
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_melquiades_alvarez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1936.8.22
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_melquiades_alvarez
+		}
+		fix_variable_error = { variable = converter_melquiades_alvarez }
+	}
+}
+fem_SPA_melquiades_alvarez = {
+	first_name = Rufina
+	last_name = Alvarez
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	birth_date = 1864.5.17
+	traits = {
+		erudite
+		charismatic
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_melquiades_alvarez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1900.1.1
+		latest_usage_date = 1936.8.22
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_melquiades_alvarez
+		}
+		fix_variable_error = { variable = converter_melquiades_alvarez }
+	}
+}
+
+REPLACE:SPA_manuel_girona = { # Manuel Girona i Agrafel
+	first_name = Manuel
+	last_name = Girona_i_Agrafel
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	birth_date = 1817.1.1
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		meticulous
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_girona
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1905.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_girona
+		}
+		fix_variable_error = { variable = converter_manuel_girona }
+	}
+}
+fem_SPA_manuel_girona = {
+	first_name = Manola
+	last_name = Girona_i_Agrafel
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	birth_date = 1817.1.1
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		meticulous
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_girona
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1905.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_girona
+		}
+		fix_variable_error = { variable = converter_manuel_girona }
+	}
+}
+
+REPLACE:SPA_nicolas_salmeron = { # Nicolás Salmerón
+	first_name = NicolA_s_2
+	last_name = SalmerO_n
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 1838.4.10
+	traits = {
+		erudite
+		reserved
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_nicolas_salmeron
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1908.9.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_nicolas_salmeron
+		}
+		fix_variable_error = { variable = converter_nicolas_salmeron }
+	}
+}
+fem_SPA_nicolas_salmeron = {
+	first_name = Nicolasa
+	last_name = SalmerO_n
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 1838.4.10
+	traits = {
+		erudite
+		reserved
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_nicolas_salmeron
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1908.9.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_nicolas_salmeron
+		}
+		fix_variable_error = { variable = converter_nicolas_salmeron }
+	}
+}
+
+REPLACE:SPA_joaquin_francisco_pacheco = { # Joaquín Francisco Pacheco
+	first_name = Joaquin
+	last_name = Francisco_Pacheco
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_liberal_leader
+	birth_date = 1808.2.22
+	traits = {
+		erudite
+		charismatic
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_francisco_pacheco
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1837.1.1
+		latest_usage_date = 1865.10.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_francisco_pacheco
+		}
+		fix_variable_error = { variable = converter_joaquin_francisco_pacheco }
+	}
+}
+fem_SPA_joaquin_francisco_pacheco = {
+	first_name = Joaquima
+	last_name = Francisca_Pacheco
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_liberal_leader
+	birth_date = 1808.2.22
+	traits = {
+		erudite
+		charismatic
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_francisco_pacheco
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1837.1.1
+		latest_usage_date = 1865.10.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_francisco_pacheco
+		}
+		fix_variable_error = { variable = converter_joaquin_francisco_pacheco }
+	}
+}
+
+REPLACE:SPA_juan_bautista_orense = { # Juan Bautista Orense
+	first_name = Juan
+	last_name = Bautista_Orense
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_radical
+	birth_date = 1803.7.29
+	traits = {
+		firebrand
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_bautista_orense
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1860.4.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_bautista_orense
+		}
+		fix_variable_error = { variable = converter_juan_bautista_orense }
+	}
+}
+fem_SPA_juan_bautista_orense = {
+	first_name = Juana
+	last_name = Bautista_Orense
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_radical
+	birth_date = 1803.7.29
+	traits = {
+		firebrand
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_bautista_orense
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1860.4.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_bautista_orense
+		}
+		fix_variable_error = { variable = converter_juan_bautista_orense }
+	}
+}
+
+REPLACE:SPA_jose_de_salamanca = { # José de Salamanca y Mayol, Marqués de Salamanca
+	first_name = JosE_
+	last_name = de_Salamanca_y_Mayol
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	birth_date = 1811.5.23
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_de_salamanca
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1883.1.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_de_salamanca
+		}
+		fix_variable_error = { variable = converter_jose_de_salamanca }
+	}
+}
+fem_SPA_jose_de_salamanca = {
+	first_name = Josefa
+	last_name = de_Salamanca_y_Mayol
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_market_liberal
+	birth_date = 1811.5.23
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_de_salamanca
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1883.1.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_de_salamanca
+		}
+		fix_variable_error = { variable = converter_jose_de_salamanca }
+	}
+}
+
+REPLACE:SPA_francisco_giner = { # Francisco Giner de los Ríos
+	first_name = Francisco
+	last_name = Giner_de_los_Rios
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_utilitarian_leader
+	birth_date = 1839.10.10
+	traits = {
+		erudite
+		inspirational_orator
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_giner
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1915.2.18
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_giner
+		}
+		fix_variable_error = { variable = converter_francisco_giner }
+	}
+}
+fem_SPA_francisco_giner = {
+	first_name = Francisca
+	last_name = Giner_de_los_Rios
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_utilitarian_leader
+	birth_date = 1839.10.10
+	traits = {
+		erudite
+		inspirational_orator
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_giner
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1915.2.18
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_giner
+		}
+		fix_variable_error = { variable = converter_francisco_giner }
+	}
+}
+
+REPLACE:SPA_martinez_campos = { # Arsenio Martínez Campos
+	first_name = Arsenio
+	last_name = Martinez_Campos
+	historical = yes
+	female = no
+	ig_leader = yes
+	is_general = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_arsenio_martinez_campos
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	birth_date = 1831.12.14
+	traits = {
+		brave
+		experienced_defensive_strategist
+		stalwart_defender
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_martinez_campos
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1900.9.23
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_martinez_campos
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1900.9.23
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_martinez_campos
+		}
+		fix_variable_error = { variable = converter_martinez_campos }
+	}
+}
+fem_SPA_martinez_campos = {
+	first_name = Virginia
+	last_name = Martinez_Campos
+	historical = yes
+	female = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:spanish
+	noble = no
+	dna = dna_arsenio_martinez_campos
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	birth_date = 1831.12.14
+	traits = {
+		brave
+		experienced_defensive_strategist
+		stalwart_defender
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_martinez_campos
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1900.9.23
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_martinez_campos
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_OLD_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1900.9.23
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_martinez_campos
+		}
+		fix_variable_error = { variable = converter_martinez_campos }
+	}
+}
+
+REPLACE:SPA_valeriano_weyler = { # Valeriano Weyler y Nicolau
+	first_name = Valeriano
+	last_name = Weyler
+	historical = yes
+	female = no
+	ig_leader = yes
+	is_general = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_valeriano_weyler
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	birth_date = 1838.9.17
+	traits = {
+		ruthless
+		experienced_offensive_planner
+		traditionalist_commander
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_valeriano_weyler
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1930.10.20
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_valeriano_weyler
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1930.10.20
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_valeriano_weyler
+		}
+		fix_variable_error = { variable = converter_valeriano_weyler }
+	}
+}
+fem_SPA_valeriano_weyler = {
+	first_name = Valeriana
+	last_name = Weyler
+	historical = yes
+	female = yes
+	ig_leader = yes
+	is_general = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_valeriano_weyler
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	birth_date = 1838.9.17
+	traits = {
+		ruthless
+		experienced_offensive_planner
+		traditionalist_commander
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_valeriano_weyler
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1930.10.20
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_valeriano_weyler
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1930.10.20
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_valeriano_weyler
+		}
+		fix_variable_error = { variable = converter_valeriano_weyler }
+	}
+}
+
+REPLACE:SPA_leopoldo_odonnell = { # Leopoldo O'Donnell, Duque de Tetuán
+	first_name = Leopoldo
+	last_name = ODonnell
+	historical = yes
+	female = no
+	culture = cu:spanish
+	noble = yes
+	dna = dna_leopoldo_odonnell
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1809.1.12
+	traits = {
+		charismatic
+		brave
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_leopoldo_odonnell
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CANARY_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1867.11.5
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_leopoldo_odonnell
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CANARY_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1867.11.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_leopoldo_odonnell
+		}
+		fix_variable_error = { variable = converter_leopoldo_odonnell }
+	}
+}
+fem_SPA_leopoldo_odonnell = {
+	first_name = Ricarda
+	last_name = ODonnell
+	historical = yes
+	female = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_leopoldo_odonnell
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1809.1.12
+	traits = {
+		charismatic
+		brave
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_leopoldo_odonnell
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CANARY_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1867.11.5
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_leopoldo_odonnell
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CANARY_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1867.11.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_leopoldo_odonnell
+		}
+		fix_variable_error = { variable = converter_leopoldo_odonnell }
+	}
+}
+
+REPLACE:SPA_antonio_maria_claret = { # Antonio María Claret (San Antonio M. Claret)
+	first_name = Antonio_Maria
+	last_name = Claret
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1807.12.23
+	traits = {
+		pious
+		inspirational_orator
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_maria_claret
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1849.1.1
+		latest_usage_date = 1870.10.24
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_maria_claret
+		}
+		fix_variable_error = { variable = converter_antonio_maria_claret }
+	}
+}
+fem_SPA_antonio_maria_claret = {
+	first_name = Antonia_MarI_a
+	last_name = Claret
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1807.12.23
+	traits = {
+		pious
+		inspirational_orator
+		persistent
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_maria_claret
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1849.1.1
+		latest_usage_date = 1870.10.24
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_maria_claret
+		}
+		fix_variable_error = { variable = converter_antonio_maria_claret }
+	}
+}
+
+REPLACE:SPA_juan_vazquez_de_mella = { # Juan Vázquez de Mella
+	first_name = Juan
+	last_name = Vazquez_de_Mella
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_carlist
+	birth_date = 1861.6.8
+	traits = {
+		erudite
+		inspirational_orator
+		pious
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_vazquez_de_mella
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1928.2.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_vazquez_de_mella
+		}
+		fix_variable_error = { variable = converter_juan_vazquez_de_mella }
+	}
+}
+fem_SPA_juan_vazquez_de_mella = {
+	first_name = Juana
+	last_name = Vazquez_de_Mella
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_carlist
+	birth_date = 1861.6.8
+	traits = {
+		erudite
+		inspirational_orator
+		pious
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_vazquez_de_mella
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1893.1.1
+		latest_usage_date = 1928.2.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_vazquez_de_mella
+		}
+		fix_variable_error = { variable = converter_juan_vazquez_de_mella }
+	}
+}
+
+REPLACE:SPA_eusebi_guell = { # Eusebi Güell i Bacigalupi
+	first_name = Eusebi
+	last_name = GU_ell_i_Bacigalupi
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1846.12.15
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_eusebi_guell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1918.7.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_eusebi_guell
+		}
+		fix_variable_error = { variable = converter_eusebi_guell }
+	}
+}
+fem_SPA_eusebi_guell = {
+	first_name = Eusebia
+	last_name = GU_ell_i_Bacigalupi
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1846.12.15
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_eusebi_guell
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1918.7.8
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_eusebi_guell
+		}
+		fix_variable_error = { variable = converter_eusebi_guell }
+	}
+}
+
+REPLACE:SPA_claudio_bru_lopez = { # Claudio Bru López, II Marqués de Comillas
+	first_name = Claudio
+	last_name = Bru_LO_pez
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_corporatist_leader
+	birth_date = 1853.5.14
+	traits = {
+		pious
+		experienced_entrepreneur
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_claudio_bru_lopez
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1883.1.16
+		latest_usage_date = 1925.4.18
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_claudio_bru_lopez
+		}
+		fix_variable_error = { variable = converter_claudio_bru_lopez }
+	}
+}
+fem_SPA_claudio_bru_lopez = {
+	first_name = Claudia
+	last_name = Bru_LO_pez
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_corporatist_leader
+	birth_date = 1853.5.14
+	traits = {
+		pious
+		experienced_entrepreneur
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_claudio_bru_lopez
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1883.1.16
+		latest_usage_date = 1925.4.18
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_claudio_bru_lopez
+		}
+		fix_variable_error = { variable = converter_claudio_bru_lopez }
+	}
+}
+
+REPLACE:SPA_jose_osorio_y_silva = { # José Osorio y Silva, Duque de Sesto (Marqués de Alcañices)
+	first_name = JosE_
+	last_name = Osorio_y_Silva
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	birth_date = 1825.5.12
+	traits = {
+		ambitious
+		charismatic
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_osorio_y_silva
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1874.12.29
+		latest_usage_date = 1909.4.3
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_osorio_y_silva
+		}
+		fix_variable_error = { variable = converter_jose_osorio_y_silva }
+	}
+}
+fem_SPA_jose_osorio_y_silva = {
+	first_name = Josefa
+	last_name = Osorio_y_Silva
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_royalist
+	birth_date = 1825.5.12
+	traits = {
+		ambitious
+		charismatic
+		experienced_political_operator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_osorio_y_silva
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1874.12.29
+		latest_usage_date = 1909.4.3
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_osorio_y_silva
+		}
+		fix_variable_error = { variable = converter_jose_osorio_y_silva }
+	}
+}
+
+REPLACE:SPA_marques_de_cerralbo = { # Enrique de Aguilera y Gamboa, Marqués de Cerralbo
+	first_name = Enrique
+	last_name = de_Aguilera_y_Gamboa
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_carlist
+	birth_date = 1845.7.8
+	traits = {
+		pious
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_marques_de_cerralbo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1899.1.1
+		latest_usage_date = 1909.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_marques_de_cerralbo
+		}
+		fix_variable_error = { variable = converter_marques_de_cerralbo }
+	}
+}
+fem_SPA_marques_de_cerralbo = {
+	first_name = Enriqueta
+	last_name = de_Aguilera_y_Gamboa
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_carlist
+	birth_date = 1845.7.8
+	traits = {
+		pious
+		erudite
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_marques_de_cerralbo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1899.1.1
+		latest_usage_date = 1909.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_marques_de_cerralbo
+		}
+		fix_variable_error = { variable = converter_marques_de_cerralbo }
+	}
+}
+
+REPLACE:SPA_antonio_lopez_y_lopez = { # Antonio López y López, Marqués de Comillas
+	first_name = Antonio
+	last_name = LO_pez_y_LO_pez
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1817.4.12
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_lopez_y_lopez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1883.1.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_lopez_y_lopez
+		}
+		fix_variable_error = { variable = converter_antonio_lopez_y_lopez }
+	}
+}
+fem_SPA_antonio_lopez_y_lopez = {
+	first_name = Antonia
+	last_name = LO_pez_y_LO_pez
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = yes
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1817.4.12
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_antonio_lopez_y_lopez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1883.1.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_antonio_lopez_y_lopez
+		}
+		fix_variable_error = { variable = converter_antonio_lopez_y_lopez }
+	}
+}
+
+REPLACE:SPA_victor_chavarri = { # Víctor Chávarri Salazar
+	first_name = Victor
+	last_name = ChA_varri_Salazar
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1854.12.23
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		meticulous
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victor_chavarri
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1885.1.1
+		latest_usage_date = 1900.3.29
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victor_chavarri
+		}
+		fix_variable_error = { variable = converter_victor_chavarri }
+	}
+}
+fem_SPA_victor_chavarri = {
+	first_name = VictO_ria
+	last_name = ChA_varri_Salazar
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_industrialists
+	ideology = ideology_protectionist
+	birth_date = 1854.12.23
+	traits = {
+		ambitious
+		experienced_entrepreneur
+		meticulous
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victor_chavarri
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_industrialists
+		}
+		earliest_usage_date = 1885.1.1
+		latest_usage_date = 1900.3.29
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victor_chavarri
+		}
+		fix_variable_error = { variable = converter_victor_chavarri }
+	}
+}
+
+REPLACE:SPA_francisco_serrano = { # Francisco Serrano y Domínguez, Duque de la Torre
+	first_name = Francisco
+	last_name = Serrano_y_DomI_nguez
+	historical = yes
+	female = no
+	culture = cu:spanish
+	noble = yes
+	dna = dna_francisco_serrano
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1810.12.17
+	traits = {
+		experienced_offensive_planner
+		charismatic
+		popular_commander
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_serrano
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1885.11.25
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_serrano
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1885.11.25
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_serrano
+		}
+		fix_variable_error = { variable = converter_francisco_serrano }
+	}
+}
+fem_SPA_francisco_serrano = {
+	first_name = Francisca
+	last_name = Serrano_y_DomI_nguez
+	historical = yes
+	female = yes
+	culture = cu:spanish
+	noble = yes
+	dna = dna_francisco_serrano
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	birth_date = 1810.12.17
+	traits = {
+		experienced_offensive_planner
+		charismatic
+		popular_commander
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_serrano
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1885.11.25
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_serrano
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1885.11.25
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_serrano
+		}
+		fix_variable_error = { variable = converter_francisco_serrano }
+	}
+}
+
+REPLACE:SPA_manuel_pavia = { # Manuel Pavía y Rodríguez de Alburquerque
+	first_name = Manuel
+	last_name = PavI_a
+	historical = yes
+	female = no
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1828.8.2
+	traits = {
+		brave
+		ruthless
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1874.1.3
+		latest_usage_date = 1895.1.4
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.3
+		latest_usage_date = 1895.1.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_pavia
+		}
+		fix_variable_error = { variable = converter_manuel_pavia }
+	}
+}
+fem_SPA_manuel_pavia = {
+	first_name = Manola
+	last_name = PavI_a
+	historical = yes
+	female = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_armed_forces
+	ideology = ideology_authoritarian
+	birth_date = 1828.8.2
+	traits = {
+		brave
+		ruthless
+		experienced_offensive_planner
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+		}
+		earliest_usage_date = 1874.1.3
+		latest_usage_date = 1895.1.4
+		chance = 50
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.3
+		latest_usage_date = 1895.1.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_pavia
+		}
+		fix_variable_error = { variable = converter_manuel_pavia }
+	}
+}
+
+REPLACE:SPA_felix_sarda_salvany = { # Félix Sardà y Salvany
+	first_name = FE_lix
+	last_name = SardA__y_Salvany
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1841.5.21
+	traits = {
+		pious
+		firebrand
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_felix_sarda_salvany
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1884.1.1
+		latest_usage_date = 1916.1.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_felix_sarda_salvany
+		}
+		fix_variable_error = { variable = converter_felix_sarda_salvany }
+	}
+}
+fem_SPA_felix_sarda_salvany = {
+	first_name = Felicia
+	last_name = SardA__y_Salvany
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1841.5.21
+	traits = {
+		pious
+		firebrand
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_felix_sarda_salvany
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1884.1.1
+		latest_usage_date = 1916.1.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_felix_sarda_salvany
+		}
+		fix_variable_error = { variable = converter_felix_sarda_salvany }
+	}
+}
+
+REPLACE:SPA_ceferino_gonzalez = { # Ceferino González Díaz-Tuñón
+	first_name = Ceferino
+	last_name = GonzA_lez_DI_az_TuN_O_n
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1831.1.28
+	traits = {
+		pious
+		erudite
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ceferino_gonzalez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1875.1.1
+		latest_usage_date = 1894.11.29
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ceferino_gonzalez
+		}
+		fix_variable_error = { variable = converter_ceferino_gonzalez }
+	}
+}
+fem_SPA_ceferino_gonzalez = {
+	first_name = Ceferina
+	last_name = GonzA_lez_DI_az_TuN_O_n
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:asturleonese
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_devout
+	ideology = ideology_theocrat
+	birth_date = 1831.1.28
+	traits = {
+		pious
+		erudite
+		honorable
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ceferino_gonzalez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_ASTURIAS
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_devout
+		}
+		earliest_usage_date = 1875.1.1
+		latest_usage_date = 1894.11.29
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ceferino_gonzalez
+		}
+		fix_variable_error = { variable = converter_ceferino_gonzalez }
+	}
+}
+
+REPLACE:SPA_concepcion_arenal = { # Concepción Arenal
+	first_name = Concepcion
+	last_name = Arenal
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 1820.1.31
+	traits = {
+		erudite
+		honorable
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_concepcion_arenal
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1893.2.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_concepcion_arenal
+		}
+		fix_variable_error = { variable = converter_concepcion_arenal }
+	}
+}
+masc_SPA_concepcion_arenal = {
+	first_name = JesU_s
+	last_name = Arenal
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:galician
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_humanitarian
+	birth_date = 1820.1.31
+	traits = {
+		erudite
+		honorable
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_concepcion_arenal
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1893.2.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_concepcion_arenal
+		}
+		fix_variable_error = { variable = converter_concepcion_arenal }
+	}
+}
+
+REPLACE:SPA_rafael_maria_de_labra = { # Rafael María de Labra
+	first_name = Rafael_MarI_a
+	last_name = de_Labra
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_abolitionist
+	birth_date = 1840.9.7
+	traits = {
+		erudite
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_rafael_maria_de_labra
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1918.11.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_rafael_maria_de_labra
+		}
+		fix_variable_error = { variable = converter_rafael_maria_de_labra }
+	}
+}
+fem_SPA_rafael_maria_de_labra = {
+	first_name = Rafaela_MarI_a
+	last_name = de_Labra
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_abolitionist
+	birth_date = 1840.9.7
+	traits = {
+		erudite
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_rafael_maria_de_labra
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1918.11.16
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_rafael_maria_de_labra
+		}
+		fix_variable_error = { variable = converter_rafael_maria_de_labra }
+	}
+}
+
+REPLACE:SPA_manuel_duran_y_bas = { # Manuel Durán i Bas
+	first_name = Manuel
+	last_name = Duran_i_Bas
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_protectionist
+	birth_date = 1823.11.29
+	traits = {
+		meticulous
+		erudite
+		reserved
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_duran_y_bas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1868.1.1
+		latest_usage_date = 1907.11.10
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_duran_y_bas
+		}
+		fix_variable_error = { variable = converter_manuel_duran_y_bas }
+	}
+}
+fem_SPA_manuel_duran_y_bas = {
+	first_name = Manola
+	last_name = Duran_i_Bas
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_protectionist
+	birth_date = 1823.11.29
+	traits = {
+		meticulous
+		erudite
+		reserved
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_duran_y_bas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+		}
+		earliest_usage_date = 1868.1.1
+		latest_usage_date = 1907.11.10
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_duran_y_bas
+		}
+		fix_variable_error = { variable = converter_manuel_duran_y_bas }
+	}
+}
+
+REPLACE:SPA_fermin_salvochea = { # Fermín Salvochea
+	first_name = FermI_n
+	last_name = Salvochea
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1842.3.1
+	traits = {
+		charismatic
+		firebrand
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fermin_salvochea
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1907.9.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fermin_salvochea
+		}
+		fix_variable_error = { variable = converter_fermin_salvochea }
+	}
+}
+fem_SPA_fermin_salvochea = {
+	first_name = Fermina
+	last_name = Salvochea
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1842.3.1
+	traits = {
+		charismatic
+		firebrand
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fermin_salvochea
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1907.9.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fermin_salvochea
+		}
+		fix_variable_error = { variable = converter_fermin_salvochea }
+	}
+}
+
+REPLACE:SPA_teresa_claramunt = { # Teresa Claramunt
+	first_name = Teresa
+	last_name = Claramunt
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1862.6.4
+	traits = {
+		firebrand
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_teresa_claramunt
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1888.1.1
+		latest_usage_date = 1931.4.11
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_teresa_claramunt
+		}
+		fix_variable_error = { variable = converter_teresa_claramunt }
+	}
+}
+masc_SPA_teresa_claramunt = {
+	first_name = Pablo
+	last_name = Claramunt
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:catalan
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_trade_unions
+	ideology = ideology_anarchist
+	birth_date = 1862.6.4
+	traits = {
+		firebrand
+		persistent
+		inspirational_orator
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_teresa_claramunt
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_trade_unions
+		}
+		earliest_usage_date = 1888.1.1
+		latest_usage_date = 1931.4.11
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_teresa_claramunt
+		}
+		fix_variable_error = { variable = converter_teresa_claramunt }
+	}
+}
+
+REPLACE:SPA_fermin_caballero = { # Fermín Caballero
+	first_name = FermI_n
+	last_name = Caballero
+	historical = yes
+	female = no
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_rural_folk
+	ideology = ideology_land_reformer
+	birth_date = 1800.7.7
+	traits = {
+		erudite
+		meticulous
+		direct
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fermin_caballero
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1876.6.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fermin_caballero
+		}
+		fix_variable_error = { variable = converter_fermin_caballero }
+	}
+}
+fem_SPA_fermin_caballero = {
+	first_name = Fermina
+	last_name = Caballero
+	historical = yes
+	female = yes
+	ig_leader = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_rural_folk
+	ideology = ideology_land_reformer
+	birth_date = 1800.7.7
+	traits = {
+		erudite
+		meticulous
+		direct
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fermin_caballero
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1876.6.13
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fermin_caballero
+		}
+		fix_variable_error = { variable = converter_fermin_caballero }
+	}
+}
+
+### Generated Commanders
+## Generals
+
+REPLACE:SPA_camilo_garcia_de_polavieja = { # Camilo García de Polavieja
+	first_name = Camilo
+	last_name = GarcI_a_de_Polavieja
+	historical = yes
+	birth_date = 1838.7.13
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_defensive_strategist
+		pious
+		imperious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_camilo_garcia_de_polavieja
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1914.1.15
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_camilo_garcia_de_polavieja
+		}
+		fix_variable_error = { variable = converter_camilo_garcia_de_polavieja }
+	}
+}
+fem_SPA_camilo_garcia_de_polavieja = {
+	first_name = Camila
+	last_name = GarcI_a_de_Polavieja
+	historical = yes
+	female = yes
+	birth_date = 1838.7.13
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_defensive_strategist
+		pious
+		imperious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_camilo_garcia_de_polavieja
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1914.1.15
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_camilo_garcia_de_polavieja
+		}
+		fix_variable_error = { variable = converter_camilo_garcia_de_polavieja }
+	}
+}
+
+REPLACE:SPA_jose_lopez_dominguez = { # José López Domínguez
+	first_name = JosE_
+	last_name = LO_pez_DomI_nguez
+	historical = yes
+	birth_date = 1829.11.29
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		tactful
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_lopez_dominguez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1911.10.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_lopez_dominguez
+		}
+		fix_variable_error = { variable = converter_jose_lopez_dominguez }
+	}
+}
+fem_SPA_jose_lopez_dominguez = {
+	first_name = Josefa
+	last_name = LO_pez_DomI_nguez
+	historical = yes
+	female = yes
+	birth_date = 1829.11.29
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		tactful
+		popular_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_lopez_dominguez
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1911.10.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_lopez_dominguez
+		}
+		fix_variable_error = { variable = converter_jose_lopez_dominguez }
+	}
+}
+
+REPLACE:SPA_domingo_moriones = { # Domingo Moriones y Murillo
+	first_name = Domingo
+	last_name = Moriones_y_Murillo
+	historical = yes
+	birth_date = 1823.12.20
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:basque
+	religion = rel:catholic
+	traits = {
+		stalwart_defender
+		mountain_commander
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_domingo_moriones
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1872.1.1
+		latest_usage_date = 1881.9.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_domingo_moriones
+		}
+		fix_variable_error = { variable = converter_domingo_moriones }
+	}
+}
+fem_SPA_domingo_moriones = {
+	first_name = Dominga
+	last_name = Moriones_y_Murillo
+	historical = yes
+	female = yes
+	birth_date = 1823.12.20
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:basque
+	religion = rel:catholic
+	traits = {
+		stalwart_defender
+		mountain_commander
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_domingo_moriones
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1872.1.1
+		latest_usage_date = 1881.9.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_domingo_moriones
+		}
+		fix_variable_error = { variable = converter_domingo_moriones }
+	}
+}
+
+REPLACE:SPA_manuel_gutierrez_de_la_concha = { # Manuel Gutiérrez de la Concha, Marqués del Duero
+	first_name = Manuel
+	last_name = GutiE_rrez_de_la_Concha
+	historical = yes
+	birth_date = 1808.4.3
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	dna = dna_manuel_gutierrez_de_la_concha
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_gutierrez_de_la_concha
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1874.6.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_gutierrez_de_la_concha
+		}
+		fix_variable_error = { variable = converter_manuel_gutierrez_de_la_concha }
+	}
+}
+fem_SPA_manuel_gutierrez_de_la_concha = {
+	first_name = Manola
+	last_name = GutiE_rrez_de_la_Concha
+	historical = yes
+	female = yes
+	birth_date = 1808.4.3
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	dna = dna_manuel_gutierrez_de_la_concha
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_gutierrez_de_la_concha
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1874.6.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_gutierrez_de_la_concha
+		}
+		fix_variable_error = { variable = converter_manuel_gutierrez_de_la_concha }
+	}
+}
+
+REPLACE:SPA_juan_zavala_sierra_bullones = { # Juan Zavala de la Puente, Marqués de Sierra Bullones
+	first_name = Juan
+	last_name = Zavala_de_la_Puente
+	historical = yes
+	birth_date = 1804.12.27
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	noble = yes
+	culture = cu:spanish # Born in Lima
+	religion = rel:catholic
+	traits = {
+		brave
+		experienced_offensive_planner
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_zavala_sierra_bullones
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1859.11.1
+		latest_usage_date = 1874.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_zavala_sierra_bullones
+		}
+		fix_variable_error = { variable = converter_juan_zavala_sierra_bullones }
+	}
+}
+fem_SPA_juan_zavala_sierra_bullones = {
+	first_name = Juana
+	last_name = Zavala_de_la_Puente
+	historical = yes
+	female = yes
+	birth_date = 1804.12.27
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	noble = yes
+	culture = cu:spanish # Born in Lima
+	religion = rel:catholic
+	traits = {
+		brave
+		experienced_offensive_planner
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_zavala_sierra_bullones
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1859.11.1
+		latest_usage_date = 1874.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_zavala_sierra_bullones
+		}
+		fix_variable_error = { variable = converter_juan_zavala_sierra_bullones }
+	}
+}
+
+REPLACE:SPA_joaquin_jovellar = { # Joaquín Jovellar y Soler
+	first_name = JoaquI_n
+	last_name = Jovellar_y_Soler
+	historical = yes
+	birth_date = 1819.12.28
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		meticulous
+		experienced_defensive_strategist
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_jovellar
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1883.4.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_jovellar
+		}
+		fix_variable_error = { variable = converter_joaquin_jovellar }
+	}
+}
+fem_SPA_joaquin_jovellar = {
+	first_name = Joaquima
+	last_name = Jovellar_y_Soler
+	historical = yes
+	female = yes
+	birth_date = 1819.12.28
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		meticulous
+		experienced_defensive_strategist
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_joaquin_jovellar
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1883.4.17
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_joaquin_jovellar
+		}
+		fix_variable_error = { variable = converter_joaquin_jovellar }
+	}
+}
+
+REPLACE:SPA_fernando_fernandez_de_cordova = { # Fernando Fernández de Córdova
+	first_name = Fernando
+	last_name = FernA_ndez_de_CO_rdova
+	historical = yes
+	birth_date = 1809.9.2
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_offensive_planner
+		ruthless
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fernando_fernandez_de_cordova
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1868.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fernando_fernandez_de_cordova
+		}
+		fix_variable_error = { variable = converter_fernando_fernandez_de_cordova }
+	}
+}
+fem_SPA_fernando_fernandez_de_cordova = {
+	first_name = Fernanda
+	last_name = FernA_ndez_de_CO_rdova
+	historical = yes
+	female = yes
+	birth_date = 1809.9.2
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_offensive_planner
+		ruthless
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_fernando_fernandez_de_cordova
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1868.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_fernando_fernandez_de_cordova
+		}
+		fix_variable_error = { variable = converter_fernando_fernandez_de_cordova }
+	}
+}
+
+REPLACE:SPA_manuel_pavia_y_lacy = { # Manuel Pavía y Lacy, Marqués de Novaliches
+	first_name = Manuel
+	last_name = PavI_a_y_Lacy
+	historical = yes
+	birth_date = 1814.7.6
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		honorable
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia_y_lacy
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1838.1.1
+		latest_usage_date = 1868.9.28
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_pavia_y_lacy
+		}
+		fix_variable_error = { variable = converter_manuel_pavia_y_lacy }
+	}
+}
+fem_SPA_manuel_pavia_y_lacy = {
+	first_name = Manola
+	last_name = PavI_a_y_Lacy
+	historical = yes
+	female = yes
+	birth_date = 1814.7.6
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		honorable
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_pavia_y_lacy
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_UPPER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1838.1.1
+		latest_usage_date = 1868.9.28
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_pavia_y_lacy
+		}
+		fix_variable_error = { variable = converter_manuel_pavia_y_lacy }
+	}
+}
+
+REPLACE:SPA_ramon_blanco = { # Ramón Blanco, Marqués de Peña Plata
+	first_name = RamO_n
+	last_name = Blanco_y_Erenas
+	historical = yes
+	birth_date = 1833.9.15
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:basque
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_blanco
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1906.4.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_blanco
+		}
+		fix_variable_error = { variable = converter_ramon_blanco }
+	}
+}
+fem_SPA_ramon_blanco = {
+	first_name = Ramona
+	last_name = Blanco_y_Erenas
+	historical = yes
+	female = yes
+	birth_date = 1833.9.15
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:basque
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_blanco
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1876.1.1
+		latest_usage_date = 1906.4.4
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_blanco
+		}
+		fix_variable_error = { variable = converter_ramon_blanco }
+	}
+}
+
+REPLACE:SPA_eulogio_despujol = { # Eulogio Despujol y Dusay, Conde de Caspe
+	first_name = Eulogio
+	last_name = Despujol_y_Dusay
+	historical = yes
+	birth_date = 1834.3.11
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		basic_political_operator
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_eulogio_despujol
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.1
+		latest_usage_date = 1903.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_eulogio_despujol
+		}
+		fix_variable_error = { variable = converter_eulogio_despujol }
+	}
+}
+fem_SPA_eulogio_despujol = {
+	first_name = Eulogia
+	last_name = Despujol_y_Dusay
+	historical = yes
+	female = yes
+	birth_date = 1834.3.11
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		basic_defensive_strategist
+		basic_political_operator
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_eulogio_despujol
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.1
+		latest_usage_date = 1903.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_eulogio_despujol
+		}
+		fix_variable_error = { variable = converter_eulogio_despujol }
+	}
+}
+
+REPLACE:SPA_jose_cabrinetty = { # José Cabrinetty
+	first_name = JosE_
+	last_name = Cabrinetty
+	historical = yes
+	birth_date = 1822.6.27
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		brave
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_cabrinetty
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1865.1.1
+		latest_usage_date = 1873.6.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_cabrinetty
+		}
+		fix_variable_error = { variable = converter_jose_cabrinetty }
+	}
+}
+fem_SPA_jose_cabrinetty = {
+	first_name = Josefa
+	last_name = Cabrinetty
+	historical = yes
+	female = yes
+	birth_date = 1822.6.27
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		brave
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_cabrinetty
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BALEARIC_ISLANDS
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1865.1.1
+		latest_usage_date = 1873.6.9
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_cabrinetty
+		}
+		fix_variable_error = { variable = converter_jose_cabrinetty }
+	}
+}
+
+REPLACE:SPA_ramon_nouvilas = { # Ramón Nouvilas
+	first_name = RamO_n
+	last_name = Nouvilas
+	historical = yes
+	birth_date = 1812.12.18
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		stalwart_defender
+		tactful
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_nouvilas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1874.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_nouvilas
+		}
+		fix_variable_error = { variable = converter_ramon_nouvilas }
+	}
+}
+fem_SPA_ramon_nouvilas = {
+	first_name = Ramona
+	last_name = Nouvilas
+	historical = yes
+	female = yes
+	birth_date = 1812.12.18
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		stalwart_defender
+		tactful
+		mountain_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_nouvilas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1868.9.29
+		latest_usage_date = 1874.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_nouvilas
+		}
+		fix_variable_error = { variable = converter_ramon_nouvilas }
+	}
+}
+
+REPLACE:SPA_jenaro_quesada = { # Jenaro Quesada, Marqués de Miravalles
+	first_name = Jenaro
+	last_name = Quesada
+	historical = yes
+	birth_date = 1818.2.6
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_defensive_strategist
+		honorable
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jenaro_quesada
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.1
+		latest_usage_date = 1885.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jenaro_quesada
+		}
+		fix_variable_error = { variable = converter_jenaro_quesada }
+	}
+}
+fem_SPA_jenaro_quesada = {
+	first_name = Rhea
+	last_name = Quesada
+	historical = yes
+	female = yes
+	birth_date = 1818.2.6
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_defensive_strategist
+		honorable
+		traditionalist_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jenaro_quesada
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_NEW_CASTILE
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1874.1.1
+		latest_usage_date = 1885.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jenaro_quesada
+		}
+		fix_variable_error = { variable = converter_jenaro_quesada }
+	}
+}
+
+# Carlist Generals
+
+REPLACE:SPA_ramon_altarriba = { # Ramón Altarriba y Villanueva, conde de Altarriba
+	first_name = Ramon
+	last_name = Altarriba_y_Villanueva
+	historical = yes
+	birth_date = 1841.8.30
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:aragonese
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		basic_offensive_planner
+		traditionalist_commander
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_altarriba
+				}
+			}
+			uses_catalan_characters = yes
+			OR = {
+				any_scope_state = { state_region = s:STATE_BASQUE_COUNTRY }
+				any_scope_state = { state_region = s:STATE_ARAGON }
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1888.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_altarriba
+		}
+		fix_variable_error = { variable = converter_ramon_altarriba }
+	}
+}
+fem_SPA_ramon_altarriba = {
+	first_name = Ramona
+	last_name = Altarriba_y_Villanueva
+	historical = yes
+	female = yes
+	birth_date = 1841.8.30
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:aragonese
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		basic_offensive_planner
+		traditionalist_commander
+		reserved
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ramon_altarriba
+				}
+			}
+			uses_catalan_characters = yes
+			OR = {
+				any_scope_state = { state_region = s:STATE_BASQUE_COUNTRY }
+				any_scope_state = { state_region = s:STATE_ARAGON }
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1888.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ramon_altarriba
+		}
+		fix_variable_error = { variable = converter_ramon_altarriba }
+	}
+}
+
+REPLACE:SPA_rafael_tristany = { # Rafael Tristany
+	first_name = Rafael
+	last_name = Tristany
+	historical = yes
+	birth_date = 1814.5.16
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_rafael_tristany
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1880.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_rafael_tristany
+		}
+		fix_variable_error = { variable = converter_rafael_tristany }
+	}
+}
+fem_SPA_rafael_tristany = {
+	first_name = Rafaela
+	last_name = Tristany
+	historical = yes
+	female = yes
+	birth_date = 1814.5.16
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_rafael_tristany
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1855.1.1
+		latest_usage_date = 1880.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_rafael_tristany
+		}
+		fix_variable_error = { variable = converter_rafael_tristany }
+	}
+}
+
+REPLACE:SPA_francisco_savalls = { # Francisco Savalls i Massot
+	first_name = Francisco
+	last_name = Savalls
+	historical = yes
+	birth_date = 1817.1.29
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		forest_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_savalls
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1875.10.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_savalls
+		}
+		fix_variable_error = { variable = converter_francisco_savalls }
+	}
+}
+fem_SPA_francisco_savalls = {
+	first_name = Francisca
+	last_name = Savalls
+	historical = yes
+	female = yes
+	birth_date = 1817.1.29
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		experienced_offensive_planner
+		forest_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_francisco_savalls
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1875.10.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_francisco_savalls
+		}
+		fix_variable_error = { variable = converter_francisco_savalls }
+	}
+}
+
+REPLACE:SPA_alfonso_caserta = { # Alfonso de Borbón-Dos Sicilias, conde de Caserta
+	first_name = Alfonso
+	last_name = de_BorbO_n_Dos_Sicilias
+	historical = yes
+	birth_date = 1841.3.28
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:spanish
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		experienced_defensive_strategist
+		traditionalist_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_alfonso_caserta
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1877.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_alfonso_caserta
+		}
+		fix_variable_error = { variable = converter_alfonso_caserta }
+	}
+}
+fem_SPA_alfonso_caserta = {
+	first_name = Alfonsa
+	last_name = de_BorbO_n_Dos_Sicilias
+	historical = yes
+	female = yes
+	birth_date = 1841.3.28
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:spanish
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		experienced_defensive_strategist
+		traditionalist_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_alfonso_caserta
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1870.1.1
+		latest_usage_date = 1877.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_alfonso_caserta
+		}
+		fix_variable_error = { variable = converter_alfonso_caserta }
+	}
+}
+
+REPLACE:SPA_pascual_cucala = { # Pascual Cucala y Parreño
+	first_name = Pascual
+	last_name = Cucala
+	historical = yes
+	birth_date = 1816.1.1
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		resupply_commander
+		mountain_commander
+		persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_pascual_cucala
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_VALENCIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1872.1.1
+		latest_usage_date = 1877.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_pascual_cucala
+		}
+		fix_variable_error = { variable = converter_pascual_cucala }
+	}
+}
+fem_SPA_pascual_cucala = {
+	first_name = Pascuala
+	last_name = Cucala
+	historical = yes
+	female = yes
+	birth_date = 1816.1.1
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		resupply_commander
+		mountain_commander
+		persistent
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_pascual_cucala
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_VALENCIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1872.1.1
+		latest_usage_date = 1877.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_pascual_cucala
+		}
+		fix_variable_error = { variable = converter_pascual_cucala }
+	}
+}
+
+REPLACE:SPA_torcuato_mendiry = { # Torcuato Mendiry (Mendiri) y Corera, marqués de Mendiri
+	first_name = Torcuato
+	last_name = Mendiry
+	historical = yes
+	birth_date = 1813.5.22
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:basque
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_torcuato_mendiry
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1856.1.1
+		latest_usage_date = 1875.11.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_torcuato_mendiry
+		}
+		fix_variable_error = { variable = converter_torcuato_mendiry }
+	}
+}
+fem_SPA_torcuato_mendiry = {
+	first_name = Orosia
+	last_name = Mendiry
+	historical = yes
+	female = yes
+	birth_date = 1813.5.22
+	is_general = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_carlist
+	culture = cu:basque
+	religion = rel:catholic
+	noble = yes
+	traits = {
+		experienced_offensive_planner
+		mountain_commander
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_torcuato_mendiry
+				}
+			}
+			uses_basque_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_BASQUE_COUNTRY
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = general
+		earliest_usage_date = 1856.1.1
+		latest_usage_date = 1875.11.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:basque }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_torcuato_mendiry
+		}
+		fix_variable_error = { variable = converter_torcuato_mendiry }
+	}
+}
+
+## Admirals
+
+REPLACE:SPA_casto_mendez_nunez = { # Casto Méndez Núñez
+	first_name = Casto
+	last_name = ME_ndez_NU_N_ez
+	historical = yes
+	dna = dna_casto_mendez_nunez
+	birth_date = 1824.7.1
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_casto_mendez_nunez
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1869.8.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_casto_mendez_nunez
+		}
+		fix_variable_error = { variable = converter_casto_mendez_nunez }
+	}
+}
+fem_SPA_casto_mendez_nunez = {
+	first_name = InE_s
+	last_name = ME_ndez_NU_N_ez
+	historical = yes
+	female = yes
+	dna = dna_casto_mendez_nunez
+	birth_date = 1824.7.1
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		honorable
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_casto_mendez_nunez
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1850.1.1
+		latest_usage_date = 1869.8.21
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_casto_mendez_nunez
+		}
+		fix_variable_error = { variable = converter_casto_mendez_nunez }
+	}
+}
+
+REPLACE:SPA_juan_bautista_topete = { # Juan Bautista Topete y Carballo
+	first_name = Juan_Bautista
+	last_name = Topete_y_Carballo
+	historical = yes
+	birth_date = 1821.5.24
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		basic_political_operator
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_bautista_topete
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1857.12.7
+		latest_usage_date = 1885.10.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_bautista_topete
+		}
+		fix_variable_error = { variable = converter_juan_bautista_topete }
+	}
+}
+fem_SPA_juan_bautista_topete = {
+	first_name = Juana_Bautista
+	last_name = Topete_y_Carballo
+	historical = yes
+	female = yes
+	birth_date = 1821.5.24
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		basic_political_operator
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_bautista_topete
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1857.12.7
+		latest_usage_date = 1885.10.27
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_bautista_topete
+		}
+		fix_variable_error = { variable = converter_juan_bautista_topete }
+	}
+}
+
+REPLACE:SPA_patricio_montojo = { # Patricio Montojo y Pasarón
+	first_name = Patricio
+	last_name = Montojo_y_PasarO_n
+	historical = yes
+	birth_date = 1839.9.7
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_patricio_montojo
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1898.9.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_patricio_montojo
+		}
+		fix_variable_error = { variable = converter_patricio_montojo }
+	}
+}
+fem_SPA_patricio_montojo = {
+	first_name = Patricia
+	last_name = Montojo_y_PasarO_n
+	historical = yes
+	female = yes
+	birth_date = 1839.9.7
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		cautious
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_patricio_montojo
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1873.1.1
+		latest_usage_date = 1898.9.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_patricio_montojo
+		}
+		fix_variable_error = { variable = converter_patricio_montojo }
+	}
+}
+
+REPLACE:SPA_miguel_lobo_malagamba = { # Miguel Lobo y Malagamba
+	first_name = Miguel
+	last_name = Lobo_y_Malagamba
+	historical = yes
+	birth_date = 1821.11.26
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_lobo_malagamba
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1876.4.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_miguel_lobo_malagamba
+		}
+		fix_variable_error = { variable = converter_miguel_lobo_malagamba }
+	}
+}
+fem_SPA_miguel_lobo_malagamba = {
+	first_name = Miguela
+	last_name = Lobo_y_Malagamba
+	historical = yes
+	female = yes
+	birth_date = 1821.11.26
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		charismatic
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_miguel_lobo_malagamba
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1860.1.1
+		latest_usage_date = 1876.4.5
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_miguel_lobo_malagamba
+		}
+		fix_variable_error = { variable = converter_miguel_lobo_malagamba }
+	}
+}
+
+REPLACE:SPA_jose_malcampo = { # José Malcampo y Monge
+	first_name = JosE_
+	last_name = Malcampo_y_Monge
+	historical = yes
+	birth_date = 1828.1.13
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		basic_colonial_administrator
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_malcampo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1864.1.1
+		latest_usage_date = 1880.5.23
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_malcampo
+		}
+		fix_variable_error = { variable = converter_jose_malcampo }
+	}
+}
+fem_SPA_jose_malcampo = {
+	first_name = Josefa
+	last_name = Malcampo_y_Monge
+	historical = yes
+	female = yes
+	birth_date = 1828.1.13
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	noble = yes
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		basic_colonial_administrator
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_malcampo
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1864.1.1
+		latest_usage_date = 1880.5.23
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_malcampo
+		}
+		fix_variable_error = { variable = converter_jose_malcampo }
+	}
+}
+
+REPLACE:SPA_victor_concas = { # Víctor Concas y Palau
+	first_name = VI_ctor
+	last_name = Concas_y_Palau
+	historical = yes
+	birth_date = 1845.11.12
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victor_concas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1887.1.1
+		latest_usage_date = 1916.9.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victor_concas
+		}
+		fix_variable_error = { variable = converter_victor_concas }
+	}
+}
+fem_SPA_victor_concas = {
+	first_name = VictO_ria
+	last_name = Concas_y_Palau
+	historical = yes
+	female = yes
+	birth_date = 1845.11.12
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:catalan
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victor_concas
+				}
+			}
+			uses_catalan_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_CATALONIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1887.1.1
+		latest_usage_date = 1916.9.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:catalan }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victor_concas
+		}
+		fix_variable_error = { variable = converter_victor_concas }
+	}
+}
+
+REPLACE:SPA_manuel_de_la_camara = { # Manuel de la Cámara y Livermoore
+	first_name = Manuel
+	last_name = de_la_CA_mara_y_Livermoore
+	historical = yes
+	birth_date = 1836.5.7
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		meticulous
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_de_la_camara
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1868.1.1
+		latest_usage_date = 1903.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_de_la_camara
+		}
+		fix_variable_error = { variable = converter_manuel_de_la_camara }
+	}
+}
+fem_SPA_manuel_de_la_camara = {
+	first_name = Manola
+	last_name = de_la_CA_mara_y_Livermoore
+	historical = yes
+	female = yes
+	birth_date = 1836.5.7
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_moderate
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+		meticulous
+		dockyard_master
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_manuel_de_la_camara
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1868.1.1
+		latest_usage_date = 1903.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_manuel_de_la_camara
+		}
+		fix_variable_error = { variable = converter_manuel_de_la_camara }
+	}
+}
+
+REPLACE:SPA_juan_manuel_pareja = { # Juan Manuel Pareja y Septién
+	first_name = Juan_Manuel
+	last_name = Pareja_y_SeptiE_n
+	historical = yes
+	birth_date = 1813.2.8
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:spanish # Born in Lima
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_manuel_pareja
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1851.11.7
+		latest_usage_date = 1865.11.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_manuel_pareja
+		}
+		fix_variable_error = { variable = converter_juan_manuel_pareja }
+	}
+}
+fem_SPA_juan_manuel_pareja = {
+	first_name = Juana_Manola
+	last_name = Pareja_y_SeptiE_n
+	historical = yes
+	female = yes
+	birth_date = 1813.2.8
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:spanish # Born in Lima
+	religion = rel:catholic
+	traits = {
+		basic_naval_commander
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_manuel_pareja
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1851.11.7
+		latest_usage_date = 1865.11.30
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_manuel_pareja
+		}
+		fix_variable_error = { variable = converter_juan_manuel_pareja }
+	}
+}
+
+REPLACE:SPA_jose_maria_berA_nger = { # José María Beránger y Ruiz de Apodaca
+	first_name = Jose_Maria
+	last_name = BerA_nger_y_Ruiz_de_Apodaca
+	historical = yes
+	birth_date = 1824.1.1 # Only year known
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_maria_berA_nger
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1870.3.20
+		latest_usage_date = 1896.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_maria_berA_nger
+		}
+		fix_variable_error = { variable = converter_jose_maria_berA_nger }
+	}
+}
+fem_SPA_jose_maria_berA_nger = {
+	first_name = Jose_Maria
+	last_name = BerA_nger_y_Ruiz_de_Apodaca
+	historical = yes
+	female = yes
+	birth_date = 1824.1.1 # Only year known
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_liberal_leader
+	culture = cu:spanish
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		tactful
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_jose_maria_berA_nger
+				}
+			}
+			uses_spanish_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_LOWER_ANDALUSIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1870.3.20
+		latest_usage_date = 1896.1.1
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_jose_maria_berA_nger
+		}
+		fix_variable_error = { variable = converter_jose_maria_berA_nger }
+	}
+}
+
+REPLACE:SPA_victoriano_sanchez_barcaiztegui = { # Victoriano Sánchez Barcáiztegui
+	first_name = Victoriano
+	last_name = SA_nchez_BarcA_iztegui
+	historical = yes
+	birth_date = 1826.4.23
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victoriano_sanchez_barcaiztegui
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1866.1.1
+		latest_usage_date = 1875.5.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victoriano_sanchez_barcaiztegui
+		}
+		fix_variable_error = { variable = converter_victoriano_sanchez_barcaiztegui }
+	}
+}
+fem_SPA_victoriano_sanchez_barcaiztegui = {
+	first_name = Victoriana
+	last_name = SA_nchez_BarcA_iztegui
+	historical = yes
+	female = yes
+	birth_date = 1826.4.23
+	is_admiral = yes
+	commander_rank = default
+	interest_group = ig_armed_forces
+	ideology = ideology_jingoist_leader
+	culture = cu:galician
+	religion = rel:catholic
+	traits = {
+		experienced_naval_commander
+		brave
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_victoriano_sanchez_barcaiztegui
+				}
+			}
+			uses_galician_characters = yes
+			any_scope_state = {
+				state_region = s:STATE_GALICIA
+			}
+			has_dlc_feature = ip4_content
+		}
+		role = admiral
+		earliest_usage_date = 1866.1.1
+		latest_usage_date = 1875.5.26
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:galician }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_victoriano_sanchez_barcaiztegui
+		}
+		fix_variable_error = { variable = converter_victoriano_sanchez_barcaiztegui }
+	}
+}
+
+# Agitators
+
+REPLACE:SPA_juan_donoso_cortes = { # Juan Donoso Cortés
+	first_name = Juan
+	last_name = Donoso_CortE_z
+	historical = yes
+	female = no
+	is_agitator = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	birth_date = 1809.5.6
+	traits = {
+		basic_diplomat
+		erudite
+		pious
+	}
+	agitator_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_donoso_cortes
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1853.5.3
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_donoso_cortes
+		}
+		fix_variable_error = { variable = converter_juan_donoso_cortes }
+	}
+}
+fem_SPA_juan_donoso_cortes = {
+	first_name = Juana
+	last_name = Donoso_CortE_z
+	historical = yes
+	female = yes
+	is_agitator = yes
+	culture = cu:spanish
+	noble = no
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	birth_date = 1809.5.6
+	traits = {
+		basic_diplomat
+		erudite
+		pious
+	}
+	agitator_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_juan_donoso_cortes
+				}
+			}
+			uses_spanish_characters = yes
+			has_dlc_feature = ip4_content
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1840.1.1
+		latest_usage_date = 1853.5.3
+		chance = 50
+	}
+	trait_generation = { }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:spanish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_juan_donoso_cortes
+		}
+		fix_variable_error = { variable = converter_juan_donoso_cortes }
 	}
 }

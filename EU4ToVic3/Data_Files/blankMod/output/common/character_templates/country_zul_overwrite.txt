@@ -1,0 +1,90 @@
+﻿# Zulu
+
+REPLACE:ZUL_zibhebhu_kamaphitha = { # Zibhebhu kaMaphitha Zulu, Chief of the Mandlakazi after the Anglo-Zulu war, second cousin of Cetshwayo, contender for the Zulu throne after Cetshwayo's death.
+	first_name = "Zibhebhu"
+	last_name = "Zulu"
+	historical = yes
+	culture = cu:zulu
+	religion = rel:animist
+	female = no
+	ig_leader = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	birth_date = 1841.8.27 # exact birthday unnown, died August 27th, 1904
+	traits = {
+		ambitious
+		arrogant
+		reckless
+		pillager
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_zibhebhu_kamaphitha
+				}
+			}
+			uses_zulu_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1877.1.1
+		latest_usage_date = 1897.1.1 # Died in 1904
+		chance = 50
+	}
+	on_created = {
+		converter_colonial_template_effect = { TARGET = global_black_cape_cultures }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_zibhebhu_kamaphitha
+		}
+		fix_variable_error = { variable = converter_zibhebhu_kamaphitha }
+	}
+}
+fem_ZUL_zibhebhu_kamaphitha = {
+	first_name = "Sindiswa"
+	last_name = "Zulu"
+	historical = yes
+	culture = cu:zulu
+	religion = rel:animist
+	female = yes
+	ig_leader = yes
+	interest_group = ig_landowners
+	ideology = ideology_traditionalist
+	birth_date = 1841.8.27 # exact birthday unnown, died August 27th, 1904
+	traits = {
+		ambitious
+		arrogant
+		reckless
+		pillager
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_zibhebhu_kamaphitha
+				}
+			}
+			uses_zulu_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1877.1.1
+		latest_usage_date = 1897.1.1 # Died in 1904
+		chance = 50
+	}
+	on_created = {
+		converter_colonial_template_effect = { TARGET = global_black_cape_cultures }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_zibhebhu_kamaphitha
+		}
+		fix_variable_error = { variable = converter_zibhebhu_kamaphitha }
+	}
+}

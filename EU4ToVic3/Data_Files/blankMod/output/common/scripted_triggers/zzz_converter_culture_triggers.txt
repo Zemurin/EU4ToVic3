@@ -9,6 +9,7 @@
 # converter_is_czech_homeland
 # converter_is_hungarian_homeland
 # converter_is_polish_homeland
+# converter_is_lithuanian_homeland
 # converter_is_irish_homeland
 # converter_is_scottish_homeland
 # converter_is_british_homeland
@@ -22,11 +23,14 @@
 # converter_is_tatar_homeland
 # converter_is_north_italian_homeland
 # converter_is_south_italian_homeland
-# converter_is_catalan_homeland
 # converter_is_spanish_homeland
+# converter_is_catalan_homeland
+# converter_is_galician_homeland
+# converter_is_basque_homeland
 # converter_is_portuguese_homeland
 # converter_is_greek_homeland
 # converter_is_romanian_homeland
+# converter_is_szekely_homeland
 # converter_is_serbian_homeland
 # converter_is_croatian_homeland
 # converter_is_berber_homeland
@@ -50,6 +54,9 @@
 # converter_is_rajput_homeland
 # converter_is_tamil_homeland
 # converter_is_telegu_homeland
+# converter_is_ethiopian_homeland
+# converter_is_arab_homeland
+# converter_is_swahili_homeland
 
 converter_has_target_list = {
 	switch = {
@@ -63,6 +70,7 @@ converter_has_target_list = {
 		cu:czech = { is_target_in_global_variable_list = { name = global_czech_cultures target = this } }
 		cu:hungarian = { is_target_in_global_variable_list = { name = global_hungarian_cultures target = this } }
 		cu:polish = { is_target_in_global_variable_list = { name = global_polish_cultures target = this } }
+		cu:lithuanian = { is_target_in_global_variable_list = { name = global_lithuanian_cultures target = this } }
 		cu:irish = { is_target_in_global_variable_list = { name = global_irish_cultures target = this } }
 		cu:scottish = { is_target_in_global_variable_list = { name = global_scottish_cultures target = this } }
 		cu:british = { is_target_in_global_variable_list = { name = global_british_cultures target = this } }
@@ -76,11 +84,14 @@ converter_has_target_list = {
 		cu:tatar = { is_target_in_global_variable_list = { name = global_tatar_cultures target = this } }
 		cu:north_italian = { is_target_in_global_variable_list = { name = global_nor_ita_cultures target = this } }
 		cu:south_italian = { is_target_in_global_variable_list = { name = global_sou_ita_cultures target = this } }
-		cu:catalan = { is_target_in_global_variable_list = { name = global_catalan_cultures target = this } }
 		cu:spanish = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+		cu:catalan = { is_target_in_global_variable_list = { name = global_catalan_cultures target = this } }
+		cu:galician = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } }
+		cu:basque = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } }
 		cu:portuguese = { is_target_in_global_variable_list = { name = global_portuguese_cultures target = this } }
 		cu:greek = { is_target_in_global_variable_list = { name = global_greek_cultures target = this } }
 		cu:romanian = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } }
+		cu:szekely = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } }
 		cu:serb = { is_target_in_global_variable_list = { name = global_serbian_cultures target = this } }
 		cu:croat = { is_target_in_global_variable_list = { name = global_croatian_cultures target = this } }
 		cu:berber = { is_target_in_global_variable_list = { name = global_berber_cultures target = this } }
@@ -104,6 +115,12 @@ converter_has_target_list = {
 		cu:rajput = { is_target_in_global_variable_list = { name = global_rajput_cultures target = this } }
 		cu:tamil = { is_target_in_global_variable_list = { name = global_tamil_cultures target = this } }
 		cu:telegu = { is_target_in_global_variable_list = { name = global_telegu_cultures target = this } }
+		cu:amhara = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+		cu:tigray = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+		cu:somali = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+		cu:bedouin = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+		cu:mashriqi = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+		cu:swahili = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } }
 	}
 }
 
@@ -119,6 +136,7 @@ converter_has_target_homeland = {
 		cu:czech = { converter_is_czech_homeland = yes }
 		cu:hungarian = { converter_is_hungarian_homeland = yes }
 		cu:polish = { converter_is_polish_homeland = yes }
+		cu:lithuanian = { converter_is_lithuanian_homeland = yes }
 		cu:irish = { converter_is_irish_homeland = yes }
 		cu:scottish = { converter_is_scottish_homeland = yes }
 		cu:british = { converter_is_british_homeland = yes }
@@ -132,11 +150,14 @@ converter_has_target_homeland = {
 		cu:tatar = { converter_is_tatar_homeland = yes }
 		cu:north_italian = { converter_is_north_italian_homeland = yes }
 		cu:south_italian = { converter_is_south_italian_homeland = yes }
-		cu:catalan = { converter_is_catalan_homeland = yes }
 		cu:spanish = { converter_is_spanish_homeland = yes }
+		cu:catalan = { converter_is_catalan_homeland = yes }
+		cu:galician = { converter_is_galician_homeland = yes }
+		cu:basque = { converter_is_basque_homeland = yes }
 		cu:portuguese = { converter_is_portuguese_homeland = yes }
 		cu:greek = { converter_is_greek_homeland = yes }
 		cu:romanian = { converter_is_romanian_homeland = yes }
+		cu:szekely = { converter_is_szekely_homeland = yes }
 		cu:serb = { converter_is_serbian_homeland = yes }
 		cu:croat = { converter_is_croatian_homeland = yes }
 		cu:berber = { converter_is_berber_homeland = yes }
@@ -160,6 +181,12 @@ converter_has_target_homeland = {
 		cu:rajput = { converter_is_rajput_homeland = yes }
 		cu:tamil = { converter_is_tamil_homeland = yes }
 		cu:telegu = { converter_is_telegu_homeland = yes }
+		cu:amhara = { converter_is_ethiopian_homeland = yes }
+		cu:tigray = { converter_is_ethiopian_homeland = yes }
+		cu:somali = { converter_is_ethiopian_homeland = yes }
+		cu:bedouin = { converter_is_arab_homeland = yes }
+		cu:mashriqi = { converter_is_arab_homeland = yes }
+		cu:swahili = { converter_is_swahili_homeland = yes }
 	}
 }
 
@@ -275,16 +302,23 @@ converter_is_hungarian_homeland = {
 
 converter_is_polish_homeland = {
 	OR = {
-		state_region = s:STATE_VILNIUS
 		state_region = s:STATE_WEST_GALICIA
 		state_region = s:STATE_EAST_GALICIA
 		state_region = s:STATE_POSEN
 		state_region = s:STATE_WEST_PRUSSIA
-		state_region = s:STATE_EAST_PRUSSIA
+		#state_region = s:STATE_EAST_PRUSSIA
 		state_region = s:STATE_UPPER_SILESIA
 		state_region = s:STATE_GREATER_POLAND
 		state_region = s:STATE_LESSER_POLAND
 		state_region = s:STATE_MAZOVIA
+	}
+}
+
+converter_is_lithuanian_homeland = {
+	OR = {
+		state_region = s:STATE_KAUNAS
+		state_region = s:STATE_VILNIUS
+		state_region = s:STATE_EAST_PRUSSIA
 	}
 }
 
@@ -458,22 +492,14 @@ converter_is_south_italian_homeland = {
 	}
 }
 
-converter_is_catalan_homeland = {
-	OR = {
-		state_region = s:STATE_CATALONIA
-		state_region = s:STATE_BALEARIC_ISLANDS
-		state_region = s:STATE_VALENCIA
-	}
-}
-
 converter_is_spanish_homeland = {
 	OR = {
 		state_region = s:STATE_LOWER_ANDALUSIA
-		state_region = s:STATE_GALICIA
+		#state_region = s:STATE_GALICIA
 		state_region = s:STATE_ASTURIAS
 		state_region = s:STATE_OLD_CASTILE
 		state_region = s:STATE_ARAGON
-		state_region = s:STATE_BASQUE_COUNTRY
+		#state_region = s:STATE_BASQUE_COUNTRY
 		#state_region = s:STATE_CATALONIA
 		#state_region = s:STATE_BALEARIC_ISLANDS
 		state_region = s:STATE_CANARY_ISLANDS
@@ -484,6 +510,22 @@ converter_is_spanish_homeland = {
 		state_region = s:STATE_MURCIA
 		state_region = s:STATE_LEON
 	}
+}
+
+converter_is_catalan_homeland = {
+	OR = {
+		state_region = s:STATE_CATALONIA
+		state_region = s:STATE_BALEARIC_ISLANDS
+		state_region = s:STATE_VALENCIA
+	}
+}
+
+converter_is_galician_homeland = {
+	state_region = s:STATE_GALICIA
+}
+
+converter_is_basque_homeland = {
+	state_region = s:STATE_BASQUE_COUNTRY
 }
 
 converter_is_portuguese_homeland = {
@@ -527,6 +569,13 @@ converter_is_romanian_homeland = {
 		state_region = s:STATE_BESSARABIA
 		#state_region = s:STATE_BEKES
 		#state_region = s:STATE_BANAT
+	}
+}
+
+converter_is_szekely_homeland = {
+	OR = {
+		state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+		state_region = s:STATE_NORTHERN_TRANSYLVANIA
 	}
 }
 
@@ -796,5 +845,42 @@ converter_is_telegu_homeland = {
 		state_region = s:STATE_CIRCARS
 		state_region = s:STATE_HYDERABAD
 		state_region = s:STATE_KURNOOL
+	}
+}
+
+converter_is_ethiopian_homeland = {
+	OR = {
+		state_region = s:STATE_OROMIA
+		state_region = s:STATE_AMHARA
+		state_region = s:STATE_GONDER
+		state_region = s:STATE_ERITREA
+		state_region = s:STATE_SOMALILAND
+	}
+}
+
+converter_is_arab_homeland = {
+	OR = {
+		state_region = s:STATE_BASRA
+		state_region = s:STATE_OMAN
+		state_region = s:STATE_ABU_DHABI
+		state_region = s:STATE_YEMEN
+		state_region = s:STATE_HEDJAZ
+		#state_region = s:STATE_TRIPOLI
+		#state_region = s:STATE_LIBYAN_DESERT
+		#state_region = s:STATE_LIBYA
+		state_region = s:STATE_HAIL
+		state_region = s:STATE_NEJD
+		state_region = s:STATE_TRANSJORDAN
+		state_region = s:STATE_BAGHDAD
+		state_region = s:STATE_PALESTINE
+		state_region = s:STATE_LEBANON
+		state_region = s:STATE_SYRIA
+	}
+}
+
+converter_is_swahili_homeland = {
+	OR = {
+		state_region = s:STATE_KENYA
+		state_region = s:STATE_ZANZIBAR
 	}
 }

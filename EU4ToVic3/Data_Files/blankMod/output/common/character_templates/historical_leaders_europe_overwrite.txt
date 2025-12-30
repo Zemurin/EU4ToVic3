@@ -28,7 +28,7 @@ REPLACE:fra_clemenceau_character_template = {
 			uses_fra_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia   
 			NOR = {
 				has_variable = communist_ig_var
@@ -81,7 +81,7 @@ REPLACE:frm_grimm_character_template = {
 			any_primary_culture = { is_target_in_global_variable_list = { name = global_nor_ger_cultures target = this } }		##He spawns for enough vanilla countries, no need to tag restrict
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia   
 			NOR = {
 				has_variable = communist_ig_var
@@ -133,7 +133,7 @@ REPLACE:nor_thrane_template = {
 			uses_nor_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_trade_unions
 		}
 		earliest_usage_date = 1848.1.1
@@ -147,62 +147,6 @@ REPLACE:nor_thrane_template = {
 			target = flag:converter_marcus_thrane
 		}
 		fix_variable_error = { variable = converter_marcus_thrane }
-	}
-}
-
-# Prussia - PRU
-REPLACE:pru_bismarck_character_template = {
-	first_name = Otto
-	last_name = von_Bismarck
-	historical = yes
-	culture = cu:north_german
-	female = no
-	religion = rel:protestant
-	ideology = ideology_royalist
-	interest_group = ig_landowners
-	birth_date = 1815.4.1
-	traits = {
-		experienced_political_operator
-		masterful_diplomat
-		direct
-	}
-	interest_group_leader_usage = {
-		country_trigger = {
-			should_have_male_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_otto_von_bismarck
-				}
-			}
-			uses_pru_ger_characters = yes
-			owns_entire_state_region = STATE_BRANDENBURG
-			NOT = {
-				has_global_variable = bismarck_variable
-			}
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			is_interest_group_type = ig_landowners   
-			NOR = {
-				has_variable = communist_ig_var
-				has_variable = chose_vanguardism
-				has_variable = chose_fascism
-				has_variable = chose_conservatism
-				has_variable = chose_ethno_nationalism
-			}
-		}
-		earliest_usage_date = 1847.1.1
-		latest_usage_date = 1884.1.1
-		chance = 50
-	}
-	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_otto_von_bismarck
-		}
-		fix_variable_error = { variable = converter_otto_von_bismarck }
 	}
 }
 # Sardinia-Piedmont - SAR
@@ -234,7 +178,7 @@ REPLACE:sar_benso_character_template = { # The Count of Cavour
 			uses_nor_ita_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists   
 			NOR = {
 				has_variable = communist_ig_var

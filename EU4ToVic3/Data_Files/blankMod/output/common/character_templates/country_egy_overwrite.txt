@@ -2,6 +2,98 @@
 
 # Egypt - EGY
 
+### Agitators
+
+# check historical_agitators file for agitator_ahmed_urabi, Urabi Pasha
+
+REPLACE:egy_aisha_taymur = {
+	first_name = "Aisha"
+	last_name = "Taymur"
+	historical = yes
+	female = yes
+	birth_date = 1840.1.6 # Born in 1840, exact date unknown. Died May 2nd, 1902.
+	culture = cu:misri
+	religion = rel:sunni
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	traits = {
+		persistent
+		tactful
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			is_matriarchal_country = no
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_aisha_taymur
+				}
+			}
+			uses_egy_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1885.1.1 # returned to Egypt after the death of her daughter (d. 1873), her father (d. 1885), and her husband (d. 1885), and published her first collection of poetry
+		latest_usage_date = 1895.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:misri }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_aisha_taymur
+		}
+		fix_variable_error = { variable = converter_aisha_taymur }
+	}
+}
+
+masc_egy_aisha_taymur = {
+	first_name = "Muhammad"
+	last_name = "Taymur"
+	historical = yes
+	female = no
+	birth_date = 1840.1.6 # Born in 1840, exact date unknown. Died May 2nd, 1902.
+	culture = cu:misri
+	religion = rel:sunni
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	traits = {
+		persistent
+		tactful
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			is_matriarchal_country = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_aisha_taymur
+				}
+			}
+			uses_egy_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1885.1.1 # returned to Egypt after the death of her daughter (d. 1873), her father (d. 1885), and her husband (d. 1885), and published her first collection of poetry
+		latest_usage_date = 1895.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:misri }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_aisha_taymur
+		}
+		fix_variable_error = { variable = converter_aisha_taymur }
+	}
+}
+
 ### Executives
 
 REPLACE:EGY_talaat_harb = { # Talaat Harb, Misr Spinning and Weaving Company

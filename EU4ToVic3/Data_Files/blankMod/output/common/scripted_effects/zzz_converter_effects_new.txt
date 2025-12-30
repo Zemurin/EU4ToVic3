@@ -494,6 +494,15 @@ converter_ig_ideologies_effect = {		##Not ideal but probably better than ig_ideo
 			remove_ideology = ideology_agrarian
 			add_ideology = ideology_agrarian_jeffersonian
 		}
+		if = {
+			limit = { coa_republic_trigger = yes }
+			active_law:lawgroup_governance_principles ?= { # Presidential Republic
+				add_amendment = {
+					type = amendment_american_second_amendment
+					sponsor = PREV.ig:ig_rural_folk
+				}
+			}
+		}
 	}
 	if = {		# Yeoman Farmers
 		limit = {
@@ -1717,7 +1726,7 @@ converter_ig_ideologies_effect = {		##Not ideal but probably better than ig_ideo
 		if = {
 			limit = {
 				aggressive_diplomatic_plays_permitted = yes
-				NOT = { has_law_or_variant = law_type:law_slavery_banned }
+				has_law_or_variant = law_type:law_legacy_slavery
 				OR = {
 					any_scope_state = { region = sr:region_new_england }
 					any_scope_state = { region = sr:region_the_midwest }
@@ -1727,11 +1736,21 @@ converter_ig_ideologies_effect = {		##Not ideal but probably better than ig_ideo
 					has_modifier = missouri_compromise
 				}
 			}
+			add_to_global_variable_list = {
+				name = global_fugitive_slaves_act_countries
+				target = this
+			}
 			add_journal_entry = { type = je_acw_countdown }
 			add_modifier = {
 				name = missouri_compromise
 				months = 50
 				is_decaying = yes
+			}
+			active_law:lawgroup_slavery ?= { # Legacy Slavery
+				add_amendment = {
+					type = amendment_american_fugitive_slaves_act
+					sponsor = PREV.ig:ig_landowners
+				}
 			}
 		}
 	}

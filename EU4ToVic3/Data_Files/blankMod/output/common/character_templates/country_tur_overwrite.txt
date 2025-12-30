@@ -2,97 +2,6 @@
 
 # Ottoman Empire - TUR
 # Turkey & the Ottoman Empire - TUR
-REPLACE:tur_abdulhamid_ii_template = {
-	first_name = Abdul_Hamid
-	last_name = Osmanoglu
-	historical = yes
-	culture = cu:turkish
-	female = no
-	dna = dna_abdul_hamid_ii
-	ideology = ideology_authoritarian
-	interest_group = ig_landowners
-	birth_date = 1842.9.21
-	ruler = yes
-	traits = {
-		pious
-		persistent
-		basic_diplomat
-	}
-	interest_group_leader_usage = {
-		country_trigger = {
-			should_have_male_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_abdulhamid_ii_template
-				}
-			}
-			uses_tur_characters = yes
-			c:TUR = { has_law = law_type:law_monarchy }
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			is_interest_group_type = ig_landowners
-		}
-		earliest_usage_date = 1870.1.1
-		latest_usage_date = 1900.1.1
-		chance = 50
-	}
-	on_created = {
-		converter_standard_template_effect = { TARGET = cu:turkish }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_abdulhamid_ii_template
-		}
-		fix_variable_error = { variable = converter_abdulhamid_ii_template }
-	}
-}
-
-fem_tur_abdulhamid_ii_template = {
-	first_name = Cemile_Sultan
-	last_name = Osmanoglu
-	historical = yes
-	culture = cu:turkish
-	female = yes
-	dna = dna_abdul_hamid_ii
-	ideology = ideology_authoritarian
-	interest_group = ig_landowners
-	birth_date = 1842.9.21
-	ruler = yes
-	traits = {
-		pious
-		persistent
-		basic_diplomat
-	}
-	interest_group_leader_usage = {
-		country_trigger = {
-			should_have_female_characters = yes
-			NOT = {
-				is_target_in_global_variable_list = {
-					name = converter_unavailable_unique_characters
-					target = flag:converter_abdulhamid_ii_template
-				}
-			}
-			uses_tur_characters = yes
-			c:TUR = { has_law = law_type:law_monarchy }
-		}
-		interest_group_trigger = {
-			is_marginal = no
-			is_interest_group_type = ig_landowners
-		}
-		earliest_usage_date = 1870.1.1
-		latest_usage_date = 1900.1.1
-		chance = 50
-	}
-	on_created = {
-		converter_standard_template_effect = { TARGET = cu:turkish }
-		add_to_global_variable_list = {
-			name = converter_unavailable_unique_characters
-			target = flag:converter_abdulhamid_ii_template
-		}
-		fix_variable_error = { variable = converter_abdulhamid_ii_template }
-	}
-}
 
 REPLACE:tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, grand vizier in 1852-1853
 	first_name = Damad_Mehmed
@@ -143,7 +52,6 @@ REPLACE:tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, g
 		fix_variable_error = { variable = converter_koca_mustafa_reshid_pasha }
 	}
 }
-
 fem_tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, grand vizier in 1852-1853
 	first_name = Ayse
 	last_name = Ali
@@ -194,7 +102,306 @@ fem_tur_koca_mustafa_reshid_pasha = { # Damad (or Damat) Mehmed Asi Pasha, grand
 	}
 }
 
-### commanders
+REPLACE:tur_midhat_pasha = { # Midhat Pasha, Grand Vizier 1876-1877
+	first_name = "Ahmed"
+	last_name = "Midhat"
+	historical = yes
+	culture = cu:turkish
+	female = no
+	religion = rel:sunni
+	ideology = ideology_liberal_leader
+	interest_group = ig_intelligentsia
+	birth_date = 1822.10.18 # died 1884.5.8
+	traits = {
+		persistent
+		imperious
+		reckless
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_midhat_pasha
+				}
+			}
+			uses_tur_characters = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+		earliest_usage_date = 1861.1.1 # became governor of the Nis Eyalet in 1861
+		latest_usage_date = 1884.5.4
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:turkish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_midhat_pasha
+		}
+		fix_variable_error = { variable = converter_midhat_pasha }
+	}
+}
+fem_tur_midhat_pasha = { # Midhat Pasha, Grand Vizier 1876-1877
+	first_name = "Hamide"
+	last_name = "Midhat"
+	historical = yes
+	culture = cu:turkish
+	female = yes
+	religion = rel:sunni
+	ideology = ideology_liberal_leader
+	interest_group = ig_intelligentsia
+	birth_date = 1822.10.18 # died 1884.5.8
+	traits = {
+		persistent
+		imperious
+		reckless
+		master_bureaucrat
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_midhat_pasha
+				}
+			}
+			uses_tur_characters = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_industrialists
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+			NOR = {
+				has_variable = communist_ig_var
+				has_variable = chose_vanguardism
+				has_variable = chose_fascism
+				has_variable = chose_ethno_nationalism
+			}
+		}
+		earliest_usage_date = 1861.1.1 # became governor of the Nis Eyalet in 1861
+		latest_usage_date = 1884.5.4
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:turkish }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_midhat_pasha
+		}
+		fix_variable_error = { variable = converter_midhat_pasha }
+	}
+}
+
+# Generated agitators
+
+# Butrus al-Bustani, Lebanese intellectual of the Nahda
+REPLACE:tur_butrus_al_bustani = {
+	first_name = "Butrus"
+	last_name = "al-Bustani"
+	historical = yes
+	birth_date = 1819.1.11 # Born on an unknown day in January of 1819
+	culture = cu:mashriqi
+	religion = rel:protestant # Born into a Maronite family, but converted to Protestantism around 1840. Mix of Congregationalist and Presbyterian, look up the National Evangelical Church of Beirut for more on the theology if you're interested.
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	traits = {
+		romantic
+		innovative
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_butrus_al_bustani
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1861.1.1 # His most major contributions to the Nahda began after the Lebanese civil war of 1860/61.
+		latest_usage_date = 1883.5.1 # died May 1st, 1883
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:mashriqi }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_butrus_al_bustani
+		}
+		fix_variable_error = { variable = converter_butrus_al_bustani }
+	}
+}
+fem_tur_butrus_al_bustani = {
+	first_name = "Fayruz"
+	last_name = "al-Bustani"
+	historical = yes
+	female = yes
+	birth_date = 1819.1.11 # Born on an unknown day in January of 1819
+	culture = cu:mashriqi
+	religion = rel:protestant # Born into a Maronite family, but converted to Protestantism around 1840. Mix of Congregationalist and Presbyterian, look up the National Evangelical Church of Beirut for more on the theology if you're interested.
+	interest_group = ig_intelligentsia
+	ideology = ideology_reformer
+	traits = {
+		romantic
+		innovative
+		aesthete
+		literary
+	}
+	agitator_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_butrus_al_bustani
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+		}
+		earliest_usage_date = 1861.1.1 # His most major contributions to the Nahda began after the Lebanese civil war of 1860/61.
+		latest_usage_date = 1883.5.1 # died May 1st, 1883
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:mashriqi }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_butrus_al_bustani
+		}
+		fix_variable_error = { variable = converter_butrus_al_bustani }
+	}
+}
+
+# Warda al-Yaziji, Lebanese feminist and poet
+REPLACE:tur_warda_al-yaziji = {
+	first_name = "Warda"
+	last_name = "al-Yaziji"
+	historical = yes
+	female = yes
+	birth_date = 1838.6.7 # Born in 1838, exact date unknown. Died 1924, exact date unknown.
+	culture = cu:mashriqi
+	religion = rel:catholic # Melkite Greek Catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	traits = {
+		persistent
+		aesthete
+		erudite
+	}
+	agitator_usage = {
+		country_trigger = {
+			is_matriarchal_country = no
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_warda_al-yaziji
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+		earliest_usage_date = 1867.1.1 # Al-Yaziji's first collection of poems was published in 1867
+		latest_usage_date = 1899.1.1 # still active in the early 20th century, but it's best if she's spawned before she's deep into her 60s
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:mashriqi }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_warda_al-yaziji
+		}
+		fix_variable_error = { variable = converter_warda_al-yaziji }
+	}
+}
+masc_tur_warda_al-yaziji = {
+	first_name = "Zuhair"
+	last_name = "al-Yaziji"
+	historical = yes
+	female = no
+	birth_date = 1838.6.7 # Born in 1838, exact date unknown. Died 1924, exact date unknown.
+	culture = cu:mashriqi
+	religion = rel:catholic # Melkite Greek Catholic
+	interest_group = ig_intelligentsia
+	ideology = ideology_feminist
+	traits = {
+		persistent
+		aesthete
+		erudite
+	}
+	agitator_usage = {
+		country_trigger = {
+			is_matriarchal_country = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_warda_al-yaziji
+				}
+			}
+			any_scope_state = {
+				state_region = s:STATE_LEBANON
+			}
+		}
+		interest_group_trigger = {
+			OR = {
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_petty_bourgeoisie
+			}
+		}
+		earliest_usage_date = 1867.1.1 # Al-Yaziji's first collection of poems was published in 1867
+		latest_usage_date = 1899.1.1 # still active in the early 20th century, but it's best if she's spawned before she's deep into her 60s
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:mashriqi }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_warda_al-yaziji
+		}
+		fix_variable_error = { variable = converter_warda_al-yaziji }
+	}
+}
+
+# Generated Commanders
+
 REPLACE:tur_general_pasha = {
 	first_name = Mehmed_Naik
 	last_name = "Pasha"
@@ -273,6 +480,7 @@ fem_tur_general_pasha = {
 		fix_variable_error = { variable = converter_mehmed_naik_pasha }
 	}
 }
+
 REPLACE:tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
 	first_name = Hobart
 	last_name = Pasha
@@ -353,6 +561,7 @@ fem_tur_admiral_hobart = { # Augustus Charles Hobart-Hampden
 		fix_variable_error = { variable = converter_hobart_pasha }
 	}
 }
+
 REPLACE:tur_general_mehmed_ali = { # Ludwig Karl Friedrich Detroit
 	first_name = Mehmed_Ali
 	last_name = Pasha
@@ -433,6 +642,7 @@ fem_tur_general_mehmed_ali = { # Ludwig Carl Friedrich Detroit
 		fix_variable_error = { variable = converter_mehmed_ali_pasha }
 	}
 }
+
 REPLACE:tur_general_osman_nuri = {
 	first_name = Osman_Nuri
 	last_name = Pasha

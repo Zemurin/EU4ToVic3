@@ -1,0 +1,496 @@
+﻿### Ethiopia character template file ###
+
+# Ethiopia - ETH
+
+### post-game-start IG leaders and generals, for either Ethiopia or the lordships they came from if unification has not happened
+
+REPLACE:eth_gjm_tekle_haymanot = {
+	first_name = "Tekle"
+	last_name = "Haymanot_Tesema"
+	historical = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	birth_date = 1847.1.10 # born 1847-ish, birthdate unknown
+    commander_rank = default
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+
+	traits = {
+		ambitious
+		imperious
+		reckless
+		traditionalist_commander
+	}
+
+	commander_usage = {
+	    country_trigger = {
+			uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_gjm_tekle_haymanot
+				}
+			}
+	    }
+		role = general
+	    earliest_usage_date = 1872.1.1
+	    latest_usage_date = 1892.1.10 # 45 years old, ish
+	    chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_gjm_tekle_haymanot
+		}
+		fix_variable_error = { variable = converter_gjm_tekle_haymanot }
+	}
+}
+
+fem_eth_gjm_tekle_haymanot = {
+	first_name = "Tekla"
+	last_name = "Haymanot_Tesema"
+	historical = yes
+	female = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	birth_date = 1847.1.10 # born 1847-ish, birthdate unknown
+    commander_rank = default
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+
+	traits = {
+		ambitious
+		imperious
+		reckless
+		traditionalist_commander
+	}
+
+	commander_usage = {
+	    country_trigger = {
+			uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_gjm_tekle_haymanot
+				}
+			}
+	    }
+		role = general
+	    earliest_usage_date = 1872.1.1
+	    latest_usage_date = 1892.1.10 # 45 years old, ish
+	    chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_gjm_tekle_haymanot
+		}
+		fix_variable_error = { variable = converter_gjm_tekle_haymanot }
+	}
+}
+
+REPLACE:eth_shw_welde_giyorgis_aboye = {
+	first_name = "Welde_Giyorgis"
+	last_name = "Aboye"
+	historical = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	birth_date = 1851.11.4
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+
+	traits = {
+		honorable
+		persistent
+		mountain_commander
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_welde_giyorgis_aboye
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1883.1.1
+        latest_usage_date = 1901.11.4 # 50 years old
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_welde_giyorgis_aboye
+		}
+		fix_variable_error = { variable = converter_shw_welde_giyorgis_aboye }
+	}
+}
+
+fem_eth_shw_welde_giyorgis_aboye = {
+	first_name = "Wossen_Yelesh"
+	last_name = "Aboye"
+	historical = yes
+	female = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	birth_date = 1851.11.4
+	interest_group = ig_armed_forces
+	ideology = ideology_royalist
+
+	traits = {
+		honorable
+		persistent
+		mountain_commander
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_welde_giyorgis_aboye
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1883.1.1
+        latest_usage_date = 1901.11.4 # 50 years old
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_welde_giyorgis_aboye
+		}
+		fix_variable_error = { variable = converter_shw_welde_giyorgis_aboye }
+	}
+}
+
+REPLACE:eth_shw_bafena = {
+	first_name = "Bafena"
+	last_name = "Wolde_Mikael"
+	historical = yes
+	female = yes
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	birth_date = 1834.8.7 # born 1834, exact birthdate unknown
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+
+	traits = {
+		ambitious
+		charismatic
+		pious			# there's a theological angle to Bafena's biography that reads like something straight out of a 4th-century Greek schism
+		experienced_diplomat
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_bafena
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+        }
+        earliest_usage_date = 1854.8.7
+        latest_usage_date = 1874.8.7
+        chance = 25
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_bafena
+		}
+		fix_variable_error = { variable = converter_shw_bafena }
+	}
+}
+
+masc_eth_shw_bafena = {
+	first_name = "Menelik"
+	last_name = "Wolde_Mikael"
+	historical = yes
+	female = no
+	culture = cu:amhara
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	birth_date = 1834.8.7 # born 1834, exact birthdate unknown
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+
+	traits = {
+		ambitious
+		charismatic
+		pious			# there's a theological angle to Bafena's biography that reads like something straight out of a 4th-century Greek schism
+		experienced_diplomat
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_bafena
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+        }
+        earliest_usage_date = 1854.8.7
+        latest_usage_date = 1874.8.7
+        chance = 25
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_bafena
+		}
+		fix_variable_error = { variable = converter_shw_bafena }
+	}
+}
+
+REPLACE:eth_tgr_ras_alula = {
+	first_name = "Alula"
+	last_name = "Eqube"
+	historical = yes
+	culture = cu:tigray
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	commander_rank = default
+	birth_date = 1845.9.7 # born 1845, exact date unknown
+	interest_group = ig_rural_folk
+	ideology = ideology_moderate
+
+	traits = {
+		brave
+		persistent
+		celebrity_commander
+	}
+
+	commander_usage = {
+	    country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_tgr_ras_alula
+				}
+			}
+	    }
+		role = general
+        earliest_usage_date = 1875.7.11 # the Battle of Assem
+        latest_usage_date = 1895.1.1 # died of a gunshot wound February 11 1897
+	    chance = 50
+	}
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_tgr_ras_alula
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_rural_folk
+        }
+        earliest_usage_date = 1875.7.11 # the Battle of Assem
+        latest_usage_date = 1895.1.1 # died of a gunshot wound February 11 1897
+        chance = 25
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_tgr_ras_alula
+		}
+		fix_variable_error = { variable = converter_tgr_ras_alula }
+	}
+}
+
+fem_eth_tgr_ras_alula = {
+	first_name = "Woizero"
+	last_name = "Eqube"
+	historical = yes
+	female = yes
+	culture = cu:tigray
+	religion = rel:oriental_orthodox
+	ig_leader = yes
+	commander_rank = default
+	birth_date = 1845.9.7 # born 1845, exact date unknown
+	interest_group = ig_rural_folk
+	ideology = ideology_moderate
+
+	traits = {
+		brave
+		persistent
+		celebrity_commander
+	}
+
+	commander_usage = {
+	    country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_tgr_ras_alula
+				}
+			}
+	    }
+		role = general
+        earliest_usage_date = 1875.7.11 # the Battle of Assem
+        latest_usage_date = 1895.1.1 # died of a gunshot wound February 11 1897
+	    chance = 50
+	}
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_tgr_ras_alula
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_rural_folk
+        }
+        earliest_usage_date = 1875.7.11 # the Battle of Assem
+        latest_usage_date = 1895.1.1 # died of a gunshot wound February 11 1897
+        chance = 25
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_tgr_ras_alula
+		}
+		fix_variable_error = { variable = converter_tgr_ras_alula }
+	}
+}
+
+# Mersha Nahusenay. HE ORCHESTRATED CONSTRUCTION OF ETHIOPIA'S FIRST RAILROAD
+REPLACE:eth_shw_mersha_nahusenay = {
+	first_name = "Mersha"
+	last_name = "Nahusenay"
+	historical = yes
+	culture = cu:amhara
+	religion = rel:catholic # Catholic convert
+	ig_leader = yes
+	birth_date = 1850.9.2 # born 1850-ish, exact date unknown
+	interest_group = ig_intelligentsia
+	ideology = ideology_market_liberal
+
+	traits = {
+		innovative
+		pious
+		master_bureaucrat
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_mersha_nahusenay
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1890.1.1
+        latest_usage_date = 1936.1.1 # died in 1937
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_mersha_nahusenay
+		}
+		fix_variable_error = { variable = converter_shw_mersha_nahusenay }
+	}
+}
+
+fem_eth_shw_mersha_nahusenay = {
+	first_name = "Tedeneqyalesh"
+	last_name = "Nahusenay"
+	historical = yes
+	female = yes
+	culture = cu:amhara
+	religion = rel:catholic # Catholic convert
+	ig_leader = yes
+	birth_date = 1850.9.2 # born 1850-ish, exact date unknown
+	interest_group = ig_intelligentsia
+	ideology = ideology_market_liberal
+
+	traits = {
+		innovative
+		pious
+		master_bureaucrat
+	}
+
+    interest_group_leader_usage = {
+        country_trigger = {
+	    	uses_eth_characters = yes
+	    	should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_shw_mersha_nahusenay
+				}
+			}
+        }
+        interest_group_trigger = {
+			is_interest_group_type = ig_intelligentsia
+        }
+        earliest_usage_date = 1890.1.1
+        latest_usage_date = 1936.1.1 # died in 1937
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:amhara }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_shw_mersha_nahusenay
+		}
+		fix_variable_error = { variable = converter_shw_mersha_nahusenay }
+	}
+}

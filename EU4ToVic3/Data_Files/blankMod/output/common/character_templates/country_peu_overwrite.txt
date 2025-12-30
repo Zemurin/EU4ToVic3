@@ -835,7 +835,7 @@ fem_PEU_nicolas_de_pierola = { # José Nicolás Baltazar Fernández de Piérola 
 }
 
 REPLACE:PEU_julio_cesar_arana_del_aguila = { # Julio César Arana del Águila
-	first_name = Julio_Cesar
+	first_name = Julio_CE_sar
 	last_name = Arana_del_Aguila
 	historical = yes
 	female = no
@@ -1513,7 +1513,7 @@ REPLACE:PEU_ramon_castilla = { # Ramón Castilla y Marquesado
 			needs_state_tarapaca = yes
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 			has_dlc_feature = rp1_content
 		}
@@ -1563,7 +1563,7 @@ fem_PEU_ramon_castilla = { # Ramón Castilla y Marquesado
 			needs_state_tarapaca = yes
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 			has_dlc_feature = rp1_content
 		}
@@ -1611,7 +1611,7 @@ REPLACE:PEU_manuel_ignacio_de_vivanco = { # Manuel Ignacio de Vivanco Iturralde
 			needs_state_lima = yes
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 			has_dlc_feature = rp1_content
 		}
@@ -1660,7 +1660,7 @@ fem_PEU_manuel_ignacio_de_vivanco = { # Manuel Ignacio de Vivanco Iturralde
 			needs_state_lima = yes
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 			has_dlc_feature = rp1_content
 		}
@@ -1800,7 +1800,7 @@ REPLACE:PEU_juan_cristostomo_torrico = { # Juan Crisóstomo Torrico y Bargas
 			has_dlc_feature = rp1_content
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		role = general
@@ -1849,7 +1849,7 @@ fem_PEU_juan_cristostomo_torrico = { # Juan Crisóstomo Torrico y Bargas
 			has_dlc_feature = rp1_content
 			NOR = { # Anti-Confederation
 				c:PBC ?= THIS
-				is_subject = yes 
+				is_subject = yes
 			}
 		}
 		role = general
@@ -1895,7 +1895,7 @@ REPLACE:PEU_antonio_gutierrez_de_la_fuente = { # Antonio Gutiérrez de la Fuente
 			uses_peu_characters = yes
 			needs_state_tarapaca = yes
 			has_dlc_feature = rp1_content
-			is_subject = yes 
+			is_subject = yes
 		}
 		role = general
 		earliest_usage_date = 1836.1.1
@@ -1941,7 +1941,7 @@ fem_PEU_antonio_gutierrez_de_la_fuente = { # Antonio Gutiérrez de la Fuente
 			uses_peu_characters = yes
 			needs_state_tarapaca = yes
 			has_dlc_feature = rp1_content
-			is_subject = yes 
+			is_subject = yes
 		}
 		role = general
 		earliest_usage_date = 1836.1.1

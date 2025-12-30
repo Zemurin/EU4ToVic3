@@ -31,7 +31,7 @@ REPLACE:rus_witte_character_template = {
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists   
 			NOR = {
 				has_variable = communist_ig_var
@@ -82,7 +82,7 @@ fem_rus_witte_character_template = {
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists   
 			NOR = {
 				has_variable = communist_ig_var
@@ -110,7 +110,7 @@ REPLACE:RUS_elena_pavlovna_romanova = {
 	first_name = Elena
 	last_name = Romanova
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = yes
 	dna = dna_elena_romanova
 	religion = rel:orthodox
@@ -131,12 +131,11 @@ REPLACE:RUS_elena_pavlovna_romanova = {
 				}
 			}
 			uses_rus_characters = yes
-			ruler.culture = { is_target_in_global_variable_list = { name = global_sou_ger_cultures target = this } }
 			has_law = law_type:law_monarchy
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1845.1.1
@@ -144,7 +143,7 @@ REPLACE:RUS_elena_pavlovna_romanova = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_elena_pavlovna_romanova
@@ -157,7 +156,7 @@ masc_RUS_elena_pavlovna_romanova = {
 	first_name = Helios
 	last_name = Romanova
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = no
 	dna = dna_elena_romanova
 	religion = rel:orthodox
@@ -178,12 +177,11 @@ masc_RUS_elena_pavlovna_romanova = {
 				}
 			}
 			uses_rus_characters = yes
-			ruler.culture = { is_target_in_global_variable_list = { name = global_sou_ger_cultures target = this } }
 			has_law = law_type:law_monarchy
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1845.1.1
@@ -191,7 +189,7 @@ masc_RUS_elena_pavlovna_romanova = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_elena_pavlovna_romanova
@@ -231,7 +229,7 @@ REPLACE:RUS_konstantin_nikolayevich_romanov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1853.1.1
@@ -279,7 +277,7 @@ fem_RUS_konstantin_nikolayevich_romanov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1853.1.1
@@ -324,7 +322,7 @@ REPLACE:RUS_nikolai_alekseevich_milyutin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1855.1.1
@@ -369,7 +367,7 @@ fem_RUS_nikolai_alekseevich_milyutin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1855.1.1
@@ -390,7 +388,7 @@ REPLACE:RUS_egor_frantsevich_kankrin = {
 	first_name = Egor
 	last_name = Kankrin
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = no
 	religion = rel:protestant
 	ideology = ideology_protectionist
@@ -413,7 +411,7 @@ REPLACE:RUS_egor_frantsevich_kankrin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1836.1.1
@@ -421,7 +419,7 @@ REPLACE:RUS_egor_frantsevich_kankrin = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_egor_frantsevich_kankrin
@@ -434,7 +432,7 @@ fem_RUS_egor_frantsevich_kankrin = {
 	first_name = Georgiana
 	last_name = Kankrin
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = yes
 	religion = rel:protestant
 	ideology = ideology_protectionist
@@ -457,7 +455,7 @@ fem_RUS_egor_frantsevich_kankrin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1836.1.1
@@ -465,7 +463,7 @@ fem_RUS_egor_frantsevich_kankrin = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_egor_frantsevich_kankrin
@@ -504,7 +502,7 @@ REPLACE:RUS_alexander_ageevich_abaza = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1857.1.1
@@ -550,7 +548,7 @@ fem_RUS_alexander_ageevich_abaza = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1857.1.1
@@ -594,7 +592,7 @@ REPLACE:RUS_ivan_evseevich_popov-veniaminov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1865.1.1
@@ -639,7 +637,7 @@ fem_RUS_ivan_evseevich_popov-veniaminov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1865.1.1
@@ -683,7 +681,7 @@ REPLACE:RUS_nikolai_stepanovich_klementyevsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1844.1.1
@@ -727,7 +725,7 @@ fem_RUS_nikolai_stepanovich_klementyevsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1844.1.1
@@ -771,7 +769,7 @@ REPLACE:RUS_yakov_sergeevich_nikolsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1856.1.1
@@ -815,7 +813,7 @@ fem_RUS_yakov_sergeevich_nikolsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1856.1.1
@@ -859,7 +857,7 @@ REPLACE:RUS_pavel_ivanovich_raev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1880.1.1
@@ -903,7 +901,7 @@ fem_RUS_pavel_ivanovich_raev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1880.1.1
@@ -947,7 +945,7 @@ REPLACE:RUS_alexander_vasilyevich_vadkovsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1898.1.1
@@ -991,7 +989,7 @@ fem_RUS_alexander_vasilyevich_vadkovsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1898.1.1
@@ -1035,7 +1033,7 @@ REPLACE:RUS_vasily_nikiforovich_bogoyavlensky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1905.1.1
@@ -1079,7 +1077,7 @@ fem_RUS_vasily_nikiforovich_bogoyavlensky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1905.1.1
@@ -1123,7 +1121,7 @@ REPLACE:RUS_vasily_ivanovich_bellavin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1915.1.1
@@ -1167,7 +1165,7 @@ fem_RUS_vasily_ivanovich_bellavin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1915.1.1
@@ -1212,7 +1210,7 @@ REPLACE:RUS_alexey_pavlovich_khrapovitsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1920.1.1
@@ -1257,7 +1255,7 @@ fem_RUS_alexey_pavlovich_khrapovitsky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1920.1.1
@@ -1301,7 +1299,7 @@ REPLACE:RUS_peter_fedorovich_polyansky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1923.1.1
@@ -1345,7 +1343,7 @@ fem_RUS_peter_fedorovich_polyansky = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_devout
 		}
 		earliest_usage_date = 1923.1.1
@@ -1366,7 +1364,7 @@ REPLACE:RUS_nikolai_christianovich_bunge = {
 	first_name = Nikolai
 	last_name = Bunge
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = no
 	religion = rel:protestant
 	ideology = ideology_reformer
@@ -1389,7 +1387,7 @@ REPLACE:RUS_nikolai_christianovich_bunge = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1870.1.1
@@ -1397,7 +1395,7 @@ REPLACE:RUS_nikolai_christianovich_bunge = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_nikolai_christianovich_bunge
@@ -1410,7 +1408,7 @@ fem_RUS_nikolai_christianovich_bunge = {
 	first_name = Nikola
 	last_name = Bunge
 	historical = yes
-	culture = cu:south_german
+	culture = cu:east_german
 	female = yes
 	religion = rel:protestant
 	ideology = ideology_reformer
@@ -1433,7 +1431,7 @@ fem_RUS_nikolai_christianovich_bunge = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1870.1.1
@@ -1441,7 +1439,7 @@ fem_RUS_nikolai_christianovich_bunge = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:south_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_nikolai_christianovich_bunge
@@ -1478,7 +1476,7 @@ REPLACE:RUS_konstantin_petrovich_pobedonostsev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1880.1.1
@@ -1523,7 +1521,7 @@ fem_RUS_konstantin_petrovich_pobedonostsev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1880.1.1
@@ -1567,7 +1565,7 @@ REPLACE:RUS_pavel_nikolaevich_ignatiev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1900.1.1
@@ -1611,7 +1609,7 @@ fem_RUS_pavel_nikolaevich_ignatiev = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1900.1.1
@@ -1655,7 +1653,7 @@ REPLACE:RUS_nikolai_dmitrievich_golitsyn = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1910.1.1
@@ -1699,7 +1697,7 @@ fem_RUS_nikolai_dmitrievich_golitsyn = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1910.1.1
@@ -1745,7 +1743,7 @@ REPLACE:RUS_pyotr_arkadyevich_stolypin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1900.1.1
@@ -1791,7 +1789,7 @@ fem_RUS_pyotr_arkadyevich_stolypin = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_landowners
 		}
 		earliest_usage_date = 1900.1.1
@@ -1836,7 +1834,7 @@ REPLACE:RUS_viktor_mikhailovich_chernov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1900.1.1
@@ -1881,7 +1879,7 @@ fem_RUS_viktor_mikhailovich_chernov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1900.1.1
@@ -1930,7 +1928,7 @@ REPLACE:RUS_nikolai_konstantinovich_rerikh = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1906.1.1
@@ -1980,7 +1978,7 @@ fem_RUS_nikolai_konstantinovich_rerikh = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1906.1.1
@@ -2028,7 +2026,7 @@ REPLACE:RUS_alexander_fyodorovich_kerensky = {
 			has_technology_researched = dialectics
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1912.1.1
@@ -2075,7 +2073,7 @@ fem_RUS_alexander_fyodorovich_kerensky = {
 			has_technology_researched = dialectics
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1912.1.1
@@ -2119,7 +2117,7 @@ REPLACE:RUS_pavel_nikolaevich_milyukov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1900.1.1
@@ -2163,7 +2161,7 @@ fem_RUS_pavel_nikolaevich_milyukov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1900.1.1
@@ -2207,7 +2205,7 @@ REPLACE:RUS_alexander_ivanovich_guchkov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1905.1.1
@@ -2251,7 +2249,7 @@ fem_RUS_alexander_ivanovich_guchkov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_petty_bourgeoisie
 		}
 		earliest_usage_date = 1905.1.1
@@ -2296,7 +2294,7 @@ REPLACE:RUS_alexander_ivanovich_konovalov = {
 			has_technology_researched = corporatism
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1905.1.1
@@ -2341,7 +2339,7 @@ fem_RUS_alexander_ivanovich_konovalov = {
 			has_technology_researched = corporatism
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1905.1.1
@@ -2384,7 +2382,7 @@ REPLACE:RUS_ivan_zakharovich_surikov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1865.1.1
@@ -2427,7 +2425,7 @@ fem_RUS_ivan_zakharovich_surikov = {
 			has_dlc_feature = ep1_content
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1865.1.1
@@ -2474,7 +2472,7 @@ REPLACE:RUS_georgi_valentinovich_plekhanov = {
 			has_technology_researched = dialectics
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_trade_unions
 		}
 		earliest_usage_date = 1877.1.1
@@ -2521,7 +2519,7 @@ fem_RUS_georgi_valentinovich_plekhanov = {
 			has_technology_researched = dialectics
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_trade_unions
 		}
 		earliest_usage_date = 1877.1.1
@@ -2624,7 +2622,7 @@ REPLACE:rus_general_von_tottleben = {
 	first_name = Franz_Eduard
 	last_name = von_Tottleben
 	historical = yes
-	culture = cu:north_german
+	culture = cu:east_german
 	female = no
 	ideology = ideology_moderate
 	commander_rank = default
@@ -2653,7 +2651,7 @@ REPLACE:rus_general_von_tottleben = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_von_tottleben
@@ -2666,7 +2664,7 @@ fem_rus_general_von_tottleben = {
 	first_name = Ziska_Eduardine
 	last_name = von_Tottleben
 	historical = yes
-	culture = cu:north_german
+	culture = cu:east_german
 	female = yes
 	ideology = ideology_moderate
 	commander_rank = default
@@ -2695,7 +2693,7 @@ fem_rus_general_von_tottleben = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_von_tottleben
@@ -2708,7 +2706,7 @@ REPLACE:rus_general_von_rennenkampf = {
 	first_name = Paul
 	last_name = von_Rennenkampf
 	historical = yes
-	culture = cu:north_german
+	culture = cu:east_german
 	female = no
 	ideology = ideology_royalist
 	commander_rank = default
@@ -2737,7 +2735,7 @@ REPLACE:rus_general_von_rennenkampf = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_von_rennenkampf
@@ -2750,7 +2748,7 @@ fem_rus_general_von_rennenkampf = {
 	first_name = Paula
 	last_name = von_Rennenkampf
 	historical = yes
-	culture = cu:north_german
+	culture = cu:east_german
 	female = yes
 	ideology = ideology_royalist
 	commander_rank = default
@@ -2779,7 +2777,7 @@ fem_rus_general_von_rennenkampf = {
 		chance = 50
 	}
 	on_created = {
-		converter_standard_template_effect = { TARGET = cu:north_german }
+		converter_standard_template_effect = { TARGET = cu:east_german }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
 			target = flag:converter_von_rennenkampf
@@ -3153,7 +3151,7 @@ REPLACE:RUS_mikhail_tarielovich_loris-melikov = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1860.1.1
@@ -3203,7 +3201,7 @@ fem_RUS_mikhail_tarielovich_loris-melikov = {
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1860.1.1
@@ -3251,7 +3249,7 @@ REPLACE:RUS_sergei_alexandrovich_romanov = {
 			has_technology_researched = pan-nationalism
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1890.1.1
@@ -3299,7 +3297,7 @@ fem_RUS_sergei_alexandrovich_romanov = {
 			has_technology_researched = pan-nationalism
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_armed_forces
 		}
 		earliest_usage_date = 1890.1.1
@@ -4062,7 +4060,7 @@ REPLACE:agitator_aleksei_aladin = { # Aleksei Feodorovich Aladin
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1892.1.1
@@ -4107,7 +4105,7 @@ fem_agitator_aleksei_aladin = { # Aleksei Feodorovich Aladin
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1892.1.1
@@ -4153,7 +4151,7 @@ REPLACE:agitator_nestor_makhno = {
 			uses_ukr_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_rural_folk
@@ -4202,7 +4200,7 @@ fem_agitator_nestor_makhno = {
 			uses_ukr_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_trade_unions
 				is_interest_group_type = ig_rural_folk
@@ -4251,7 +4249,7 @@ REPLACE:agitator_dmitry_ivanovich_pisarev = {
 			uses_ukr_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -4300,7 +4298,7 @@ fem_agitator_dmitry_ivanovich_pisarev = {
 			uses_ukr_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_trade_unions
@@ -4348,7 +4346,7 @@ REPLACE:agitator_maxim_gorky = { # The Maximum Gorky
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1899.1.1
@@ -4393,7 +4391,7 @@ fem_agitator_maxim_gorky = { # The Maximum Gorky
 			uses_rus_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1899.1.1

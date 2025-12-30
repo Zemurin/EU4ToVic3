@@ -1,0 +1,130 @@
+﻿REPLACE:amendment_american_second_amendment = {
+
+	parent = law_national_guard
+
+	allowed_laws = {
+		law_presidential_republic
+		law_parliamentary_republic
+		law_council_republic
+		law_corporate_state
+	}
+
+	modifier = {
+		state_colony_growth_speed_mult = 0.05
+		building_training_rate_mult = 0.10
+		state_non_homeland_mortality_mult = 0.01
+		state_mortality_turmoil_mult = 0.005
+	}
+
+	possible = {
+		OR = {
+			is_target_in_global_variable_list = { name = global_jeffersonian_countries target = this }
+			any_primary_culture = { is_target_in_global_variable_list = { name = global_jeffersonian_cultures target = this } }
+		}
+	}
+
+	would_sponsor = {
+		ROOT = {
+			OR = {
+				is_interest_group_type = ig_rural_folk
+				is_interest_group_type = ig_petty_bourgeoisie
+				AND = {
+					exists = scope:approval
+					scope:approval > 0
+				}
+			}
+		}
+	}
+
+	on_activate = {
+		owner ?= {
+			if = {
+				limit = {
+					any_primary_culture = {
+						NOT = { has_cultural_obsession = small_arms }
+					}
+				}
+			}
+			every_primary_culture = {
+				limit = {
+					NOT = { has_cultural_obsession = small_arms }
+				}
+				add_cultural_obsession = small_arms
+			}
+		}
+	}
+
+	on_deactivate = {
+		owner ?= {
+			if = {
+				limit = {
+					any_primary_culture = { has_cultural_obsession = small_arms }
+				}
+			}
+			every_primary_culture = {
+				limit = { has_cultural_obsession = small_arms }
+				remove_cultural_obsession = small_arms
+			}
+		}
+	}
+
+	ai_will_revoke = {
+		country_has_voting_franchise = no
+	}
+
+	can_repeal = {
+		legitimacy >= legitimacy_to_repeal_amendment
+	}
+
+	amendment_activism_multiplier = 0.25
+}
+
+REPLACE:amendment_american_fugitive_slaves_act = {
+
+	parent = law_legacy_slavery
+
+	allowed_laws = {
+		law_legacy_slavery
+	}
+
+	modifier = {
+		interest_group_ig_landowners_approval_add = 1
+		interest_group_ig_landowners_pol_str_mult = 0.1
+		state_free_state_pop_support_movement_anti_slavery_mult = 0.15
+	}
+
+	possible = {
+		is_target_in_global_variable_list = { name = global_fugitive_slaves_act_countries target = this }
+	}
+
+	would_sponsor = {
+		AND = {
+			exists = scope:approval
+			scope:approval > 0
+		}
+	}
+
+	ai_will_revoke = {
+		OR = {
+			ruler = {
+				law_enactment_stance = {
+					law = law_type:law_slavery_banned
+					value > neutral
+				}
+			}
+			any_interest_group = {
+				is_in_government = yes
+				law_enactment_stance = {
+					law = law_type:law_slavery_banned
+					value > neutral
+				}
+			}
+		}
+	}
+
+	can_repeal = {
+		legitimacy >= legitimacy_to_repeal_amendment
+	}
+
+	amendment_activism_multiplier = 0.75
+}

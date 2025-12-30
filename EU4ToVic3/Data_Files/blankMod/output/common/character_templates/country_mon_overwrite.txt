@@ -1,0 +1,380 @@
+﻿### Montenegro character template file###
+
+#General Mirko Petrovic-Njegos, eldest brother of Danilo,  "the sword of Montenegro"
+REPLACE:mon_general_mirko_petrovic_njegos = {
+    is_general = yes
+    first_name = Mirko
+    last_name = Petrovic_Njegos
+    historical = yes
+    dna = dna_mirko_petrovic_njegos
+    culture = cu:serb
+    female = no
+    ideology = ideology_moderate
+    commander_rank = default
+    interest_group = ig_landowners
+    birth_date = 1820.8.19
+    traits = {
+        literary
+        stalwart_defender
+        popular_commander
+        forest_commander
+    }
+    commander_usage = {
+        country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_mirko_petrovic_njegos
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 50
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_mirko_petrovic_njegos
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_landowners
+        }
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_mirko_petrovic_njegos
+		}
+		fix_variable_error = { variable = converter_general_mirko_petrovic_njegos }
+	}
+}
+fem_mon_general_mirko_petrovic_njegos = {
+    is_general = yes
+    first_name = Mirko
+    last_name = Petrovic_Njegos
+    historical = yes
+    dna = dna_mirko_petrovic_njegos
+    culture = cu:serb
+    female = yes
+    ideology = ideology_moderate
+    commander_rank = default
+    interest_group = ig_landowners
+    birth_date = 1820.8.19
+    traits = {
+        literary
+        stalwart_defender
+        popular_commander
+        forest_commander
+    }
+    commander_usage = {
+        country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_mirko_petrovic_njegos
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 50
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_mirko_petrovic_njegos
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_landowners
+        }
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_mirko_petrovic_njegos
+		}
+		fix_variable_error = { variable = converter_general_mirko_petrovic_njegos }
+	}
+}
+
+#General Novica Cerovic, slayer of Ottoman commander who killed ruler's brother
+REPLACE:mon_general_novica_cerovic = {
+    is_general = yes
+    first_name = Novica
+    last_name = Cerovic
+    historical = yes
+    dna = dna_novica_cerovic
+    culture = cu:serb
+    female = no
+    ideology = ideology_traditionalist
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1805.10.27
+    traits = {
+        mountain_commander
+        pillager
+        popular_commander
+    }
+    commander_usage = {
+        country_trigger = {
+            should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_novica_cerovic
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1834.8.19
+        latest_usage_date = 1885.8.19
+        chance = 75
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_novica_cerovic
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_novica_cerovic
+		}
+		fix_variable_error = { variable = converter_general_novica_cerovic }
+	}
+}
+fem_mon_general_novica_cerovic = {
+    is_general = yes
+    first_name = Nevena
+    last_name = Cerovic
+    historical = yes
+    dna = dna_novica_cerovic
+    culture = cu:serb
+    female = yes
+    ideology = ideology_traditionalist
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1805.10.27
+    traits = {
+        mountain_commander
+        pillager
+        popular_commander
+    }
+    commander_usage = {
+        country_trigger = {
+            should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_novica_cerovic
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1834.8.19
+        latest_usage_date = 1885.8.19
+        chance = 75
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_novica_cerovic
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1838.8.19
+        latest_usage_date = 1900.8.19
+        chance = 75
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_novica_cerovic
+		}
+		fix_variable_error = { variable = converter_general_novica_cerovic }
+	}
+}
+#petar vukotić, war hero
+REPLACE:mon_general_petar_vukotić = {
+    is_general = yes
+    first_name = Petar
+    last_name = Vukotic
+    historical = yes
+    dna = dna_petar_vukotic
+    culture = cu:serb
+    female = no
+    ideology = ideology_moderate
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1826.12.14
+    traits = {
+        mountain_commander
+        pillager
+        popular_commander
+    }
+    commander_usage = {
+        country_trigger = {
+            should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_petar_vukotić
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1842.12.14
+        latest_usage_date = 1910.12.14
+        chance = 75
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_petar_vukotić
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1860.06.01
+        latest_usage_date = 1900.8.19
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_petar_vukotić
+		}
+		fix_variable_error = { variable = converter_general_petar_vukotić }
+	}
+}
+fem_mon_general_petar_vukotić = {
+    is_general = yes
+    first_name = Petra
+    last_name = Vukotic
+    historical = yes
+    dna = dna_petar_vukotic
+    culture = cu:serb
+    female = yes
+    ideology = ideology_moderate
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1826.12.14
+    traits = {
+        mountain_commander
+        pillager
+        popular_commander
+    }
+    commander_usage = {
+        country_trigger = {
+            should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_petar_vukotić
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        role = general
+        earliest_usage_date = 1842.12.14
+        latest_usage_date = 1910.12.14
+        chance = 75
+    }
+    interest_group_leader_usage = {
+        country_trigger = {
+            should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_petar_vukotić
+				}
+			}
+			uses_mon_ser_characters = yes
+            has_dlc_feature = ip3_content
+        }
+        interest_group_trigger = {
+            is_interest_group_type = ig_armed_forces
+        }
+        earliest_usage_date = 1860.06.01
+        latest_usage_date = 1900.8.19
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:serb }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_petar_vukotić
+		}
+		fix_variable_error = { variable = converter_general_petar_vukotić }
+	}
+}

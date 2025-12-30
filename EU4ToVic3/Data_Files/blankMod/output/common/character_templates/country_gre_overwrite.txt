@@ -1,0 +1,1408 @@
+﻿### Greece - GRE character template file ###
+
+# Military
+
+REPLACE:GRE_general_kolokotronis = { # Ioannis Kolokotronis
+    first_name = Ioannis
+    last_name = Kolokotronis
+    historical = yes
+    culture = cu:greek
+    female = no
+    religion = rel:orthodox
+    ideology = ideology_moderate
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1805.6.28 # approximate birth date
+    traits = {
+        social_bandit
+        celebrity_commander
+        brave
+    }
+    commander_usage = {
+        country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_kolokotronis
+				}
+			}
+			uses_gre_characters = yes
+        }
+        role = general
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1865.1.1
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_kolokotronis
+		}
+		fix_variable_error = { variable = converter_kolokotronis }
+	}
+}
+
+fem_gre_general_kolokotronis = {
+	first_name = Yianna
+	last_name = Kolokotronis
+	historical = yes
+	culture = cu:greek
+	female = yes
+	religion = rel:orthodox
+	ideology = ideology_moderate
+	commander_rank = default
+	interest_group = ig_armed_forces
+	birth_date = 1805.6.28 # approximate birth date
+	traits = {
+        social_bandit
+        celebrity_commander
+        brave
+	}
+	commander_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_kolokotronis
+				}
+			}
+			uses_gre_characters = yes
+		}
+        role = general
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1865.1.1
+        chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_kolokotronis
+		}
+		fix_variable_error = { variable = converter_kolokotronis }
+	}
+}
+
+REPLACE:GRE_general_kallergis = { # Dimitrios Kallergis
+    first_name = Dimitrios
+    last_name = Kallergis
+    historical = yes
+    culture = cu:greek
+    female = no
+    religion = rel:orthodox
+    ideology = ideology_traditionalist
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1805.6.28 # approximate birth date
+    traits = {
+    }
+    commander_usage = {
+        country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_kallergis
+				}
+			}
+			uses_gre_characters = yes
+        }
+        role = general
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1865.1.1
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_kallergis
+		}
+		fix_variable_error = { variable = converter_kallergis }
+	}
+}
+
+fem_gre_general_kallergis = { # Dimitrios Kallergis
+    first_name = Demetria
+    last_name = Kallergis
+    historical = yes
+    culture = cu:greek
+    female = yes
+    religion = rel:orthodox
+    ideology = ideology_traditionalist
+    commander_rank = default
+    interest_group = ig_armed_forces
+    birth_date = 1805.6.28 # approximate birth date
+    traits = {
+    }
+    commander_usage = {
+        country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_kallergis
+				}
+			}
+			uses_gre_characters = yes
+        }
+        role = general
+        earliest_usage_date = 1836.1.1
+        latest_usage_date = 1865.1.1
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_kallergis
+		}
+		fix_variable_error = { variable = converter_kallergis }
+	}
+}
+
+# Agitators
+
+REPLACE:agitator_ion_dragoumis = { # Ion Dragoumis
+    first_name = Ion
+    last_name = Dragoumis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    female = no
+    interest_group = ig_landowners
+    ideology = ideology_fascist
+    birth_date = 1878.9.14
+    traits = {
+        experienced_diplomat
+        literary
+        ambitious
+    }
+    agitator_usage = {
+        country_trigger = {
+            has_dlc_feature = voice_of_the_people_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ion_dragoumis
+				}
+			}
+			uses_gre_characters = yes
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            OR = {
+                is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_petty_bourgeoisie
+            }
+        }
+        earliest_usage_date = 1907.1.1
+        latest_usage_date = 1935.12.31 # Historically, he was shot in 1920
+        chance = 50
+    }
+    on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ion_dragoumis
+		}
+		fix_variable_error = { variable = converter_ion_dragoumis }
+    }
+}
+
+fem:agitator_ion_dragoumis = { # Ion Dragoumis
+    first_name = Creusa
+    last_name = Dragoumis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    female = yes
+    interest_group = ig_landowners
+    ideology = ideology_fascist
+    birth_date = 1878.9.14
+    traits = {
+        experienced_diplomat
+        literary
+        ambitious
+    }
+    agitator_usage = {
+        country_trigger = {
+            has_dlc_feature = voice_of_the_people_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ion_dragoumis
+				}
+			}
+			uses_gre_characters = yes
+        }
+        interest_group_trigger = {
+            ig_counts_as_marginal = no
+            OR = {
+                is_interest_group_type = ig_landowners
+                is_interest_group_type = ig_petty_bourgeoisie
+            }
+        }
+        earliest_usage_date = 1907.1.1
+        latest_usage_date = 1935.12.31 # Historically, he was shot in 1920
+        chance = 50
+    }
+    on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ion_dragoumis
+		}
+		fix_variable_error = { variable = converter_ion_dragoumis }
+    }
+}
+
+
+# Generated IG Leaders
+# ARMED FORCES
+REPLACE:GRE_ioannis_makriyannis = { # Greek military officer and politician who joined Greek struggle for independence, achieving the rank of general and leading his men to notable victories, being a public figure after the independence.
+    first_name = Ioannis
+    last_name = Makriyannis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1797.1.1
+    ig_leader = yes
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+    traits = {
+        charismatic
+        persistent
+        traditionalist_commander
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ioannis_makriyannis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_armed_forces
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1864.4.27
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ioannis_makriyannis
+		}
+		fix_variable_error = { variable = converter_ioannis_makriyannis }
+	}
+}
+fem_GRE_ioannis_makriyannis = { # Greek military officer and politician who joined Greek struggle for independence, achieving the rank of general and leading his men to notable victories, being a public figure after the independence.
+    first_name = Yianna
+    last_name = Makriyannis
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1797.1.1
+    ig_leader = yes
+    interest_group = ig_armed_forces
+    ideology = ideology_royalist
+    traits = {
+        charismatic
+        persistent
+        traditionalist_commander
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_ioannis_makriyannis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_armed_forces
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1864.4.27
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_ioannis_makriyannis
+		}
+		fix_variable_error = { variable = converter_ioannis_makriyannis }
+	}
+}
+
+# DEVOUT
+REPLACE:GRE_anastasios_nectarios_kephalas = { # Metropolitan of Pentapolis and Wonderworker of Aegina, is one of the most renowned Greek saints, venerated both in the Eastern Orthodox Church and the Eastern Catholic Churches.
+    first_name = Anastasios_Nectarios
+    last_name = Kephalas
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1846.10.1
+    ig_leader = yes
+    interest_group = ig_devout
+    ideology = ideology_theocrat
+    traits = {
+        pious
+        persistent
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_nectarios_kephalas
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_devout
+    	}
+    	earliest_usage_date = 1879.11.7
+    	latest_usage_date = 1920.11.8
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_nectarios_kephalas
+		}
+		fix_variable_error = { variable = converter_anastasios_nectarios_kephalas }
+	}
+}
+fem_GRE_anastasios_nectarios_kephalas = { # Metropolitan of Pentapolis and Wonderworker of Aegina, is one of the most renowned Greek saints, venerated both in the Eastern Orthodox Church and the Eastern Catholic Churches.
+    first_name = Anastasia_Nektaria
+    last_name = Kephalas
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1846.10.1
+    ig_leader = yes
+    interest_group = ig_devout
+    ideology = ideology_theocrat
+    traits = {
+        pious
+        persistent
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_nectarios_kephalas
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_devout
+    	}
+    	earliest_usage_date = 1879.11.7
+    	latest_usage_date = 1920.11.8
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_nectarios_kephalas
+		}
+		fix_variable_error = { variable = converter_anastasios_nectarios_kephalas }
+	}
+}
+
+# INDUSTRIALISTS
+REPLACE:GRE_andreas_syggros = { # Famous Greek banker, co-founder of the Bank of Constantinople.
+    first_name = Andreas
+    last_name = Syggros
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1830.10.12
+    ig_leader = yes
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        ambitious
+        imperious
+        experienced_entrepreneur
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_andreas_syggros
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_industrialists
+    	}
+    	earliest_usage_date = 1871.1.1
+    	latest_usage_date = 1899.2.13
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_andreas_syggros
+		}
+		fix_variable_error = { variable = converter_andreas_syggros }
+	}
+}
+fem_GRE_andreas_syggros = { # Famous Greek banker, co-founder of the Bank of Constantinople.
+    first_name = Andriana
+    last_name = Syggros
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1830.10.12
+    ig_leader = yes
+    interest_group = ig_industrialists
+    ideology = ideology_market_liberal
+    traits = {
+        ambitious
+        imperious
+        experienced_entrepreneur
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_andreas_syggros
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_industrialists
+    	}
+    	earliest_usage_date = 1871.1.1
+    	latest_usage_date = 1899.2.13
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_andreas_syggros
+		}
+		fix_variable_error = { variable = converter_andreas_syggros }
+	}
+}
+
+# INTELLIGENTSIA
+REPLACE:GRE_constantine_paparrigopoulos = { # Greek historian, who is considered the founder of modern Greek historiography. He is the founder of the concept of historical continuity of Greece from antiquity to the present.
+    first_name = Constantine
+    last_name = Paparrigopoulos
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1815.4.12
+    ig_leader = yes
+    interest_group = ig_intelligentsia
+    ideology = ideology_reformer
+    traits = {
+        meticulous
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_constantine_paparrigopoulos
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_intelligentsia
+    	}
+    	earliest_usage_date = 1845.1.1
+    	latest_usage_date = 1891.4.14
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_constantine_paparrigopoulos
+		}
+		fix_variable_error = { variable = converter_constantine_paparrigopoulos }
+	}
+}
+fem_GRE_constantine_paparrigopoulos = { # Greek historian, who is considered the founder of modern Greek historiography. He is the founder of the concept of historical continuity of Greece from antiquity to the present.
+    first_name = Konstantina
+    last_name = Paparrigopoulos
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1815.4.12
+    ig_leader = yes
+    interest_group = ig_intelligentsia
+    ideology = ideology_reformer
+    traits = {
+        meticulous
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_constantine_paparrigopoulos
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_intelligentsia
+    	}
+    	earliest_usage_date = 1845.1.1
+    	latest_usage_date = 1891.4.14
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_constantine_paparrigopoulos
+		}
+		fix_variable_error = { variable = converter_constantine_paparrigopoulos }
+	}
+}
+
+# LANDOWNERS
+REPLACE:GRE_petrobey_mavromichalis = { # Greek general and politician who played a major role in the lead-up and during the Greek War of Independence. Before the war, he served as the Bey of Mani.
+    first_name = Petrobey
+    last_name = Mavromichalis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1765.8.6
+    ig_leader = yes
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        compliant
+        arrogant
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_petrobey_mavromichalis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1848.1.17
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_petrobey_mavromichalis
+		}
+		fix_variable_error = { variable = converter_petrobey_mavromichalis }
+	}
+}
+fem_GRE_petrobey_mavromichalis = { # Greek general and politician who played a major role in the lead-up and during the Greek War of Independence. Before the war, he served as the Bey of Mani.
+    first_name = Petroula
+    last_name = Mavromichalis
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1765.8.6
+    ig_leader = yes
+    interest_group = ig_landowners
+    ideology = ideology_traditionalist
+    traits = {
+        compliant
+        arrogant
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_petrobey_mavromichalis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_landowners
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1848.1.17
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_petrobey_mavromichalis
+		}
+		fix_variable_error = { variable = converter_petrobey_mavromichalis }
+	}
+}
+
+# PETITE BOURGEOISIE
+REPLACE:GRE_anastasios_polyzoidis = { # Greek politician and judicial official
+    first_name = Anastasios
+    last_name = Polyzoidis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1802.12.25
+    ig_leader = yes
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_social_democrat
+    traits = {
+        charismatic
+        direct
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_polyzoidis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_petty_bourgeoisie
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1873.5.17
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_polyzoidis
+		}
+		fix_variable_error = { variable = converter_anastasios_polyzoidis }
+	}
+}
+fem_GRE_anastasios_polyzoidis = { # Greek politician and judicial official
+    first_name = Anastasia
+    last_name = Polyzoidis
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1802.12.25
+    ig_leader = yes
+    interest_group = ig_petty_bourgeoisie
+    ideology = ideology_social_democrat
+    traits = {
+        charismatic
+        direct
+        inspirational_orator
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_polyzoidis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_petty_bourgeoisie
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1873.5.17
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_polyzoidis
+		}
+		fix_variable_error = { variable = converter_anastasios_polyzoidis }
+	}
+}
+
+# RURAL FOLK
+REPLACE:GRE_anastasios_londos = { # Greek politician, mayor of Aigio and senator of the Kingdom of Greece
+    first_name = Anastasios
+    last_name = Londos
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1791.1.10
+    ig_leader = yes
+    interest_group = ig_rural_folk
+    ideology = ideology_land_reformer
+    traits = {
+        persistent
+        demagogue
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_londos
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1856.1.1
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_londos
+		}
+		fix_variable_error = { variable = converter_anastasios_londos }
+	}
+}
+fem_GRE_anastasios_londos = { # Greek politician, mayor of Aigio and senator of the Kingdom of Greece
+    first_name = Anastasia
+    last_name = Londos
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1791.1.10
+    ig_leader = yes
+    interest_group = ig_rural_folk
+    ideology = ideology_land_reformer
+    traits = {
+        persistent
+        demagogue
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_anastasios_londos
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1836.1.1
+    	latest_usage_date = 1856.1.1
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_anastasios_londos
+		}
+		fix_variable_error = { variable = converter_anastasios_londos }
+	}
+}
+
+# TRADE UNION
+REPLACE:GRE_stavros_kallergis = { # Greek revolutionary and socialist. He is known for organizing the first celebration of the First of May in Greece, in 1893, and being active in various socialist groups in fin de siècle Greece.
+    first_name = Stavros
+    last_name = Kallergis
+    historical = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1865.1.1
+    ig_leader = yes
+    interest_group = ig_trade_unions
+    ideology = ideology_utopian
+    traits = {
+        ambitious
+        charismatic
+        firebrand
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_stavros_kallergis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1890.1.1
+    	latest_usage_date = 1926.4.27
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_stavros_kallergis
+		}
+		fix_variable_error = { variable = converter_stavros_kallergis }
+	}
+}
+fem_GRE_stavros_kallergis = { # Greek revolutionary and socialist. He is known for organizing the first celebration of the First of May in Greece, in 1893, and being active in various socialist groups in fin de siècle Greece.
+    first_name = Stavroula
+    last_name = Kallergis
+    historical = yes
+    female = yes
+    culture = cu:greek
+    religion = rel:orthodox
+    birth_date = 1865.1.1
+    ig_leader = yes
+    interest_group = ig_trade_unions
+    ideology = ideology_utopian
+    traits = {
+        ambitious
+        charismatic
+        firebrand
+    }
+    interest_group_leader_usage = {
+    	country_trigger = {
+    		has_dlc_feature = ip3_content
+    		should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_stavros_kallergis
+				}
+			}
+			uses_gre_characters = yes
+    	}
+    	interest_group_trigger = {
+    	    is_interest_group_type = ig_rural_folk
+    	}
+    	earliest_usage_date = 1890.1.1
+    	latest_usage_date = 1926.4.27
+    	chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_stavros_kallergis
+		}
+		fix_variable_error = { variable = converter_stavros_kallergis }
+	}
+}
+
+# AGITATORS
+REPLACE:GRE_alexandros_koumoundouros = { # He was a political personality famous for his work towards national progress, despite him having been in office during a very unsettled period of Greek history.
+	first_name = Alexandros
+	last_name = Koumoundouros
+	historical = yes
+	is_agitator = yes
+	culture = cu:greek
+	religion = rel:orthodox
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_reformer
+	birth_date = 1815.2.4
+	traits = {
+		persistent
+        experienced_diplomat
+        inspirational_orator
+	}
+    agitator_usage = {
+        country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_alexandros_koumoundouros
+				}
+			}
+			uses_gre_characters = yes
+			has_dlc_feature = ip3_content
+		}
+        interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+        }
+        earliest_usage_date = 1853.1.1
+        latest_usage_date = 1883.2.26
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_alexandros_koumoundouros
+		}
+		fix_variable_error = { variable = converter_alexandros_koumoundouros }
+	}
+}
+fem_GRE_alexandros_koumoundouros = { # He was a political personality famous for his work towards national progress, despite him having been in office during a very unsettled period of Greek history.
+	first_name = Alexandra
+	last_name = Koumoundouros
+	historical = yes
+    female = yes
+	is_agitator = yes
+	culture = cu:greek
+	religion = rel:orthodox
+	interest_group = ig_petty_bourgeoisie
+	ideology = ideology_reformer
+	birth_date = 1815.2.4
+	traits = {
+		persistent
+        experienced_diplomat
+        inspirational_orator
+	}
+    agitator_usage = {
+        country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_alexandros_koumoundouros
+				}
+			}
+			uses_gre_characters = yes
+			has_dlc_feature = ip3_content
+		}
+        interest_group_trigger = {
+			is_interest_group_type = ig_petty_bourgeoisie
+        }
+        earliest_usage_date = 1853.1.1
+        latest_usage_date = 1883.2.26
+        chance = 50
+    }
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_alexandros_koumoundouros
+		}
+		fix_variable_error = { variable = converter_alexandros_koumoundouros }
+	}
+}
+
+# GENERALS
+REPLACE:GRE_general_panagiotis_danglis = { # Greek military officer and politician.
+    first_name = Panagiotis
+    last_name = Danglis
+    historical = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1853.11.17
+    commander_rank = commander_rank_2
+    is_general = yes
+    traits = {
+        compliant
+        direct
+        experienced_artillery_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_panagiotis_danglis
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = general
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1920.10.7
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_panagiotis_danglis
+		}
+		fix_variable_error = { variable = converter_general_panagiotis_danglis }
+	}
+}
+fem_GRE_general_panagiotis_danglis = { # Greek military officer and politician.
+    first_name = Panagiota
+    last_name = Danglis
+    historical = yes
+    female = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1853.11.17
+    commander_rank = commander_rank_2
+    is_general = yes
+    traits = {
+        compliant
+        direct
+        experienced_artillery_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_panagiotis_danglis
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = general
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1920.10.7
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_panagiotis_danglis
+		}
+		fix_variable_error = { variable = converter_general_panagiotis_danglis }
+	}
+}
+
+REPLACE:GRE_general_anastasios_papoulas = { # Greek general, most notable as the Greek commander-in-chief during most of the Greco-Turkish War of 1919–22.
+    first_name = Anastasios
+    last_name = Papoulas
+    historical = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_royalist
+    interest_group = ig_armed_forces
+    birth_date = 1857.1.13
+    commander_rank = commander_rank_2
+    is_general = yes
+    traits = {
+        ambitious
+        basic_diplomat
+        experienced_artillery_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_anastasios_papoulas
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = general
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1922.5.19
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_anastasios_papoulas
+		}
+		fix_variable_error = { variable = converter_general_anastasios_papoulas }
+	}
+}
+fem_GRE_general_anastasios_papoulas = { # Greek general, most notable as the Greek commander-in-chief during most of the Greco-Turkish War of 1919–22.
+    first_name = Anastasia
+    last_name = Papoulas
+    historical = yes
+    female = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_royalist
+    interest_group = ig_armed_forces
+    birth_date = 1857.1.13
+    commander_rank = commander_rank_2
+    is_general = yes
+    traits = {
+        ambitious
+        basic_diplomat
+        experienced_artillery_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_general_anastasios_papoulas
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = general
+		earliest_usage_date = 1878.1.1
+		latest_usage_date = 1922.5.19
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_general_anastasios_papoulas
+		}
+		fix_variable_error = { variable = converter_general_anastasios_papoulas }
+	}
+}
+
+# ADMIRALS
+REPLACE:GRE_admiral_konstantinos_kanaris = { # Greek statesman, admiral, and a hero of the Greek War of Independence.
+    first_name = Konstantinos
+    last_name = Kanaris
+    historical = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1790.1.1
+    commander_rank = commander_rank_2
+    is_admiral = yes
+    traits = {
+        charismatic
+        experienced_naval_commander
+        traditionalist_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_admiral_konstantinos_kanaris
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1877.9.2
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_admiral_konstantinos_kanaris
+		}
+		fix_variable_error = { variable = converter_admiral_konstantinos_kanaris }
+	}
+}
+fem_GRE_admiral_konstantinos_kanaris = { # Greek statesman, admiral, and a hero of the Greek War of Independence.
+    first_name = Konstantina
+    last_name = Kanaris
+    historical = yes
+    female = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1790.1.1
+    commander_rank = commander_rank_2
+    is_admiral = yes
+    traits = {
+        charismatic
+        experienced_naval_commander
+        traditionalist_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_admiral_konstantinos_kanaris
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1877.9.2
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_admiral_konstantinos_kanaris
+		}
+		fix_variable_error = { variable = converter_admiral_konstantinos_kanaris }
+	}
+}
+
+REPLACE:GRE_admiral_leonidas_palaskas = { # Distinguished Greek naval officer who served in the French and in the Greek navies, as well as publishing a number of scientific studies.
+    first_name = Leonidas
+    last_name = Palaskas
+    historical = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1819.1.1
+    commander_rank = commander_rank_3
+    is_admiral = yes
+    traits = {
+        persistent
+        wrathful
+        experienced_naval_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_admiral_leonidas_palaskas
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1880.1.14
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_admiral_leonidas_palaskas
+		}
+		fix_variable_error = { variable = converter_admiral_leonidas_palaskas }
+	}
+}
+fem_GRE_admiral_leonidas_palaskas = { # Distinguished Greek naval officer who served in the French and in the Greek navies, as well as publishing a number of scientific studies.
+    first_name = Gorgo
+    last_name = Palaskas
+    historical = yes
+    female = yes
+	culture = cu:greek
+	religion = rel:orthodox
+    ideology = ideology_jingoist_leader
+    interest_group = ig_armed_forces
+    birth_date = 1819.1.1
+    commander_rank = commander_rank_3
+    is_admiral = yes
+    traits = {
+        persistent
+        wrathful
+        experienced_naval_commander
+    }
+    commander_usage = {
+		country_trigger = {
+			has_dlc_feature = ip3_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_admiral_leonidas_palaskas
+				}
+			}
+			uses_gre_characters = yes
+		}
+		role = admiral
+		earliest_usage_date = 1836.1.1
+		latest_usage_date = 1880.1.14
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:greek }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_admiral_leonidas_palaskas
+		}
+		fix_variable_error = { variable = converter_admiral_leonidas_palaskas }
+	}
+}

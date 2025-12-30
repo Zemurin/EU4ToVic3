@@ -1,22 +1,38 @@
-﻿#should_be_naked_trigger
-#should_be_naked_character_trigger
+﻿# converter_has_popular_nudist_faith
+# converter_has_clerical_nudist_faith
+# should_be_naked_trigger
+# should_be_naked_character_trigger
+
+converter_has_popular_nudist_faith = {
+	OR = {
+		rel:adamites ?= this
+		is_target_in_global_variable_list = { name = global_popular_nudist_religions target = this }
+	}
+}
+
+converter_has_clerical_nudist_faith = {
+	OR = {
+		rel:jain ?= this
+		is_target_in_global_variable_list = { name = global_clerical_nudist_religions target = this }
+	}
+}
 
 REPLACE:should_be_naked_trigger = {
 	exists = scope:pop
 	scope:pop = {
 		trigger_if = {
 			limit = {
-				religion = { is_target_in_global_variable_list = { name = global_popular_nudist_religions target = this } }
+				religion = { converter_has_popular_nudist_faith = yes }
 			}
 			NOT = { is_pop_type = academics }
 		}
 		trigger_else_if = {
 			limit = { is_pop_type = clergymen }
-			religion = { is_target_in_global_variable_list = { name = global_clerical_nudist_religions target = this } }
+			religion = { converter_has_clerical_nudist_faith = yes }
 		}
 		trigger_else_if = {
 			limit = { is_pop_type = officers }
-			religion = { is_target_in_global_variable_list = { name = global_clerical_nudist_religions target = this } }
+			religion = { converter_has_clerical_nudist_faith = yes }
 			has_state_religion = yes
 			owner = {
 				ig:ig_armed_forces ?= {
@@ -54,13 +70,19 @@ should_be_naked_character_trigger = {
 		}
 		trigger_if = {
 			limit = {
-				religion = { is_target_in_global_variable_list = { name = global_popular_nudist_religions target = this } }
+				religion = { converter_has_popular_nudist_faith = yes }
 			}
-			NOT = { is_interest_group_type = ig_intelligentsia }
+			trigger_if = {
+				limit = { is_interest_group_type = ig_petty_bourgeoisie }
+				NOT = { culture = { is_target_in_global_variable_list = { name = global_atheist_cultures target = this } } }
+			}
+			trigger_else = {
+				NOT = { is_interest_group_type = ig_intelligentsia }
+			}
 		}
 		trigger_else_if = {
 			limit = {
-				religion = { is_target_in_global_variable_list = { name = global_clerical_nudist_religions target = this } }
+				religion = { converter_has_clerical_nudist_faith = yes }
 			}
 			OR = {
 				has_ideology = ideology:ideology_theocrat
@@ -74,7 +96,7 @@ should_be_naked_character_trigger = {
 				trigger_if = {
 					limit = {
 						owner = {
-							religion = { is_target_in_global_variable_list = { name = global_clerical_nudist_religions target = this } }
+							religion = { converter_has_clerical_nudist_faith = yes }
 							ig:ig_armed_forces ?= {
 								OR = {
 									has_ideology = ideology:ideology_pious

@@ -8,6 +8,7 @@
 # uses_canada_characters
 # uses_mexico_characters
 # uses_cuba_characters
+# uses_haiti_characters
 # uses_dominican_characters
 # uses_brazil_characters
 # uses_afro_braz_characters
@@ -36,16 +37,20 @@
 # uses_ukr_characters
 # uses_nor_ita_characters
 # uses_sou_ita_characters
+# uses_spanish_characters
 # uses_catalan_characters
+# uses_galician_characters
+# uses_basque_characters
 # uses_por_characters
 # uses_gre_characters
 # uses_romanian_characters
+# needs_state_transylvania
+# uses_szekely_characters
 # uses_ber_characters
 # uses_tur_characters
 # uses_han_characters
 # uses_mongol_characters
 # uses_japanese_characters
-# uses_spa_characters
 # uses_arg_characters
 # uses_bol_characters
 # uses_chl_characters
@@ -70,6 +75,9 @@
 # uses_pol_characters
 # uses_cro_characters
 # uses_mon_ser_characters
+# uses_eth_characters
+# uses_oma_characters
+# uses_zulu_characters
 
 uses_integralist_ideology = {
 	any_primary_culture = {
@@ -213,7 +221,7 @@ uses_mexico_characters = {
 
 uses_cuba_characters = {
 	is_settler_colonial_country = yes
-	any_primary_culture = { is_target_in_global_variable_list = { name = global_andean_cultures target = this } }
+	any_primary_culture = { is_target_in_global_variable_list = { name = global_caribbean_cultures target = this } }
 	OR = {
 		any_scope_state = { state_region = s:STATE_WESTERN_CUBA }
 		any_scope_state = { state_region = s:STATE_CENTRAL_CUBA }
@@ -221,9 +229,18 @@ uses_cuba_characters = {
 	}
 }
 
+uses_haiti_characters = {
+	is_settler_colonial_country = yes
+	any_primary_culture = { is_target_in_global_variable_list = { name = global_caribbean_cultures target = this } }
+	any_primary_culture = { is_target_in_global_variable_list = { name = global_african_diaspora_cultures target = this } }
+	#any_scope_state = {
+	#	state_region = s:STATE_HAITI
+	#}
+}
+
 uses_dominican_characters = {
 	is_settler_colonial_country = yes
-	any_primary_culture = { is_target_in_global_variable_list = { name = global_andean_cultures target = this } }
+	any_primary_culture = { is_target_in_global_variable_list = { name = global_caribbean_cultures target = this } }
 	any_scope_state = {
 		state_region = s:STATE_SANTO_DOMINGO
 	}
@@ -751,6 +768,19 @@ uses_sou_ita_characters = {
 	}
 }
 
+uses_spanish_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:SPA
+			c:SPA = { any_primary_culture = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } } }
+		}
+		this = c:SPA
+	}
+	trigger_else = {
+		any_primary_culture = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
+	}
+}
+
 uses_catalan_characters = {
 	trigger_if = {
 		limit = {
@@ -766,8 +796,48 @@ uses_catalan_characters = {
 		always = yes
 	}
 	trigger_else = {
-		uses_spa_characters = yes
+		uses_spanish_characters = yes
 		any_scope_state = { converter_is_catalan_homeland = yes }
+	}
+}
+
+uses_galician_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:GLI
+			c:GLI = { any_primary_culture = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } } }
+		}
+		this = c:GLI
+	}
+	trigger_else_if = {
+		limit = {
+			any_primary_culture = { is_target_in_global_variable_list = { name = global_galician_cultures target = this } }
+		}
+		always = yes
+	}
+	trigger_else = {
+		uses_spanish_characters = yes
+		any_scope_state = { converter_is_galician_homeland = yes }
+	}
+}
+
+uses_basque_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:NAV
+			c:NAV = { any_primary_culture = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } } }
+		}
+		this = c:NAV
+	}
+	trigger_else_if = {
+		limit = {
+			any_primary_culture = { is_target_in_global_variable_list = { name = global_basque_cultures target = this } }
+		}
+		always = yes
+	}
+	trigger_else = {
+		uses_spanish_characters = yes
+		any_scope_state = { converter_is_basque_homeland = yes }
 	}
 }
 
@@ -809,16 +879,56 @@ uses_romanian_characters = {
 					exists = c:WAL
 					c:WAL = { any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } } }
 				}
+				AND = {
+					exists = c:TRS
+					c:TRS = { any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } } }
+				}
 			}
 		}
 		OR = {
 			c:ROM ?= this
 			c:WAL ?= this
+			c:TRS ?= this
 		}
 	}
 	trigger_else = {
 		any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } }
 	}
+}
+
+needs_state_transylvania = {
+	any_scope_state = {
+		OR = {
+			state_region = s:STATE_SOUTHERN_TRANSYLVANIA
+			state_region = s:STATE_NORTHERN_TRANSYLVANIA
+		}
+		is_incorporated = yes
+	}
+}
+
+uses_szekely_characters = {
+	trigger_if = {
+		limit = {
+			OR = {
+				AND = {
+					exists = c:ROM
+					c:ROM = { any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } } }
+				}
+				AND = {
+					exists = c:TRS
+					c:TRS = { any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } } }
+				}
+			}
+		}
+		OR = {
+			c:ROM ?= this
+			c:TRS ?= this
+		}
+	}
+	trigger_else = {
+		any_primary_culture = { is_target_in_global_variable_list = { name = global_romanian_cultures target = this } }
+	}
+	needs_state_transylvania = yes
 }
 
 uses_ber_characters = {
@@ -914,19 +1024,6 @@ uses_japanese_characters = {
 	}
 	trigger_else = {
 		any_primary_culture = { is_target_in_global_variable_list = { name = global_japanese_cultures target = this } }
-	}
-}
-
-uses_spa_characters = {
-	trigger_if = {
-		limit = {
-			exists = c:SPA
-			c:SPA = { any_primary_culture = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } } }
-		}
-		this = c:SPA
-	}
-	trigger_else = {
-		any_primary_culture = { is_target_in_global_variable_list = { name = global_spanish_cultures target = this } }
 	}
 }
 
@@ -1403,6 +1500,68 @@ uses_mon_ser_characters = {
 	}
 	any_scope_state = {
 		state_region = s:STATE_MONTENEGRO
+		is_incorporated = yes
+	}
+}
+
+uses_eth_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:ETH
+			c:ETH = { any_primary_culture = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } } }
+		}
+		this = c:ETH
+	}
+	trigger_else = {
+		any_primary_culture = { is_target_in_global_variable_list = { name = global_ethiopian_cultures target = this } }
+	}
+}
+
+uses_oma_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:OMA
+			c:OMA = { any_primary_culture = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } } }
+		}
+		this = c:OMA
+	}
+	trigger_else = {
+		any_primary_culture = { is_target_in_global_variable_list = { name = global_arab_cultures target = this } }
+	}
+	any_scope_state = {
+		state_region = s:STATE_OMAN
+		is_incorporated = yes
+	}
+}
+
+uses_zan_characters = {
+	trigger_if = {
+		limit = {
+			exists = c:ZAN
+			c:ZAN = { any_primary_culture = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } } }
+		}
+		this = c:ZAN
+	}
+	trigger_else = {
+		any_primary_culture = { is_target_in_global_variable_list = { name = global_swahili_cultures target = this } }
+	}
+	any_scope_state = {
+		state_region = s:STATE_ZANZIBAR
+		is_incorporated = yes
+	}
+}
+
+uses_zulu_characters = {
+	is_in_geographic_region = geographic_region_south_africa
+	any_primary_culture = {
+		converter_has_indigenous_african_language = yes
+		is_target_in_global_variable_list = { name = global_black_cape_cultures target = this }
+	}
+	any_scope_state = {
+		OR = {
+			state_region = s:STATE_ZULULAND
+			state_region = s:STATE_TRANSVAAL
+		}
 		is_incorporated = yes
 	}
 }

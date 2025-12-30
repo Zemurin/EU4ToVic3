@@ -24,13 +24,16 @@ REPLACE:usa_lincoln_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_lincoln
+					target = flag:converter_lincoln_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
+            NOT = {
+                has_global_variable = ruler_selector_abraham_lincoln
+            }
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -51,9 +54,9 @@ REPLACE:usa_lincoln_character_template = {
 		converter_colonial_template_effect = { TARGET = global_mw_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_lincoln
+			target = flag:converter_lincoln_character_template
 		}
-		fix_variable_error = { variable = converter_lincoln }
+		fix_variable_error = { variable = converter_lincoln_character_template }
 	}
 }
 fem_usa_lincoln_character_template = {
@@ -78,13 +81,16 @@ fem_usa_lincoln_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_lincoln
+					target = flag:converter_lincoln_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
+            NOT = {
+                has_global_variable = ruler_selector_abraham_lincoln
+            }
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_petty_bourgeoisie
 				is_interest_group_type = ig_intelligentsia
@@ -105,11 +111,12 @@ fem_usa_lincoln_character_template = {
 		converter_colonial_template_effect = { TARGET = global_mw_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_lincoln
+			target = flag:converter_lincoln_character_template
 		}
-		fix_variable_error = { variable = converter_lincoln }
+		fix_variable_error = { variable = converter_lincoln_character_template }
 	}
 }
+
 REPLACE:usa_roosevelt_character_template = {
 	first_name = Theodore
 	last_name = Roosevelt
@@ -133,13 +140,13 @@ REPLACE:usa_roosevelt_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_roosevelt
+					target = flag:converter_roosevelt_character_template
 				}
 			}
 			uses_new_england_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_industrialists
@@ -161,9 +168,9 @@ REPLACE:usa_roosevelt_character_template = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_roosevelt
+			target = flag:converter_roosevelt_character_template
 		}
-		fix_variable_error = { variable = converter_roosevelt }
+		fix_variable_error = { variable = converter_roosevelt_character_template }
 	}
 }
 fem_usa_roosevelt_character_template = {
@@ -189,13 +196,13 @@ fem_usa_roosevelt_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_roosevelt
+					target = flag:converter_roosevelt_character_template
 				}
 			}
 			uses_new_england_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_intelligentsia
 				is_interest_group_type = ig_industrialists
@@ -217,11 +224,12 @@ fem_usa_roosevelt_character_template = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_roosevelt
+			target = flag:converter_roosevelt_character_template
 		}
-		fix_variable_error = { variable = converter_roosevelt }
+		fix_variable_error = { variable = converter_roosevelt_character_template }
 	}
 }
+
 REPLACE:usa_jp_morgan_character_template = {
 	first_name = John_Pierpont
 	last_name = Morgan
@@ -244,13 +252,13 @@ REPLACE:usa_jp_morgan_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jp_morgan
+					target = flag:converter_jp_morgan_character_template
 				}
 			}
 			uses_new_england_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1865.1.1
@@ -261,9 +269,9 @@ REPLACE:usa_jp_morgan_character_template = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jp_morgan
+			target = flag:converter_jp_morgan_character_template
 		}
-		fix_variable_error = { variable = converter_jp_morgan }
+		fix_variable_error = { variable = converter_jp_morgan_character_template }
 	}
 }
 fem_usa_jp_morgan_character_template = {
@@ -288,13 +296,13 @@ fem_usa_jp_morgan_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jp_morgan
+					target = flag:converter_jp_morgan_character_template
 				}
 			}
 			uses_new_england_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1865.1.1
@@ -305,11 +313,12 @@ fem_usa_jp_morgan_character_template = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jp_morgan
+			target = flag:converter_jp_morgan_character_template
 		}
-		fix_variable_error = { variable = converter_jp_morgan }
+		fix_variable_error = { variable = converter_jp_morgan_character_template }
 	}
 }
+
 REPLACE:usa_thomas_edison_character_template = {
 	first_name = Thomas
 	last_name = Edison
@@ -318,6 +327,7 @@ REPLACE:usa_thomas_edison_character_template = {
 	dna = dna_thomas_edison
 	female = no
 	religion = rel:atheist
+    ig_leader = yes
 	ideology = ideology_pacifist
 	interest_group = ig_intelligentsia
 	birth_date = 1847.2.11
@@ -332,7 +342,7 @@ REPLACE:usa_thomas_edison_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_edison
+					target = flag:converter_thomas_edison_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
@@ -351,14 +361,14 @@ REPLACE:usa_thomas_edison_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_edison
+					target = flag:converter_thomas_edison_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
 			has_company = company_type:company_general_electric
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1876.1.1
@@ -380,9 +390,9 @@ REPLACE:usa_thomas_edison_character_template = {
 		}
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_edison
+			target = flag:converter_thomas_edison_character_template
 		}
-		fix_variable_error = { variable = converter_edison }
+		fix_variable_error = { variable = converter_thomas_edison_character_template }
 	}
 }
 fem_usa_thomas_edison_character_template = {
@@ -393,6 +403,7 @@ fem_usa_thomas_edison_character_template = {
 	dna = dna_thomas_edison
 	female = yes
 	religion = rel:atheist
+    ig_leader = yes
 	ideology = ideology_pacifist
 	interest_group = ig_intelligentsia
 	birth_date = 1847.2.11
@@ -407,7 +418,7 @@ fem_usa_thomas_edison_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_edison
+					target = flag:converter_thomas_edison_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
@@ -426,14 +437,14 @@ fem_usa_thomas_edison_character_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_edison
+					target = flag:converter_thomas_edison_character_template
 				}
 			}
 			uses_midwest_yankee_characters = yes
 			has_company = company_type:company_general_electric
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1876.1.1
@@ -455,9 +466,9 @@ fem_usa_thomas_edison_character_template = {
 		}
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_edison
+			target = flag:converter_thomas_edison_character_template
 		}
-		fix_variable_error = { variable = converter_edison }
+		fix_variable_error = { variable = converter_thomas_edison_character_template }
 	}
 }
 
@@ -472,7 +483,7 @@ REPLACE:uom_mkc = {
 	interest_group = ig_rural_folk
 	birth_date = 1890.7.14
 	traits = {
-		charistmatic
+		charismatic
 		cautious
 		erudite
 	}
@@ -488,7 +499,7 @@ REPLACE:uom_mkc = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1919.8.19
@@ -540,7 +551,7 @@ fem_uom_mkc = {
 	interest_group = ig_rural_folk
 	birth_date = 1890.7.14
 	traits = {
-		charistmatic
+		charismatic
 		cautious
 		erudite
 	}
@@ -556,7 +567,7 @@ fem_uom_mkc = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_rural_folk
 		}
 		earliest_usage_date = 1919.8.19
@@ -619,7 +630,7 @@ REPLACE:usa_mark_twain_character_template = { #Mark Twain
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_mark_twain
+					target = flag:converter_mark_twain_character_template
 				}
 			}
 			uses_dixie_characters = yes
@@ -628,7 +639,7 @@ REPLACE:usa_mark_twain_character_template = { #Mark Twain
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1865.11.18
@@ -673,9 +684,9 @@ REPLACE:usa_mark_twain_character_template = { #Mark Twain
 		}
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_mark_twain
+			target = flag:converter_mark_twain_character_template
 		}
-		fix_variable_error = { variable = converter_mark_twain }
+		fix_variable_error = { variable = converter_mark_twain_character_template }
 	}
 }
 fem_usa_mark_twain_character_template = { #Mark Twain
@@ -699,7 +710,7 @@ fem_usa_mark_twain_character_template = { #Mark Twain
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_mark_twain
+					target = flag:converter_mark_twain_character_template
 				}
 			}
 			uses_dixie_characters = yes
@@ -708,7 +719,7 @@ fem_usa_mark_twain_character_template = { #Mark Twain
 			}
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_intelligentsia
 		}
 		earliest_usage_date = 1865.11.18
@@ -753,9 +764,9 @@ fem_usa_mark_twain_character_template = { #Mark Twain
 		}
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_mark_twain
+			target = flag:converter_mark_twain_character_template
 		}
-		fix_variable_error = { variable = converter_mark_twain }
+		fix_variable_error = { variable = converter_mark_twain_character_template }
 	}
 }
 
@@ -789,7 +800,7 @@ REPLACE:usa_henry_ford = {
 			has_company = company_type:company_ford_motor
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 			NOR = {
 				has_variable = communist_ig_var
@@ -813,7 +824,7 @@ REPLACE:usa_henry_ford = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1908.8.12 # first production Model T
@@ -859,7 +870,7 @@ fem_usa_henry_ford = {
 			has_company = company_type:company_ford_motor
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 			NOR = {
 				has_variable = communist_ig_var
@@ -883,7 +894,7 @@ fem_usa_henry_ford = {
 			uses_midwest_yankee_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			is_interest_group_type = ig_industrialists
 		}
 		earliest_usage_date = 1908.8.12 # first production Model T
@@ -921,13 +932,13 @@ REPLACE:csa_jefferson_davis_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jefferson_davis
+					target = flag:converter_jefferson_davis_template
 				}
 			}
 			uses_dixie_traitor_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_landowners
@@ -951,9 +962,9 @@ REPLACE:csa_jefferson_davis_template = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jefferson_davis
+			target = flag:converter_jefferson_davis_template
 		}
-		fix_variable_error = { variable = converter_jefferson_davis }
+		fix_variable_error = { variable = converter_jefferson_davis_template }
 	}
 }
 fem_csa_jefferson_davis_template = {
@@ -977,13 +988,13 @@ fem_csa_jefferson_davis_template = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jefferson_davis
+					target = flag:converter_jefferson_davis_template
 				}
 			}
 			uses_dixie_traitor_characters = yes
 		}
 		interest_group_trigger = {
-			is_marginal = no
+			ig_counts_as_marginal = no
 			OR = {
 				is_interest_group_type = ig_armed_forces
 				is_interest_group_type = ig_landowners
@@ -1007,9 +1018,9 @@ fem_csa_jefferson_davis_template = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jefferson_davis
+			target = flag:converter_jefferson_davis_template
 		}
-		fix_variable_error = { variable = converter_jefferson_davis }
+		fix_variable_error = { variable = converter_jefferson_davis_template }
 	}
 }
 
@@ -1140,7 +1151,7 @@ REPLACE:usa_general_jesup = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jesup
+					target = flag:converter_general_jesup
 				}
 			}
 			uses_dixie_characters = yes
@@ -1154,9 +1165,9 @@ REPLACE:usa_general_jesup = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jesup
+			target = flag:converter_general_jesup
 		}
-		fix_variable_error = { variable = converter_jesup }
+		fix_variable_error = { variable = converter_general_jesup }
 	}
 }
 fem_usa_general_jesup = {
@@ -1178,7 +1189,7 @@ fem_usa_general_jesup = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_jesup
+					target = flag:converter_general_jesup
 				}
 			}
 			uses_dixie_characters = yes
@@ -1192,11 +1203,12 @@ fem_usa_general_jesup = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_jesup
+			target = flag:converter_general_jesup
 		}
-		fix_variable_error = { variable = converter_jesup }
+		fix_variable_error = { variable = converter_general_jesup }
 	}
 }
+
 REPLACE:usa_admiral_shubrick = {
 	first_name = William
 	last_name = Shubrick
@@ -1216,7 +1228,7 @@ REPLACE:usa_admiral_shubrick = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_shubrick
+					target = flag:converter_admiral_shubrick
 				}
 			}
 			uses_dixie_characters = yes
@@ -1230,9 +1242,9 @@ REPLACE:usa_admiral_shubrick = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_shubrick
+			target = flag:converter_admiral_shubrick
 		}
-		fix_variable_error = { variable = converter_shubrick }
+		fix_variable_error = { variable = converter_admiral_shubrick }
 	}
 }
 fem_usa_admiral_shubrick = {
@@ -1254,7 +1266,7 @@ fem_usa_admiral_shubrick = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_shubrick
+					target = flag:converter_admiral_shubrick
 				}
 			}
 			uses_dixie_characters = yes
@@ -1268,11 +1280,12 @@ fem_usa_admiral_shubrick = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_shubrick
+			target = flag:converter_admiral_shubrick
 		}
-		fix_variable_error = { variable = converter_shubrick }
+		fix_variable_error = { variable = converter_admiral_shubrick }
 	}
 }
+
 REPLACE:usa_admiral_dewey = {
 	first_name = George
 	last_name = Dewey
@@ -1296,7 +1309,7 @@ REPLACE:usa_admiral_dewey = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_dewey
+					target = flag:converter_admiral_dewey
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -1310,9 +1323,9 @@ REPLACE:usa_admiral_dewey = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_dewey
+			target = flag:converter_admiral_dewey
 		}
-		fix_variable_error = { variable = converter_dewey }
+		fix_variable_error = { variable = converter_admiral_dewey }
 	}
 }
 fem_usa_admiral_dewey = {
@@ -1338,7 +1351,7 @@ fem_usa_admiral_dewey = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_dewey
+					target = flag:converter_admiral_dewey
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -1352,11 +1365,12 @@ fem_usa_admiral_dewey = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_dewey
+			target = flag:converter_admiral_dewey
 		}
-		fix_variable_error = { variable = converter_dewey }
+		fix_variable_error = { variable = converter_admiral_dewey }
 	}
 }
+
 REPLACE:usa_admiral_farragut = {
 	first_name = David
 	last_name = Farragut
@@ -1380,7 +1394,7 @@ REPLACE:usa_admiral_farragut = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_farragut
+					target = flag:converter_admiral_farragut
 				}
 			}
 			uses_dixie_characters = yes
@@ -1394,9 +1408,9 @@ REPLACE:usa_admiral_farragut = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_farragut
+			target = flag:converter_admiral_farragut
 		}
-		fix_variable_error = { variable = converter_farragut }
+		fix_variable_error = { variable = converter_admiral_farragut }
 	}
 }
 fem_usa_admiral_farragut = {
@@ -1422,7 +1436,7 @@ fem_usa_admiral_farragut = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_farragut
+					target = flag:converter_admiral_farragut
 				}
 			}
 			uses_dixie_characters = yes
@@ -1436,11 +1450,12 @@ fem_usa_admiral_farragut = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_farragut
+			target = flag:converter_admiral_farragut
 		}
-		fix_variable_error = { variable = converter_farragut }
+		fix_variable_error = { variable = converter_admiral_farragut }
 	}
 }
+
 REPLACE:usa_admiral_perry = {
 	first_name = Matthew
 	last_name = Perry
@@ -1464,7 +1479,7 @@ REPLACE:usa_admiral_perry = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_perry
+					target = flag:converter_admiral_perry
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -1478,9 +1493,9 @@ REPLACE:usa_admiral_perry = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_perry
+			target = flag:converter_admiral_perry
 		}
-		fix_variable_error = { variable = converter_perry }
+		fix_variable_error = { variable = converter_admiral_perry }
 	}
 }
 fem_usa_admiral_perry = {
@@ -1506,7 +1521,7 @@ fem_usa_admiral_perry = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_perry
+					target = flag:converter_admiral_perry
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -1520,12 +1535,11 @@ fem_usa_admiral_perry = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_perry
+			target = flag:converter_admiral_perry
 		}
-		fix_variable_error = { variable = converter_perry }
+		fix_variable_error = { variable = converter_admiral_perry }
 	}
 }
-
 
 REPLACE:usa_admiral_buchanan = {
 	first_name = Franklin
@@ -1550,7 +1564,7 @@ REPLACE:usa_admiral_buchanan = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_buchanan
+					target = flag:converter_admiral_buchanan
 				}
 			}
 			uses_dixie_traitor_characters = yes
@@ -1567,9 +1581,9 @@ REPLACE:usa_admiral_buchanan = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_buchanan
+			target = flag:converter_admiral_buchanan
 		}
-		fix_variable_error = { variable = converter_buchanan }
+		fix_variable_error = { variable = converter_admiral_buchanan }
 	}
 }
 fem_usa_admiral_buchanan = {
@@ -1595,7 +1609,7 @@ fem_usa_admiral_buchanan = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_buchanan
+					target = flag:converter_admiral_buchanan
 				}
 			}
 			uses_dixie_traitor_characters = yes
@@ -1612,11 +1626,12 @@ fem_usa_admiral_buchanan = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_buchanan
+			target = flag:converter_admiral_buchanan
 		}
-		fix_variable_error = { variable = converter_buchanan }
+		fix_variable_error = { variable = converter_admiral_buchanan }
 	}
 }
+
 REPLACE:usa_general_lee = {
 	first_name = Robert_E
 	last_name = Lee
@@ -1707,6 +1722,7 @@ fem_usa_general_lee = {
 		fix_variable_error = { variable = converter_robert_e_lee }
 	}
 }
+
 REPLACE:usa_general_jackson = {
 	first_name = Thomas
 	last_name = Jackson
@@ -1797,6 +1813,7 @@ fem_usa_general_jackson = {
 		fix_variable_error = { variable = converter_stonewall_jackson }
 	}
 }
+
 REPLACE:usa_general_longstreet = {
 	first_name = James
 	last_name = Longstreet
@@ -1820,7 +1837,7 @@ REPLACE:usa_general_longstreet = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_longstreet
+					target = flag:converter_general_longstreet
 				}
 			}
 			uses_dixie_traitor_characters = yes
@@ -1837,9 +1854,9 @@ REPLACE:usa_general_longstreet = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_longstreet
+			target = flag:converter_general_longstreet
 		}
-		fix_variable_error = { variable = converter_longstreet }
+		fix_variable_error = { variable = converter_general_longstreet }
 	}
 }
 fem_usa_general_longstreet = {
@@ -1865,7 +1882,7 @@ fem_usa_general_longstreet = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_longstreet
+					target = flag:converter_general_longstreet
 				}
 			}
 			uses_dixie_traitor_characters = yes
@@ -1882,9 +1899,9 @@ fem_usa_general_longstreet = {
 		converter_colonial_template_effect = { TARGET = global_dixie_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_longstreet
+			target = flag:converter_general_longstreet
 		}
-		fix_variable_error = { variable = converter_longstreet }
+		fix_variable_error = { variable = converter_general_longstreet }
 	}
 }
 
@@ -2055,6 +2072,7 @@ fem_usa_general_chaffee = {
 		fix_variable_error = { variable = converter_general_chaffee }
 	}
 }
+
 REPLACE:usa_general_grant = {
 	first_name = Ulysses
 	last_name = Grant
@@ -2163,7 +2181,7 @@ REPLACE:usa_general_pershing = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_pershing
+					target = flag:converter_general_pershing
 				}
 			}
 			uses_midwest_yankee_characters = yes
@@ -2177,9 +2195,9 @@ REPLACE:usa_general_pershing = {
 		converter_colonial_template_effect = { TARGET = global_mw_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_pershing
+			target = flag:converter_general_pershing
 		}
-		fix_variable_error = { variable = converter_pershing }
+		fix_variable_error = { variable = converter_general_pershing }
 	}
 }
 fem_usa_general_pershing = {
@@ -2205,7 +2223,7 @@ fem_usa_general_pershing = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_pershing
+					target = flag:converter_general_pershing
 				}
 			}
 			uses_midwest_yankee_characters = yes
@@ -2219,11 +2237,12 @@ fem_usa_general_pershing = {
 		converter_colonial_template_effect = { TARGET = global_mw_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_pershing
+			target = flag:converter_general_pershing
 		}
-		fix_variable_error = { variable = converter_pershing }
+		fix_variable_error = { variable = converter_general_pershing }
 	}
 }
+
 REPLACE:usa_general_sheridan = {
 	first_name = Philip
 	last_name = Sheridan
@@ -2247,7 +2266,7 @@ REPLACE:usa_general_sheridan = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_sheridan
+					target = flag:converter_general_sheridan
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -2261,9 +2280,9 @@ REPLACE:usa_general_sheridan = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_sheridan
+			target = flag:converter_general_sheridan
 		}
-		fix_variable_error = { variable = converter_sheridan }
+		fix_variable_error = { variable = converter_general_sheridan }
 	}
 }
 fem_usa_general_sheridan = {
@@ -2289,7 +2308,7 @@ fem_usa_general_sheridan = {
 			NOT = {
 				is_target_in_global_variable_list = {
 					name = converter_unavailable_unique_characters
-					target = flag:converter_sheridan
+					target = flag:converter_general_sheridan
 				}
 			}
 			uses_new_england_yankee_characters = yes
@@ -2303,9 +2322,9 @@ fem_usa_general_sheridan = {
 		converter_colonial_template_effect = { TARGET = global_ne_yankee_cultures }
 		add_to_global_variable_list = {
 			name = converter_unavailable_unique_characters
-			target = flag:converter_sheridan
+			target = flag:converter_general_sheridan
 		}
-		fix_variable_error = { variable = converter_sheridan }
+		fix_variable_error = { variable = converter_general_sheridan }
 	}
 }
 
@@ -2352,7 +2371,6 @@ REPLACE:USA_william_cramp = { # William Cramp, William Cramp and Sons
 		fix_variable_error = { variable = converter_william_cramp }
 	}
 }
-
 fem_USA_william_cramp = { # William Cramp, William Cramp and Sons
 	first_name = Willa
 	last_name = Cramp
@@ -2440,7 +2458,6 @@ REPLACE:usa_rockefeller_character_template = {
 		fix_variable_error = { variable = converter_rockefeller }
 	}
 }
-
 fem_usa_rockefeller_character_template = {
 	first_name = Jane
 	last_name = Rockefeller
@@ -2530,7 +2547,6 @@ REPLACE:usa_carnegie_character_template = {
 		fix_variable_error = { variable = converter_carnegie }
 	}
 }
-
 fem_usa_carnegie_character_template = {
 	first_name = Andrea
 	last_name = Carnegie
@@ -2620,7 +2636,6 @@ REPLACE:usa_samuel_colt = {
 		fix_variable_error = { variable = converter_samuel_colt }
 	}
 }
-
 fem_usa_samuel_colt = {
 	first_name = Hannah
 	last_name = Colt
@@ -2710,7 +2725,6 @@ REPLACE:usa_robert_e_lee_wilson = {
 		fix_variable_error = { variable = converter_robert_e_lee_wilson }
 	}
 }
-
 fem_usa_robert_e_lee_wilson = {
 	first_name = Robynne_E.Lee
 	last_name = Wilson

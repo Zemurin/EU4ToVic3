@@ -1,5 +1,7 @@
 ﻿# This is executed last among all history
 GLOBAL = {
+	converter_historical_leader_cultures_effect = yes
+	converter_colonial_confederation_cultures_effect = yes
 	every_country = {
 		limit = {
 			OR = {

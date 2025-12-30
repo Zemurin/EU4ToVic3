@@ -1,0 +1,353 @@
+﻿### Transylvania character template file ###
+### some content-driven overlap with country_aus file ###
+
+### post-game-start characters
+
+REPLACE:trs_elek_nopcsa = {
+	first_name = Elek
+	last_name = Nopcsa
+	historical = yes
+	female = no
+	culture = cu:szekely
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	birth_date = 1775.3.14
+	traits = {
+		meticulous
+		tactful
+		erudite
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_elek_nopcsa
+				}
+			}
+			uses_szekely_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1836.1.2
+		latest_usage_date = 1849.1.1
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:szekely }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_elek_nopcsa
+		}
+		fix_variable_error = { variable = converter_elek_nopcsa }
+	}
+}
+fem_trs_elek_nopcsa = {
+	first_name = Szandra
+	last_name = Nopcsa
+	historical = yes
+	female = yes
+	culture = cu:szekely
+	religion = rel:catholic
+	interest_group = ig_landowners
+	ideology = ideology_moderate
+	birth_date = 1775.3.14
+	traits = {
+		meticulous
+		tactful
+		erudite
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_elek_nopcsa
+				}
+			}
+			uses_szekely_characters = yes
+		}
+		interest_group_trigger = {
+			is_interest_group_type = ig_landowners
+		}
+		earliest_usage_date = 1836.1.2
+		latest_usage_date = 1849.1.1
+		chance = 75
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:szekely }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_elek_nopcsa
+		}
+		fix_variable_error = { variable = converter_elek_nopcsa }
+	}
+}
+
+# Simion Barnutiu, Romanian revolutionary of 1848 in Transylvania, Greek Catholic priest, educator, bigot
+REPLACE:trs_simion_barnutiu = {
+	first_name = Simion
+	last_name = BA_rnuT_iu
+	historical = yes
+	culture = cu:romanian
+	religion = rel:catholic # yes, Catholic
+	female = no
+	interest_group = ig_devout
+	ideology = ideology_radical
+	birth_date = 1808.7.21
+	traits = {
+		bigoted
+		reckless
+		pious
+		erudite
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_simion_barnutiu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				AND = {
+					owner ?= {
+						religion = rel:catholic
+					}
+					is_interest_group_type = ig_devout
+				}
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_simion_barnutiu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				AND = {
+					owner ?= {
+						religion = rel:catholic
+					}
+					is_interest_group_type = ig_devout
+				}
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:romanian }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_simion_barnutiu
+		}
+		fix_variable_error = { variable = converter_simion_barnutiu }
+	}
+}
+fem_trs_simion_barnutiu = {
+	first_name = Simona
+	last_name = BA_rnuT_iu
+	historical = yes
+	culture = cu:romanian
+	religion = rel:catholic # yes, Catholic
+	female = yes
+	interest_group = ig_devout
+	ideology = ideology_radical
+	birth_date = 1808.7.21
+	traits = {
+		bigoted
+		reckless
+		pious
+		erudite
+	}
+	interest_group_leader_usage = {
+		country_trigger = {
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_simion_barnutiu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				AND = {
+					owner ?= {
+						religion = rel:catholic
+					}
+					is_interest_group_type = ig_devout
+				}
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_simion_barnutiu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			OR = {
+				AND = {
+					owner ?= {
+						religion = rel:catholic
+					}
+					is_interest_group_type = ig_devout
+				}
+				is_interest_group_type = ig_intelligentsia
+				is_interest_group_type = ig_rural_folk
+			}
+		}
+		earliest_usage_date = 1843.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:romanian }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_simion_barnutiu
+		}
+		fix_variable_error = { variable = converter_simion_barnutiu }
+	}
+}
+
+# Romanian revolutionary of 1848 in Transylvania
+REPLACE:trs_avram_iancu = {
+	first_name = Avram
+	last_name = Iancu
+	historical = yes
+	culture = cu:romanian
+	religion = rel:orthodox
+	female = no
+	interest_group = ig_rural_folk
+	ideology = ideology_radical
+	birth_date = 1824.9.10 # exact birthdate unknown. died September 10, 1872
+	traits = {
+		social_bandit
+		charismatic
+		romantic
+		firebrand
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			should_have_male_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_avram_iancu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:romanian }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_avram_iancu
+		}
+		fix_variable_error = { variable = converter_avram_iancu }
+	}
+}
+fem_trs_avram_iancu = {
+	first_name = Dumitra
+	last_name = Iancu
+	historical = yes
+	culture = cu:romanian
+	religion = rel:orthodox
+	female = yes
+	interest_group = ig_rural_folk
+	ideology = ideology_radical
+	birth_date = 1824.9.10 # exact birthdate unknown. died September 10, 1872
+	traits = {
+		social_bandit
+		charismatic
+		romantic
+		firebrand
+	}
+	agitator_usage = {
+		country_trigger = {
+			has_dlc_feature = voice_of_the_people_content
+			should_have_female_characters = yes
+			NOT = {
+				is_target_in_global_variable_list = {
+					name = converter_unavailable_unique_characters
+					target = flag:converter_avram_iancu
+				}
+			}
+			uses_romanian_characters = yes
+			needs_state_transylvania = yes
+		}
+		interest_group_trigger = {
+			ig_counts_as_marginal = no
+			is_interest_group_type = ig_rural_folk
+		}
+		earliest_usage_date = 1848.1.1
+		latest_usage_date = 1860.1.1
+		chance = 50
+	}
+	on_created = {
+		converter_standard_template_effect = { TARGET = cu:romanian }
+		add_to_global_variable_list = {
+			name = converter_unavailable_unique_characters
+			target = flag:converter_avram_iancu
+		}
+		fix_variable_error = { variable = converter_avram_iancu }
+	}
+}

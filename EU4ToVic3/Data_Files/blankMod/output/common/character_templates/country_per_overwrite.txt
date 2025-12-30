@@ -46,7 +46,7 @@ REPLACE:PER_reza_pahlavi = {
             uses_maz_characters = yes
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_armed_forces
         }
         earliest_usage_date = 1919.1.1 # Minister of War
@@ -108,7 +108,7 @@ fem_PER_reza_pahlavi = {
             uses_maz_characters = yes
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_armed_forces
         }
         earliest_usage_date = 1919.1.1 # Minister of War
@@ -157,7 +157,7 @@ REPLACE:PER_mirza_kuchik_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1909.1.1
@@ -178,7 +178,7 @@ REPLACE:PER_mirza_kuchik_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_rural_folk
                 is_interest_group_type = ig_armed_forces
@@ -228,7 +228,7 @@ fem_PER_mirza_kuchik_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             is_interest_group_type = ig_rural_folk
         }
         earliest_usage_date = 1909.1.1
@@ -249,7 +249,7 @@ fem_PER_mirza_kuchik_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_rural_folk
                 is_interest_group_type = ig_armed_forces
@@ -301,7 +301,7 @@ REPLACE:PER_sattar_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_petty_bourgeoisie
                 is_interest_group_type = ig_intelligentsia
@@ -353,7 +353,7 @@ fem_PER_sattar_khan = {
             has_dlc_feature = ep1_content
         }
         interest_group_trigger = {
-            is_marginal = no
+            ig_counts_as_marginal = no
             OR = {
                 is_interest_group_type = ig_petty_bourgeoisie
                 is_interest_group_type = ig_intelligentsia
