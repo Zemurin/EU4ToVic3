@@ -49,9 +49,9 @@ const std::set<std::string> lumberPmgs = {"pmg_base_building_logging_camp",
 	 "pmg_transportation_building_logging_camp",
 	 "pmg_ownership_capital_building_logging_camp"};
 
-const std::set<std::string> subsistencePmgs = {"pmg_base_building_subsistence_farms",
-	 "pmg_home_workshops_building_subsistence_farms",
-	 "pmg_serfdom_building_subsistence_farms"};
+const std::set<std::string> subsistencePmgs = {"pmg_base_building_subsistence_farm",
+	 "pmg_home_workshops_building_subsistence_farm",
+	 "pmg_serfdom_building_subsistence_farm"};
 } // namespace
 
 TEST(Mappers_ProductionMethodMapperTests, RulesCanBeLoaded)
@@ -293,11 +293,11 @@ TEST(Mappers_ProductionMethodMapperTests, EstimatesWalkPMListLawMethod)
 
 	// Prepare Buildings
 	V3::Building subsistence;
-	subsistence.setName("building_subsistence_farms");
+	subsistence.setName("building_subsistence_farm");
 	subsistence.setPMGroups(subsistencePmgs);
 
 	std::map<std::string, V3::Building> buildingMap;
-	buildingMap.emplace("building_subsistence_farms", subsistence);
+	buildingMap.emplace("building_subsistence_farm", subsistence);
 
 	// Load in PM and PMGroup definitions
 	const auto [PMs, PMGroups] = prepPMData();
@@ -305,11 +305,11 @@ TEST(Mappers_ProductionMethodMapperTests, EstimatesWalkPMListLawMethod)
 	const auto& serfPMEstimates = mapper.estimatePMs(countrySerfdom, PMs, PMGroups, buildingMap);
 	const auto& homesteadPMEstimates = mapper.estimatePMs(countryHomesteading, PMs, PMGroups, buildingMap);
 
-	EXPECT_THAT(serfPMEstimates, testing::Contains(testing::Pair("pmg_serfdom_building_subsistence_farms", std::make_tuple(1, 1.0))));
-	EXPECT_THAT(homesteadPMEstimates, testing::Contains(testing::Pair("pmg_serfdom_building_subsistence_farms", std::make_tuple(2, 1.0))));
+	EXPECT_THAT(serfPMEstimates, testing::Contains(testing::Pair("pmg_serfdom_building_subsistence_farm", std::make_tuple(1, 1.0))));
+	EXPECT_THAT(homesteadPMEstimates, testing::Contains(testing::Pair("pmg_serfdom_building_subsistence_farm", std::make_tuple(2, 1.0))));
 
 	/*
-	 * pmg_serfdom_building_subsistence_farms  = {
+	 * pmg_serfdom_building_subsistence_farm  = {
 	 *	production_methods = {
 	 *		pm_serfdom_no
 	 *		pm_serfdom // countrySerfdom
